@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+span {
+    color: pink;
+}
+.block {
+    color: red;
+}
+    
+.paragraph {
+    color: green;
+}
+h2 {
+    color:purple;
+}
+.skills h2 {
+    color: red;
+}
+.button {
+    background-color: grey;
+    color: white;
+    border: 10px solid red;
+}
+.container {
+    max-width: 970px;
+    margin: 0px auto;
+}
