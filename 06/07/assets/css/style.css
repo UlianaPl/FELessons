@@ -1,0 +1,75 @@
+.container {
+    max-width: 793px;
+    background-color: grey;
+    text-align: center;
+         
+}
+.line,
+.line2,
+.line4 {
+    background-color: rgb(154, 147, 161);
+    max-width: 534px;
+    
+}
+.line1,
+.line5 {
+    background-color: rgb(135, 129, 141);
+    max-width: 534px;
+}
+.line3 {
+    background-color: rgb(109, 104, 114);
+    max-width: 534px;
+}
+
+input[type="checkbox"]:checked~label {
+    text-decoration-line: line-through;
+    color: #2b2a30
+}
+.line1 label,
+.line5 label {
+    text-decoration-line: line-through;
+}
+.line:hover {
+    border: 1px solid white;
+}
+.line1:hover {
+    border: 1px solid white;
+}
+.line2:hover {
+    border: 1px solid white;
+}
+.line3:hover {
+    border: 1px solid white;
+}
+.line4:hover {
+    border: 1px solid white;
+}
+.line5:hover {
+    border: 1px solid white;
+}
+
+div {
+    background-color: rgb(83, 82, 82);
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+h2,
+h3 {
+    color: salmon;
+}
+
+label {
+    color: white 
+}
+.line1 label,
+.line5 label {
+    color:rgb(173, 170, 170)
+}
+#last-block {
+    max-width: 534px;
+    text-align: center;
+}
+span {
+    font-size: large;
+}
