@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration:none;
+    text-align: center;
+    color: gray;
+    padding-bottom: 4px;
+}
+a[href~="Home"] {
+    color: black;
+}
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;          
+}
+.container-gray {
+    background: #F6F6F6;
+    text-align: center;    
+}
+.section {
+    padding: 100px;
+}
+.about-me p {
+    margin-top: 30px;
+    }
+.about-me p:nth-child(2) {
+    margin-top:0%;
+}
+.about-me p:nth-child(4) {
+    margin-top: 0%;
+}
+.about-me p:nth-child(6) {
+    margin-top: 0%;
+}
+.photo {
+    margin-bottom: 0px;
+}
+h2 + p {
+    margin-top: 20 px;
+}
+h2 + div {
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: left;
+    font-size:xx-large;
+}
+.ending {
+    color: gray;
+    font-size: smaller;
+}
+button {
+    background-color: black;
+    color: white;
+    border-radius: 50%;  
+    width:180px;
+    height:44px;
+}
+a[href~="#"] {
+    color: rgb(77, 74, 74);
+    text-decoration-line: underline;
+}
