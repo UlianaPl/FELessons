@@ -10,7 +10,7 @@ a {
     padding-right: 40px;
 }
 li:last-child {
-    padding right: 0;
+    padding-right: 0;
 }
 a[href~="Home"] {
     color: black;
