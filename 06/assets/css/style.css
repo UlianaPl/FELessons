@@ -73,6 +73,7 @@ h1 {
 .ending {
     color: gray;
     font-size: smaller;
+    text-align: center;
 }
 button {
     background-color: black;
