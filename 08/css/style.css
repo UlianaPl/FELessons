@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container {
+    vertical-align: middle;
+    text-align: center;
+}
+.button {
+    background-color: white
+}
+.button:last-child {
+    background-color: yellow;
+}
