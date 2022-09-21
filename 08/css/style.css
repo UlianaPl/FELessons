@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 .container {
-    vertical-align: middle;
     text-align: center;
 }
 .button {
-    background-color: white
+    background-color: white;   
 }
 .button:last-child {
     background-color: yellow;
+}
+.block {
+    display: flex;
+    flex-direction: row;    
+}
+.item {
+    background-color: blue;
 }
