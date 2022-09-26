@@ -1,33 +1,54 @@
 .container {
     max-width: 793px;
-    background-color: grey;
+    text-align: center; 
+    font-family: 'Roboto';
+    font-style: normal;
+}
+header {
+    background-color: #4A4F56;
+    padding: 19px 0 12px;
+}
+header h2 {
+    margin: 0 0 4px;
+    color: #FF8984
+}
+header h3 {
+    margin: 0;
+    color: #FF8984
+}
+body {
+    display: block;
+    margin: 0;
+}
+main {
+    background-color: #3B3F45;
     text-align: center;
-         
 }
 .line,
 .line2,
 .line4 {
-    background-color: rgb(154, 147, 161);
-    max-width: 534px;
-    
+    background-color: #88839E;
+    max-width: 534px;    
 }
 .line1,
 .line5 {
-    background-color: rgb(135, 129, 141);
+    background-color: #7A7593;
     max-width: 534px;
+}
+.line_1 {
+    box-shadow:;
 }
 .line3 {
-    background-color: rgb(109, 104, 114);
+    background-color: #625E77;
     max-width: 534px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-left: none;
+    border-right: none;
 }
-
 input[type="checkbox"]:checked~label {
     text-decoration-line: line-through;
-    color: #2b2a30
-}
-.line1 label,
-.line5 label {
-    text-decoration-line: line-through;
+    color: #FFFFFF
 }
 .line:hover {
     border: 1px solid white;
@@ -47,28 +68,14 @@ input[type="checkbox"]:checked~label {
 .line5:hover {
     border: 1px solid white;
 }
-
-div {
-    background-color: rgb(83, 82, 82);
-    margin-left: auto;
-    margin-right: auto;
-}
- 
-h2,
-h3 {
-    color: salmon;
-}
-
 label {
     color: white 
 }
-.line1 label,
-.line5 label {
-    color:rgb(173, 170, 170)
-}
-#last-block {
+.last-block {
+    background-color: #4A4F56;
     max-width: 534px;
     text-align: center;
+    color: #FF8984;
 }
 span {
     font-size: large;
