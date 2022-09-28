@@ -3,6 +3,7 @@
     text-align: center; 
     font-family: 'Roboto';
     font-style: normal;
+    margin: 0 auto;
 }
 header {
     background-color: #4A4F56;
@@ -28,15 +29,19 @@ main {
 .line2,
 .line4 {
     background-color: #88839E;
-    max-width: 534px;    
+    max-width: 534px;  
 }
 .line1,
 .line5 {
     background-color: #7A7593;
     max-width: 534px;
 }
+.item {
+    margin: 0 auto;
+    text-align: left;
+}
 .line_1 {
-    box-shadow:;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .line3 {
     background-color: #625E77;
@@ -76,6 +81,7 @@ label {
     max-width: 534px;
     text-align: center;
     color: #FF8984;
+    margin: 0 auto;
 }
 span {
     font-size: large;
