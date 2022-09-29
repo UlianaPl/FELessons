@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.lorem {
+    max-width: 570px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 435px;
+    margin-bottom: 60px;
+}
+.divider {
+    margin-left: 697px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/*.title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0,05em;
+    color: #000000;
+}
+.architectural-photography {
+    margin: 120px 0;
+    
+    
+}*/
+.block-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+/*.itlife-photography_title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.itlife-photography_grid {
+    grid-template-rows: repeat(3, 1fr);
+}*/
+.block-grid--gap {
+    gap: 30px;
+}
+.block-grid--template-columns-3 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.block-grid--template-rows-3 {
+    grid-template-rows: repeat(1, 1fr);
+}
+/*.img-card {
+    border-radius: 20px;
+    overflow: hidden;
+}*/
+.itlife-photography__column--column-1-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.itlife-photography__column--column-2-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.itlife-photography__column--column-3-4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.itlife-photography__column--column-4-5 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.architectural-photography__column_text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #282528;
+}
+.architectural-photography__column_text2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #646464;
+}
+h1 {
+    font-family: 'Delius Unicase';
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+.logo_footer {
+    margin-left: 635px;
+    margin-top: 190px;
+}
+.links_footer {
+    margin-left: 528px;
+    margin-top: 36px;
+}
+.overlay {
+    display: none;
+    position: absolute;
+}
+.flex_img {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    opacity: 0
+}
+.life_2:hover .flex_img {
+    opacity: 1;    
+}
+.text {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(224, 224, 224, 0.5);
+    border-radius: 8px;
+}
+.item:hover {
+    background: #E0E0E0;
+}
+.life_2:before {
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+}
+.life_2:hover:before {
+    background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+
+}
