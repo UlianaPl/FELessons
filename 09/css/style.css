@@ -7,13 +7,6 @@
     max-width: 1170px;
     margin: 0 auto;
 }
-.title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 45px;
-    letter-spacing: 0,05em;
-    color: #000000;
-}
 h2 {
     margin-top: 120px;
     margin-bottom: 80px;
@@ -22,6 +15,178 @@ h2 {
     line-height: 45px;
     text-align: center;
     letter-spacing: 0.05em;
+}
+.fashion_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 360px);
+    gap: 30px;
+}
+.fashion_1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.fashion_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.fashion_3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.fashion_4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.fashion_5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.fashion_6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.fasion_7 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.fashion_8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.fashion_9 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.fashion_10 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.architectural-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 360px);
+    gap: 30px;
+}
+.architectural_1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.architectural_2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.architectural_3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.architectural_4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.architectural_5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.architectural_6 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url(../img/image_1_2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
 }
 .life_grid {
     display: grid;
@@ -103,6 +268,22 @@ h2 {
     right: 20px;
     opacity: 0
 }
+.fashion_1,
+.fashion_2,
+.fashion_3,
+.fashion_4,
+.fashion_5,
+.fashion_6,
+.fashion_7,
+.fashion_8,
+.fashion_9,
+.fashion_10,
+.architectural_1,
+.architectural_2,
+.architectural_3,
+.architectural_4,
+.architectural_5,
+.architectural_6,
 .life_1,
 .life_2,
 .life_3,
@@ -113,6 +294,22 @@ h2 {
     border-radius: 20px;
     overflow: hidden;
 }
+.fashion_1:hover .flex_img,
+.fashion_2:hover .flex_img,
+.fashion_3:hover .flex_img,
+.fashion_4:hover .flex_img,
+.fashion_5:hover .flex_img,
+.fashion_6:hover .flex_img,
+.fashion_7:hover .flex_img,
+.fashion_8:hover .flex_img,
+.fashion_9:hover .flex_img,
+.fashion_10:hover .flex_img,
+.architectural_1:hover .flex_img,
+.architectural_2:hover .flex_img,
+.architectural_3:hover .flex_img,
+.architectural_4:hover .flex_img,
+.architectural_5:hover .flex_img,
+.architectural_6:hover .flex_img,
 .life_1:hover .flex_img,
 .life_2:hover .flex_img,
 .life_3:hover .flex_img,
@@ -142,6 +339,22 @@ h2 {
 .item:hover {
     background: #E0E0E0;
 }
+.fashion_1:before,
+.fashion_2:before,
+.fashion_3:before,
+.fashion_4:before,
+.fashion_5:before,
+.fashion_6:before,
+.fashion_7:before,
+.fashion_8:before,
+.fashion_9:before,
+.fashion_10:before,
+.architectural_1:before,
+.architectural_2:before,
+.architectural_3:before,
+.architectural_4:before,
+.architectural_5:before,
+.architectural_6:before,
 .life_1:before,
 .life_2:before,
 .life_3:before,
@@ -157,6 +370,22 @@ h2 {
     right: 0px;
     bottom: 0;
 }
+.fashion_1:hover:before,
+.fashion_2:hover:before,
+.fashion_3:hover:before,
+.fashion_4:hover:before,
+.fashion_5:hover:before,
+.fashion_6:hover:before,
+.fashion_7:hover:before,
+.fashion_8:hover:before,
+.fashion_9:hover:before,
+.fashion_10:hover:before,
+.architectural_1:hover:before,
+.architectural_2:hover:before,
+.architectural_3:hover:before,
+.architectural_4:hover:before,
+.architectural_5:hover:before,
+.architectural_6:hover:before,
 .life_1:hover:before,
 .life_2:hover:before,
 .life_3:hover:before,
