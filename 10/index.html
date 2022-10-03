@@ -4,139 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ITLife</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="container">
+        <section class="menu">
+        <div class="menu__container">
+            <div class="menu-list">
             <nav>
-                <div style="display: inline-block; vertical-align: middle">
-                    <a href="" target="_parent">
+                <div class="menu-list__logo">
+                    <a class="logo__image" href="#" target="_parent">
                         <img src="./img/logo.png" alt="">
                     </a>                    
                 </div>
-                <div style="display: inline-block; vertical-align: middle">
-                    <ul class="">
-                        <li style="display:inline-block">
-                            <a class="first" href="Home">Home</a>
+                <div class="menu-list__items">
+                    <ul class="items-names">
+                        <li class="items-names__text">
+                            <a class="items-names__title" href="Home">Home</a>
                         </li>
-                        <li style="display:inline-block">
-                            <a href="Service">Service</a>
+                        <li class="items-names__text">
+                            <a class="items-names__title" href="Service">Service</a>
                         </li>
-                        <li style="display:inline-block">
-                            <a href="About">About</a>
+                        <li class="items-names__text">
+                            <a class="items-names__title" href="About">About</a>
                         </li>
-                        <li style="display:inline-block">
-                            <a href="Contacts">Contacts</a>
+                        <li class="items-names__text">
+                            <a class="items-names__title" href="Contacts">Contacts</a>
                         </li>
                     </ul>
                 </div>
-                <div class="button" style="display: inline-block; vertical-align: middle">
-                    <button>
+                <div class="button">
+                    <button class="button__inside">
                         CALLBACK
                     </button>
                 </div>
             </nav>
+            </div>
         </div>
+        </section>
     </header>
         <main>
-            <div class="container">
-                <section class="central">
-                    <h1 class="title who-we-are_title">
+            <section class="who-we-are who-we-are--bg">
+                <div class="who-we-are__container">
+                    <h2 class="who-we-are__title">
                         WHO WE ARE
-                    </h1>
-                    <div class="divider">
-                        <img src="./img/divider.png" alt="">
-                    </div>
-                    <div class="lorem">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur, in similique consectetur voluptates inventore. Aliquam, sint. Voluptas cumque animi placeat, voluptatem nam velit sapiente itaque, natus beatae a in.
-                    </div>
-                    <div class="
-                    block-grid 
-                    block-grid--gap 
-                    block-grid--template-columns-3 
-                    block-grid--template-rows-1
-                    ">
-                        <div class="
-                        img-card 
-                        itlife-photography__column
-                        itlife-photography__column--column-1-2
-                        ">
-                            <img src="./img/photo_1.png" alt="image">
-                            <p class="architectural-photography__column_text">
-                                John Hundson
-                            </p>
-                            <p class="architectural-photography__column_text2">
-                                Lead Designer
-                            </p>
+                    </h2>
+                    <p class="who-we-are__description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis a quas harum, omnis, neque earum laboriosam repellendus officiis laudantium provident cumque. 
+                    </p>
+                    <div class="who-we-are__people">
+                        <div class="people-card">
+                        <div class="people-card__image">
+                            <img src="./img/photo_1.png" alt="">
+                        <div class="people-card__socials socials">
+                            <a class="socials__item" href="#" target="_blank">1</a>
+                            <a class="socials__item" href="#" target="_blank">2</a>
+                            <a class="socials__item" href="#" target="_blank">3</a>
                         </div>
-                        <div class="
-                        img-card
-                        itlife-photography__column
-                        itlife-photography__column--column-2-3
-                        ">
-                            <img src="./img/photo_1.png" alt="image">
-                            <p class="architectural-photography__column_text">
+                        </div>
+                        <div class="people-card__name">
+                            John Mandson
+                        </div>
+                        <p class="people-card__position">
+                            Lead Designer
+                        </p>
+                        </div>
+                        <div class="people-card">
+                            <div class="people-card__image">
+                                <img src="./img/photo_1.png" alt="">
+                                <div class="people-card__socials socials">
+                                    <a class="socials__item" href="#" target="_blank">
+                                        <img class="item__icon1" src="./img/icon_1.png" alt="">
+                                    </a>
+                                    <a class="socials__item" href="#" target="_blank">
+                                        <img class="item__icon2" src="./img/icon_2.png" alt="">
+                                    </a>
+                                    <a class="socials__item" href="#" target="_blank">
+                                        <img class="item__icon3" src="./img/icon_3.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="people-card__name">
                                 Alex Cutter
-                            </p>
-                            <p class="architectural-photography__column_text2">
+                            </div>
+                            <p class="people-card__position">
                                 Developer
                             </p>
                         </div>
-                        <div class="
-                        img-card 
-                        itlife-photography__column
-                        itlife-photography__column--column-3-4
-                        ">
-                            <img src="./img/photo_2.png" alt="image">
-                            <p class="architectural-photography__column_text">
+                        <div class="people-card">
+                            <div class="people-card__image">
+                                <img src="./img/photo_2.png" alt="">
+                                <div class="people-card__socials socials">
+                                    <a class="socials__item" href="#" target="_blank">1</a>
+                                    <a class="socials__item" href="#" target="_blank">2</a>
+                                    <a class="socials__item" href="#" target="_blank">3</a>
+                                </div>
+                            </div>
+                            <div class="people-card__name">
                                 Elena Simpson
-                            </p>
-                            <p class="architectural-photography__column_text2">
+                            </div>
+                            <p class="people-card__position">
                                 Artist
                             </p>
                         </div>
-                        <div class="
-                        img-card
-                        itlife-photography__column
-                        itlife-photography__column--4_5                                        
-                        ">
-                            <img src="./img/photo_3.png" alt="image">
-                            <p class="architectural-photography__column_text">
+                        <div class="people-card">
+                            <div class="people-card__image">
+                                <img src="./img/photo_3.png" alt="">
+                                <div class="people-card__socials socials">
+                                    <a class="socials__item" href="#" target="_blank">1</a>
+                                    <a class="socials__item" href="#" target="_blank">2</a>
+                                    <a class="socials__item" href="#" target="_blank">3</a>
+                                </div>
+                            </div>
+                            <div class="people-card__name">
                                 Lily Allen
-                            </p>
-                            <p class="architectural-photography__column_text2">
+                            </div>
+                            <p class="people-card__position">
                                 Graphic Designer
                             </p>
                         </div>
-                        
                     </div>
-                </section>              
-    
-            </div>
+                </div>                    
+            </section>                
         </main>
         <footer>
-            <div class="container">
-                <p class="logo_footer">
-            <a href="" target="_parent">
+            <div class="footer__container">
+            <div class="footer-logo__content">                
+            <a class="" href="" target="_parent">
                 <img src="./img/logo.png" alt="">
             </a>
-                </p>
             </div>
-            <div class="" style="">
-                <ul class="links_footer">
-                    <li style="display:inline-block">
-                        <a class="first" href="Home">Home</a>
+            <div class="footer-logo__text" style="">
+                <ul class="text__links">
+                    <li class="links__item">
+                        <a class="item__type" href="Home">Home</a>
                     </li>
-                    <li style="display:inline-block">
-                        <a href="Service">Service</a>
+                    <li class="links__item">
+                        <a class="item__type" href="Service">Service</a>
                     </li>
-                    <li style="display:inline-block">
-                        <a href="About">About</a>
+                    <li class="links__item">
+                        <a class="item__type" href="About">About</a>
                     </li>
-                    <li style="display:inline-block">
-                        <a href="Contacts">Contacts</a>
+                    <li class="links__item">
+                        <a class="item__type" href="Contacts">Contacts</a>
                     </li>
                 </ul>
             </div>
