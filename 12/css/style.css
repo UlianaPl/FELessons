@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    background-color: #DADADA;
+}
+.container-header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-list nav {
+    position: sticky;
+    top: 0;
+}
+.container-main {
+    max-width: 905px;
+    margin: 0 auto;     
+}
+.container-main--image {
+    position: absolute;
+    left: 56.39%;
+    right: -9.17%;
+    top: 4.87%;
+    bottom: 70.46%;     
+}
+.container-aside--list .list--li {
+    margin-bottom: 80px;
+}
+.list--li {
+    font-family: 'Francois One', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.block {
+    display: flex;
+    column-gap: 20px;
+}
+.container-aside {
+    max-width: 535px;
+    margin-left: 130px;
+}
+.container-aside nav {
+    position: sticky;
+    top:0px;
+}
+li {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+}
+.eng {
+    margin-top: 29px;
+    margin-bottom: 30px;
+    padding-right: 50px;
+    font-family: 'Tourney', cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;       
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.header--text {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    mix-blend-mode: normal;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    padding-right: 600px;
+}
+.konstruct {
+    max-width: 120px;
+}
+.header div {    
+    display: inline-block;    
+}
+.header {
+    margin-bottom: 26px;
+}
+.title {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-family: 'Francois One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;         
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.title_2 {
+    font-family: 'Farro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+.text--underline {
+    text-decoration: underline;
+}
+.text--italic {
+    font-style: italic;
+}
+.text--bold {
+    font-weight: 700;
+}
+.text--gray {
+    background-color: #C9C9C9;
+}
