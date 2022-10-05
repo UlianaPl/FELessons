@@ -9,7 +9,7 @@ body {
     font-weight: 400;
     font-size: 28px;
     line-height: 48px;
-    background-color: #DADADA;
+    background-color: #FFFFFF;
 }
 .container {
     max-width: 1200px;
@@ -79,6 +79,7 @@ a {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.04em;
+    margin-left: 10px;
 }
 .text--underline {
     text-decoration: underline;
@@ -91,4 +92,8 @@ a {
 }
 .text--gray {
     background-color: #C9C9C9;
+}
+.section_three div,
+.section_four div {
+    margin-bottom: 40px;
 }
