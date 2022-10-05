@@ -149,7 +149,7 @@
 .socials__item:hover {
     background-color: var(--white);
 }
-.item__icon1 {
+/*.item__icon1 {
     background: url(../img/icon_1_1.png);
 }
 .item__icon2 {
@@ -157,7 +157,7 @@
 }
 .item__icon3 {
     background: url(../img/icon_3_3.png);
-}
+}*/
 .people-card__socials {
     position: absolute;
     top: 0;
@@ -224,7 +224,7 @@
     position: absolute;
     opacity: 0;
 }
-.item__icon-hover:hover {
+.item__icon11:hover {
     position: absolute;
     opacity: 1;    
 }
