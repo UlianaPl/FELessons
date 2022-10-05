@@ -3,11 +3,14 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.menu {
+    border-bottom: 1px solid #bdbdbd;
+}
 .menu__container {
-    max-width: 1440px;
+    max-width: 1174px;
     margin: 0 auto;
 }
-.menu-list__logo {
+/*.menu-list__logo {
     display: flex;
     text-align: center;
     justify-content: start;
@@ -17,9 +20,9 @@
 }
 .menu-list div{
     display: inline-block;
-}
+}*/
 .menu-list__items { 
-    margin-bottom: 28px;
+    margin-top: 28px;
 }
 .items-names .items-names__text {
     display: inline-block;
@@ -38,17 +41,7 @@
     color: var(--blue);
 }
 .button__inside {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 10px 20px;
-    gap: 10px;
-    position: absolute;
-    width: 130px;
-    height: 42px;
-    left: 1174px;
-    top: 19px;
     border: 1px solid var(--text);
     background-color: var(--white);    
     font-family: 'Lato';
@@ -56,6 +49,7 @@
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
+    margin-top: 9px;
 }
 .items-names .items-names__text {
     margin-right: 30px;
@@ -154,7 +148,6 @@
 }
 .socials__item:hover {
     background-color: var(--white);
-    color: var(--blue);
 }
 .item__icon1 {
     background: url(../img/icon_1_1.png);
@@ -181,7 +174,6 @@
     max-width: 1440px;
     margin: 0 auto;
 }
-
 .lorem {
     max-width: 570px;
     text-align: center;
@@ -223,8 +215,35 @@
 .item__type:hover {
     color: var(--blue);
 }
-
-
+.menu-list__content {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.item__icon1 {
+    position: absolute;
+    opacity: 0;
+}
+.item__icon-hover:hover {
+    position: absolute;
+    opacity: 1;    
+}
+.item__icon2 {
+    position: absolute;
+    opacity: 0;
+}
+.item__icon22:hover {
+    position: absolute;
+    opacity: 1;
+}
+.item__icon3 {
+    position: absolute;
+    opacity: 0;
+}
+.item__icon33:hover {
+    position: absolute;
+    opacity: 1;
+}
 /*.title {
     font-weight: 400;
     font-size: 36px;
