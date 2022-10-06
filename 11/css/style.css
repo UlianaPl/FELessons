@@ -57,6 +57,9 @@ a {
 }
 .header {
     margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
 }
 .title {
     display: flex;
@@ -70,7 +73,6 @@ a {
     font-size: 36px;
     line-height: 48px;         
     letter-spacing: 0.04em;
-    text-transform: uppercase;
 }
 .title_2 {
     font-family: 'Farro', sans-serif;
@@ -80,6 +82,7 @@ a {
     line-height: 30px;
     letter-spacing: 0.04em;
     margin-left: 10px;
+    text-transform: none;
 }
 .text--underline {
     text-decoration: underline;
@@ -88,10 +91,11 @@ a {
     font-style: italic;
 }
 .text--bold {
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
 }
 .text--gray {
-    background-color: #C9C9C9;
+    background-color: #DADADA;
 }
 .section_three div,
 .section_four div {
