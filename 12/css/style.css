@@ -25,7 +25,7 @@ body {
     max-width: 905px;
     margin: 0 auto;      
 }
-.container-main--image {
+.main-image {
     position: fixed;
     right:0;    
 }
@@ -40,6 +40,7 @@ body {
     text-transform: uppercase;
     color: #000000;
     border-bottom: 1px solid #BDBDBD;
+    padding-bottom: 10px;
 }
 .container-aside--list .list--li {
     margin-bottom: 70px;
@@ -125,6 +126,13 @@ a {
     line-height: 48px;         
     letter-spacing: 0.04em;
     text-transform: uppercase;
+}
+.title:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 8px;    
+    background: #000000;       
 }
 .title_2 {
     font-family: 'Farro', sans-serif;
