@@ -44,22 +44,16 @@ a {
     font-size: 22px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color: #000000;
-    mix-blend-mode: normal;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    padding-right: 600px;
-}
-.konstruct {
-    max-width: 120px;
+    color: #000000;    
 }
 .header div {    
     display: inline-block;    
 }
 .header {
-    margin-bottom: 26px;
     display: flex;
     align-items: center;
     padding: 13px 0;
+    justify-content: space-between;
 }
 .title {
     display: flex;
@@ -67,8 +61,6 @@ a {
     margin-top: 70px;
     margin-bottom: 40px;
     font-family: 'Francois One', sans-serif;
-    font-family: 'Francois One';
-    font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 48px;         

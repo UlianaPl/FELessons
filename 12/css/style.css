@@ -7,19 +7,22 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
     background-color: #FFFFFF;
 }
 .container-header {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 .all {
     position: sticky;
     top: 0;
     background-color: #fff;
     z-index: 1;
+    height: 80px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .container-main {
     max-width: 905px;
@@ -60,14 +63,18 @@ body {
     display: flex;
     column-gap: 20px;
     position: relative;
+    font-size: 28px;
+    line-height: 48px;
 }
 .container-aside {
     max-width: 535px;
-    margin-left: 130px;
+    min-width: 385px;
+    margin-right: 30px;
 }
 .container-aside nav {
     position: sticky;
     top:0px;
+    padding-top: 70px;
 }
 li {
     text-align: center;
@@ -98,26 +105,20 @@ a {
     line-height: 28px;
     letter-spacing: 0.03em;
     color: #000000;
-    mix-blend-mode: normal;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    padding-right: 600px;
-}
-.konstruct {
-    max-width: 120px;
 }
 .header div {    
     display: inline-block;    
 }
 .header {
-    margin-bottom: 26px;
     display: flex;
     align-items: center;
     padding: 13px 0;
+    justify-content: space-between;
 }
 .title {
     display: flex;
     align-items: flex-start;
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 40px;
     font-family: 'Francois One', sans-serif;
     font-style: normal;
@@ -125,14 +126,15 @@ a {
     font-size: 36px;
     line-height: 48px;         
     letter-spacing: 0.04em;
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
 .title:before {
     position: absolute;
     content: "";
     width: 100px;
     height: 8px;    
-    background: #000000;       
+    background: #000000;
+    top: 20px;     
 }
 .title_2 {
     font-family: 'Farro', sans-serif;

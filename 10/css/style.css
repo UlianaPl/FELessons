@@ -51,6 +51,10 @@
     text-transform: uppercase;
     margin-top: 9px;
 }
+.button__inside:hover {
+    background-color: var(--blue);
+    color: #FFFFFF;
+}
 .items-names .items-names__text {
     margin-right: 30px;
 }
@@ -235,21 +239,72 @@
 }
 .item__icon2 {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
 }
 .item__icon22:hover {
-    position: absolute;
+    opacity: 0;
+}
+.socials__item:hover .item__icon2 {
+    opacity: 0;
+}
+.socials__item:hover .item__icon22 {
     opacity: 1;
 }
 .item__icon3 {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
 }
 .item__icon33:hover {
+    opacity: 0;
+}
+.socials__item:hover .item__icon3 {
+    opacity: 0;
+}
+.socials__item:hover .item__icon33 {
+    opacity: 1;
+}
+.item__icon-f {
     position: absolute;
     opacity: 1;
 }
-
+.item__icon-f1 {
+    opacity: 0;
+}
+.socials__item-footer:hover .item__icon-f {
+    opacity: 0;
+}
+.socials__item-footer:hover .item__icon-f1 {
+    opacity: 1;
+}
+.item__icon-f {
+    position: absolute;
+    opacity: 1;
+}
+.item__icon-f1 {
+    opacity: 0;
+}
+.socials__item-footer:hover .item__icon-f {
+    opacity: 0;
+}
+.socials__item-footer:hover .item__icon-f1 {
+    opacity: 1;
+}
+.socials__item-footer {
+    display: inline-flex;
+    : 10px;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: var(--white);    
+    text-decoration: none;
+    border: 1px solid #18B5DC;
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+.socials__item-footer:hover {
+    background-color: var(--light);
+}
 /*.title {
     font-weight: 400;
     font-size: 36px;
@@ -258,9 +313,7 @@
     color: #000000;
 }
 .architectural-photography {
-    margin: 120px 0;
-    
-    
+    margin: 120px 0;  
 }
 .block-grid {
     display: grid;
@@ -384,5 +437,4 @@ h1 {
 }
 .life_2:hover:before {
     background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
-
 }*/
