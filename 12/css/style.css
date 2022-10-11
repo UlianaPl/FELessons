@@ -116,6 +116,7 @@ a {
     justify-content: space-between;
 }
 .title {
+    position: relative;
     display: flex;
     align-items: flex-start;
     margin-top: 100px;
@@ -134,7 +135,7 @@ a {
     width: 100px;
     height: 8px;    
     background: #000000;
-    top: 20px;     
+    top: -28px;     
 }
 .title_2 {
     font-family: 'Farro', sans-serif;
