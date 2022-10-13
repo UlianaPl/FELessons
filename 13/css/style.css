@@ -264,3 +264,7 @@ fill: #D1E7FF;
 .footer-socials + .footer-socials {
     margin-left: 10px;
 }
+.footer-socials_facebook {
+    width: 10px;
+    height: 18.67px;
+}
