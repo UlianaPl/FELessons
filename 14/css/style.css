@@ -6,12 +6,15 @@
 body {
     width: 
 }
-.animation-grid {
-    display: grid;
+.animation {
+   
+    max-width: 200px
+}
+    /*display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     column-gap: 10px;
-}
+}*/
 .pik-1 {
     width: 20px;
     height: 20px;
@@ -20,9 +23,18 @@ body {
     width: 100px;
     height: 100px;
 }
-.card {
-    position: relative;
+.container {
+    max-width: 140px;
     height: 200px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-left: 10px;
+    
+}
+.card {
+        position: relative;
+        height: 200px;
+        margin-bottom: 10px; 
     
 }
 .card--front {
@@ -39,9 +51,8 @@ body {
     height: 100%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    transition: all 0.8s ease;
-    border: 2px solid black;
-    border-radius: 6px;
+    transition: all 0.8s ease;    
+    margin-left: 10px;
 }
 .card:hover .card--back {
     transform: rotateY(0);

@@ -1,0 +1,52 @@
+.main {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 1440px;
+}
+.container {
+    max-width: 1170;
+    margin: 0 auto;
+    text-align: center;
+}
+.container__text {
+
+}
+.container__title {
+    &--gold {
+        color: $gold;
+    }
+}
+.container__flex {
+    display: flex;
+}
+.container__flex-block {
+    width: 50%;
+}
+.block--relative {
+    position: relative;    
+    height: 400px;
+    width: 400px;
+    padding: 15px;
+}
+.item--absolut {
+    position: absolute;    
+    width: 100px;
+    height: 100px;      
+}
+.name {
+    position: relative;     
+}
+.name:before {
+    position: absolute;
+    content:"";
+    width: 100px;
+    height: 1px;
+    
+    &--gold {
+            color: $gold;
+        }
+}
+
+
+
