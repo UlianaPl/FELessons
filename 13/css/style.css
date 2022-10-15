@@ -268,3 +268,6 @@ fill: #D1E7FF;
     width: 10px;
     height: 18.67px;
 }
+.footer-socials svg {
+    max-height: 20px;
+}
