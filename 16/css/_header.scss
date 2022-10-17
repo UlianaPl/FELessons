@@ -1,0 +1,10 @@
+.header {
+    &_container {
+        @include container
+    }
+    &_middle {
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+    }  
+}

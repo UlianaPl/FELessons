@@ -1,0 +1,18 @@
+.header_container {
+  max-width: 1170;
+  margin: 0 auto;
+}
+.header_middle {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.second_second-container {
+  max-width: 1170;
+  margin: 0 auto;
+}
+.second_second_wrapper {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
