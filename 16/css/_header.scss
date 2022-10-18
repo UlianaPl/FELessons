@@ -2,9 +2,26 @@
     &_container {
         @include container
     }
+    &_wrapper {
+        @include flex
+        justify-content: space-between;
+    }
     &_middle {
         display: inline-block;
         vertical-align: middle;
-        text-decoration: none;
-    }  
-}
+        list-style: none;
+        
+            &_a {
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.3em;
+                    color: $black;
+                    margin-right: 42px;
+                }
+        } 
+        &_search {
+            margin-left: 42px;
+        }       
+    }
