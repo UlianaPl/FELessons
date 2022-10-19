@@ -6,4 +6,7 @@
 @mixin flex {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+https: //css-tricks.com/snippets/css/a-guide-to-flexbox/

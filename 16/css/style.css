@@ -2,17 +2,53 @@
   max-width: 1170;
   margin: 0 auto;
 }
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .header_middle {
   display: inline-block;
   vertical-align: middle;
-  text-decoration: none;
+  list-style: none;
+}
+.header_middle_a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+  color: #000000;
+  margin-right: 42px;
+}
+.header_search {
+  margin-left: 42px;
 }
 
-.second_second-container {
+.second_container {
   max-width: 1170;
   margin: 0 auto;
 }
-.second_second_wrapper {
+.second_wrapper {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.second_right {
+  width: 50%;
+}
+.second_left {
+  width: 50%;
+}
+.second_text {
+  max-width: 448px;
+}
+.second_title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 166%;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

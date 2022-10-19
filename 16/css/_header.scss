@@ -2,8 +2,10 @@
     &_container {
         @include container
     }
+
+
     &_wrapper {
-        @include flex
+        @include flex;
         justify-content: space-between;
     }
     &_middle {

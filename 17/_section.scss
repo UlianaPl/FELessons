@@ -1,0 +1,6 @@
+.header__photo {
+    @include relative
+}
+.header__wrapper {
+    @include absolute;
+}

@@ -1,8 +1,25 @@
 .second {
-    &_second-container {
+    &_container {
         @include container;
     }
-    &_second_wrapper {
+    &_wrapper {
         @include flex;
+        flex-direction: column;
+    }
+    &_right {
+        width: 50%;
+    }
+    &_left {
+        width: 50%;
+    }
+    &_text {
+        max-width: 448px;
+    }
+    &_title {
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 166%;
+        color: $black;
     }
 }
