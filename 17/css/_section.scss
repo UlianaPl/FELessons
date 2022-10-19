@@ -1,0 +1,10 @@
+.header__photo {
+    @include relative
+}
+.header__wrapper {
+    @include absolute;
+}
+.content__title {
+    max-width: 345px;
+    background-color: red($color: #000000);
+}
