@@ -13,8 +13,12 @@
     }
     &__position {
         @include absolute;
-        top: 2176px;
+        top: 2440px;
         
+    }
+    &__position1 {
+        @include absolute;
+        top: 3150px;
     }
 }
 .block {
@@ -57,5 +61,6 @@
         letter-spacing: 0.07em;
         color: #FFFFFF;
     }
+    
 }
 }

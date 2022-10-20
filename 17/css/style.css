@@ -214,7 +214,11 @@
 }
 .section3__position {
   position: absolute;
-  top: 2176px;
+  top: 2440px;
+}
+.section3__position1 {
+  position: absolute;
+  top: 3150px;
 }
 
 .block__text {
