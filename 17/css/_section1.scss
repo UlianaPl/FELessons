@@ -1,0 +1,70 @@
+.section1 {
+    &__photo {
+        width: 1920px;
+        height: 704px;
+        @include relative;
+    }
+    &__wrapper {
+        @include absolute;
+        top: 1136px;
+    }
+    &__wrapper1 {
+        @include flex;
+    }
+}
+.content {   
+    &__left {
+        width: 50%; 
+        margin-left: 300px;       
+    }
+    &__right {
+        width: 50%;
+    &_image {
+        margin-left: 136px;
+        margin-bottom: 16px;
+        }
+    &_item {
+        margin-left: 210px;
+    }
+    }
+    &__text_title {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+    &__text_info {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        max-width: 648px;
+        margin-bottom: 32px;
+    }
+    &__text_button {
+        width: 213px;
+        height: 60px;
+        left: 0px;
+        bottom: 0px;
+        background: #5373FD;
+        border: none;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.07em;
+        color: #FFFFFF;
+    }
+}
+.part {
+    &__text {
+        margin-bottom: 30px;
+    }
+}

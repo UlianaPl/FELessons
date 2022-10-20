@@ -1,0 +1,28 @@
+.section2 {
+    background: #333333;    
+      
+&__block {      
+    width: 1920px;
+    height: 306px;        
+}
+
+&__container {
+        @include container;
+        margin-left: 301px; 
+}
+&_wrapper {  
+    
+    
+}   
+}
+.items {   
+   
+    &__line {
+        @include inline;
+    }
+    &__item {
+        width: 64px;
+        height: 64px;
+        @include inline;
+    }
+}

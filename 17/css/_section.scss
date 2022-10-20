@@ -1,10 +1,118 @@
-.header__photo {
-    @include relative
+.header {    
+    &__photo {
+    @include relative; 
+    
+    &--size {
+        width: 1920px;
+        height: 862px;
+    }
+    }
+    &__wrapper {
+        @include absolute;
+        text-align: center;
+        top: 295px;
+        left: 530px;
+    }
+    &__title {
+        max-width: 345px;
+        margin-bottom: 48px;
+        margin-left: 280px;
+        
+    &--white {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 52px;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+    }      
+    &--subtitle {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.31em;
+        color: #FFFFFF;        
+    }  
+    }
+    &__block {
+        width: 1920px;
+        background-color: #5373FD;
+    }
+    &__container {
+        @include container; 
+        margin-left: 300px;
+
+    &--flex {
+        @include flex;
+    }     
+    }
+    &__logo {        
+        margin-right: 500px;
+    }
+    &__list {
+        text-decoration: none;
+        @include inline;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin-right: 40px;
+    }
 }
-.header__wrapper {
-    @include absolute;
-}
-.content__title {
-    max-width: 345px;
-    background-color: red($color: #000000);
-}
+    .menu {
+        &--inline {            
+        @include inline;             
+        }
+    }
+    .form {  
+        background-color: #FFFFFF;
+        padding: 4px 5px;
+        margin-left: 107px;
+        
+    &__button {
+        width: 139px;
+        height: 52px;
+        left: calc(50% - 139px/2 + 249.5px);
+        top: 435px;
+        background: #5373FD;
+        border: none;
+        }
+    &__svg {
+        width: 16px;
+        height: 16px;
+        fill: #FFFFFF;
+        margin-right: 12px;
+        }
+    &__input {
+        width: 503px;
+        text-decoration: none;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        color: #999999;
+        border: none;
+        outline: none;
+        margin-left: 32px;;
+        }
+    &--search {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        }
+    }
+        
+
+    

@@ -1,0 +1,61 @@
+.section3 {
+    &__wrapper {
+        @include relative;
+    }
+    &__photo {
+        width: 1920px;
+        height: 684px;
+    }
+    &__container {
+        @include container;
+        margin-left: 300px;      
+                
+    }
+    &__position {
+        @include absolute;
+        top: 2176px;
+        
+    }
+}
+.block {
+    &__text {
+        padding-left: 32px;        
+        background: rgba(35, 35, 35, 0.9);
+        width: 648px;
+        height: 344px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    
+    &_pretitle {
+        font-size: 20px;
+        padding-top: 44px;
+        padding-bottom: 16px;
+    }
+    &_title {
+        font-weight: 400;
+        font-size: 20px;
+        padding-bottom: 16px;
+    }
+    &_button {
+        margin-top: 24px;
+        width: 213px;
+        height: 60px;
+        left: 32px;
+        bottom: 44px;
+        background: #5373FD;
+        border: none;
+        font-family: 'Aleo';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.07em;
+        color: #FFFFFF;
+    }
+}
+}

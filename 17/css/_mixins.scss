@@ -1,6 +1,17 @@
 @mixin relative {
     position: relative;    
 }
-@mixin absolut {
+@mixin absolute {
     position: absolute;
+}
+@mixin container {
+    max-width: 1320px;
+}
+@mixin inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+@mixin flex {
+    display: flex;
+    align-items: center;
 }
