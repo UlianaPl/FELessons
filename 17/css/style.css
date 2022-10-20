@@ -319,23 +319,23 @@
   height: 268px;
   background: #000000;
   text-align: center;
-}
-.footer__text {
-  max-width: 191px;
-}
-.footer__text--700 {
-  font-family: "Josefin Sans";
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.1em;
-  color: #FFFFFF;
-}
-.footer__text--400 {
-  font-family: "Josefin Sans";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2em;
-  color: #FFFFFF;
+  /*&__text {
+      max-width: 191px;
+  &--700 {
+      font-family: 'Josefin Sans';
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+      color: #FFFFFF;
+  }
+  &--400 {
+      font-family: 'Josefin Sans';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2em;
+      color: #FFFFFF;
+  }
+  }*/
 }/*# sourceMappingURL=style.css.map */
