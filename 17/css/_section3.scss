@@ -8,13 +8,11 @@
     }
     &__container {
         @include container;
-        margin-left: 300px;      
-                
+        margin-left: 300px;     
     }
     &__position {
         @include absolute;
         top: 2440px;
-        
     }
     &__position1 {
         @include absolute;

@@ -261,4 +261,81 @@
   color: #FFFFFF;
 }
 
-/*@import 'footer';*//*# sourceMappingURL=style.css.map */
+.section5__block {
+  position: relative;
+  width: 1920px;
+  height: 680px;
+}
+.section5__position {
+  position: absolute;
+  top: 3800px;
+}
+.section5__wrapper {
+  display: flex;
+  align-items: center;
+}
+.section5__wrapper_photo {
+  width: 440px;
+  height: 280px;
+  margin-left: 300px;
+}
+.section5__name {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 773px;
+  margin-bottom: 60px;
+}
+.section5__content {
+  background: #333333;
+  width: 885px;
+  height: 280px;
+  padding-left: 60px;
+}
+.section5__content_title {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.section5__content_text {
+  max-width: 760px;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.footer {
+  width: 1920px;
+  height: 268px;
+  background: #000000;
+  text-align: center;
+}
+.footer__text {
+  max-width: 191px;
+}
+.footer__text--700 {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+.footer__text--400 {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

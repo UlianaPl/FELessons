@@ -1,0 +1,54 @@
+.section5 {
+&__block {
+    @include relative;
+    width: 1920px;
+    height: 680px;
+    }
+&__position {
+    @include absolute;
+    top: 3800px;
+}   
+&__wrapper {
+    @include flex;
+&_photo {
+    width: 440px;
+    height: 280px;
+    margin-left: 300px;
+}
+}
+&__name {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 773px;
+    margin-bottom: 60px;
+}
+&__content {
+    background: #333333;
+    width: 885px;
+    height: 280px;
+    padding-left: 60px;
+
+&_title {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+&_text {
+    max-width: 760px;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+}
+}
