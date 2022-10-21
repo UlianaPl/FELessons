@@ -1,7 +1,12 @@
 .section3 {
+    @include relative;
+
     &__wrapper {
-        @include relative;
-        height: 684px;
+        @include absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
     &__photo {
         width: 100%;
@@ -13,8 +18,8 @@
         margin: 0 auto;     
     }
     &__position {
-        @include absolute;
-        top: 220px;
+        @include relative;
+        padding: 220px 0 120px;
     }
     &__position1 {
         @include absolute;
@@ -22,11 +27,8 @@
     }
 }
 .block {
-    &__text {
-        padding-left: 32px;        
-        background: rgba(35, 35, 35, 0.9);
-        width: 648px;
-        height: 344px;
+    &__text {               
+        background: rgba(35, 35, 35, 0.9);        
         font-family: 'Josefin Sans';
         font-style: normal;
         font-weight: 300;
@@ -34,16 +36,22 @@
         line-height: 28px;
         letter-spacing: 0.1em;
         color: #FFFFFF;
+        max-width: 648px;
+        padding: 44px 32px;
     
+    &--left {
+        margin: auto;
+    }    
     &_pretitle {
         font-size: 20px;
-        padding-top: 44px;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
+        letter-spacing: 0.1em;
     }
     &_title {
         font-weight: 400;
         font-size: 20px;
         padding-bottom: 16px;
+        text-transform: uppercase;
     }
     &_button {
         margin-top: 24px;        

@@ -40,6 +40,7 @@
 .header__block {
   width: 100%;
   background-color: #5373FD;
+  padding: 32px 0;
 }
 .header__container {
   width: 1320px;
@@ -63,6 +64,9 @@
   color: #FFFFFF;
   margin-right: 40px;
 }
+.header__list:last-child {
+  margin-right: 0;
+}
 .header__list:hover {
   text-decoration: underline;
 }
@@ -81,6 +85,15 @@
   letter-spacing: 0.2em;
   color: #FFFFFF;
   margin-bottom: 7.86px;
+}
+.header__scroll__menu {
+  padding: 0;
+  margin: 0;
+}
+.header__scroll__logo {
+  line-height: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .menu--inline {
@@ -128,9 +141,15 @@
   color: #FFFFFF;
 }
 
-.section1__photo {
-  height: 704px;
+.section1 {
   position: relative;
+}
+.section1__photo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .section1__photo--size {
   width: 100%;
@@ -143,21 +162,14 @@
   margin: 0 auto;
 }
 .section1__wrapper {
-  position: absolute;
-  top: px;
+  position: relative;
+  top: 124px 0;
 }
 .section1__wrapper1 {
   display: flex;
   align-items: center;
 }
 
-.content__left {
-  width: 50%;
-  margin-left: 300px;
-}
-.content__right {
-  width: 50%;
-}
 .content__right_image {
   margin-left: 136px;
   margin-bottom: 16px;
@@ -229,9 +241,15 @@
   justify-content: space-between;
 }
 
-.section3__wrapper {
+.section3 {
   position: relative;
-  height: 684px;
+}
+.section3__wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .section3__photo {
   width: 100%;
@@ -244,8 +262,8 @@
   margin: 0 auto;
 }
 .section3__position {
-  position: absolute;
-  top: 220px;
+  position: relative;
+  padding: 220px 0 120px;
 }
 .section3__position1 {
   position: absolute;
@@ -253,10 +271,7 @@
 }
 
 .block__text {
-  padding-left: 32px;
   background: rgba(35, 35, 35, 0.9);
-  width: 648px;
-  height: 344px;
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 300;
@@ -264,16 +279,22 @@
   line-height: 28px;
   letter-spacing: 0.1em;
   color: #FFFFFF;
+  max-width: 648px;
+  padding: 44px 32px;
+}
+.block__text--left {
+  margin: auto;
 }
 .block__text_pretitle {
   font-size: 20px;
-  padding-top: 44px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  letter-spacing: 0.1em;
 }
 .block__text_title {
   font-weight: 400;
   font-size: 20px;
   padding-bottom: 16px;
+  text-transform: uppercase;
 }
 .block__text_button {
   margin-top: 24px;
@@ -291,9 +312,15 @@
   color: #FFFFFF;
 }
 
-.section5__block {
+.section5 {
   position: relative;
-  height: 680px;
+}
+.section5__block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .section5__block_photo {
   width: 100%;
@@ -302,17 +329,23 @@
      object-fit: cover;
 }
 .section5__position {
-  position: absolute;
-  top: 220px;
+  position: relative;
+  padding: 120px 0 180px;
 }
 .section5__wrapper {
   display: flex;
   align-items: center;
 }
 .section5__wrapper_photo {
-  width: 440px;
-  height: 280px;
-  margin-left: 300px;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+.section5__wrapper_photo1 {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .section5__name {
   font-family: "Aleo";
@@ -321,13 +354,10 @@
   line-height: 40px;
   text-align: center;
   color: #FFFFFF;
-  margin-left: 773px;
   margin-bottom: 60px;
 }
 .section5__content {
   background: #333333;
-  width: 885px;
-  height: 280px;
   padding-left: 60px;
 }
 .section5__content_title {
@@ -336,10 +366,11 @@
   font-size: 20px;
   line-height: 28px;
   color: #FFFFFF;
-  margin-bottom: 16px;
+  margin: 0 0 16px;
+  text-transform: uppercase;
 }
 .section5__content_text {
-  max-width: 760px;
+  margin: 0;
   font-family: "Josefin Sans";
   font-weight: 300;
   font-size: 16px;
@@ -357,29 +388,32 @@
 
 .footer {
   width: 100%;
-  height: 268px;
   background: #000000;
   text-align: center;
+  padding: 80px 0;
 }
-.footer__block_title {
+.footer__container {
+  width: 1320px;
+}
+.footer__container_title {
   font-family: "Josefin Sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.1em;
   color: #FFFFFF;
-  padding-top: 80px;
+  margin: 0 0 8px;
 }
-.footer__block_subtitle {
+.footer__container_subtitle {
   font-family: "Josefin Sans";
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2em;
   color: #FFFFFF;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
-.footer__block_socials {
+.footer__container_socials {
   display: flex;
   align-items: center;
   justify-content: center;

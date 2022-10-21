@@ -1,7 +1,12 @@
 .section5 {
-&__block {
     @include relative;
-    height: 680px;
+
+&__block {
+    @include absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
 &_photo {
     width: 100%;
@@ -10,16 +15,20 @@
 }
 }
 &__position {
-    @include absolute;
-    top: 220px;
+    @include relative;;
+    padding: 120px 0 180px;
 }   
 &__wrapper {
     @include flex;
 
 &_photo {
-    width: 440px;
-    height: 280px;
-    margin-left: 300px;
+    align-self: stretch;
+    @include flex;
+    align-items: center;
+}
+&_photo1 {
+    height: 100%;
+    object-fit: cover;
 }
 }
 &__name {
@@ -29,13 +38,10 @@
     line-height: 40px;
     text-align: center;
     color: #FFFFFF;
-    margin-left: 773px;
     margin-bottom: 60px;
 }
 &__content {
     background: #333333;
-    width: 885px;
-    height: 280px;
     padding-left: 60px;
 
 &_title {
@@ -44,10 +50,11 @@
     font-size: 20px;
     line-height: 28px;
     color: #FFFFFF;
-    margin-bottom: 16px;
+    margin: 0 0 16px;
+    text-transform: uppercase;
 }
 &_text {
-    max-width: 760px;
+    margin: 0;
     font-family: 'Josefin Sans';
     font-weight: 300;
     font-size: 16px;
