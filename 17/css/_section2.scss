@@ -15,13 +15,20 @@
 .items {   
    
     &__line {
-        @include absolute;
-        top: px;
+        @include absolute;        
     }
     &__item {
-        width: 64px;
-        height: 64px;
         @include flex;        
         justify-content: space-between;
+        padding-bottom: 103px;
+    }
+    &__text {
+        font-family: 'Aleo';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
     }
 }
