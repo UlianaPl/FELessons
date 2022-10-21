@@ -63,6 +63,25 @@
   color: #FFFFFF;
   margin-right: 40px;
 }
+.header__list:hover {
+  text-decoration: underline;
+}
+.header__list:active {
+  color: yellow;
+}
+.header__scroll {
+  margin-top: 211px;
+}
+.header__scroll_title {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  margin-bottom: 7.86px;
+}
 
 .menu--inline {
   display: inline-block;
@@ -73,13 +92,10 @@
   background-color: #FFFFFF;
   padding: 4px 5px;
   display: flex;
-  align-items: center;
 }
 .form__button {
   background: #5373FD;
   border: none;
-  display: flex;
-  align-items: center;
   padding: 16px 24px;
 }
 .form__svg {
@@ -200,6 +216,7 @@
   width: 1320px;
   margin: 0 auto;
 }
+
 .items__line {
   position: absolute;
   top: px;
@@ -209,6 +226,7 @@
   height: 64px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .section3__wrapper {
@@ -330,28 +348,96 @@
   color: #FFFFFF;
 }
 
+.text__svg {
+  width: 20px;
+  height: 20px;
+  fill: #5373FD;
+  padding-right: 6px;
+}
+
 .footer {
   width: 100%;
   height: 268px;
   background: #000000;
   text-align: center;
-  /*&__text {
-      max-width: 191px;
-  &--700 {
-      font-family: 'Josefin Sans';
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
-      letter-spacing: 0.1em;
-      color: #FFFFFF;
-  }
-  &--400 {
-      font-family: 'Josefin Sans';
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.2em;
-      color: #FFFFFF;
-  }
-  }*/
+}
+.footer__block_title {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  padding-top: 80px;
+}
+.footer__block_subtitle {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  margin-bottom: 22px;
+}
+.footer__block_socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.item__fb {
+  width: 20px;
+  height: 32px;
+  fill: #FFFFFF;
+}
+.item__fb:hover {
+  fill: #5373FD;
+}
+.item__fb:hover:active {
+  fill: yellow;
+}
+.item__twitter {
+  width: 32px;
+  height: 32px;
+  fill: #FFFFFF;
+}
+.item__twitter:hover {
+  fill: #5373FD;
+}
+.item__twitter:hover:active {
+  fill: yellow;
+}
+.item__lin {
+  width: 28px;
+  height: 32px;
+  fill: white;
+}
+.item__lin:hover {
+  fill: #5373FD;
+}
+.item__lin:hover:active {
+  fill: yellow;
+}
+.item__yt {
+  width: 36px;
+  height: 32px;
+  fill: white;
+}
+.item__yt:hover {
+  fill: #5373FD;
+}
+.item__yt:hover:active {
+  fill: yellow;
+}
+.item__pinterest {
+  width: 31px;
+  height: 32px;
+  fill: white;
+}
+.item__pinterest:hover {
+  fill: #5373FD;
+}
+.item__pinterest:hover:active {
+  fill: yellow;
 }/*# sourceMappingURL=style.css.map */

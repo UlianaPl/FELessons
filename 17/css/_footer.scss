@@ -3,23 +3,93 @@
     height: 268px;
     background: #000000;
     text-align: center;
-/*&__text {
-    max-width: 191px;
-&--700 {
+&__block {
+        
+&_title {
     font-family: 'Josefin Sans';
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    padding-top: 80px;
 }
-&--400 {
+&_subtitle {
     font-family: 'Josefin Sans';
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2em;
     color: #FFFFFF;
+    margin-bottom: 22px;
 }
-}*/
+&_socials {
+    @include flex;
+    justify-content:center;
+    gap: 30px;
+}
+}
+}
+.item {
+    &__fb {
+        width: 20px;
+        height: 32px;
+        fill: $white;
+    &:hover {
+        fill: $blue;
+    &:active {
+        fill: $yellow;
+    }
+    }
+    }
+    &__twitter {
+        width: 32px;
+        height: 32px;
+        fill: $white;
+        
+    &:hover {
+        fill: $blue;
+        
+    &:active {
+        fill: yellow;
+    }
+    }        
+    }
+    &__lin {
+        width: 28px;
+        height: 32px;
+        fill: white;
+    
+    &:hover {
+        fill: #5373FD;
+    
+    &:active {
+        fill: yellow;
+    }
+    }
+    }
+    &__yt {
+        width: 36px;
+        height: 32px;
+        fill: white;
+        
+    &:hover {
+        fill: #5373FD;
+        
+    &:active {
+        fill: yellow;
+    }
+    }
+    }
+    &__pinterest {
+        width: 31px;
+        height: 32px;
+        fill: white;
+    &:hover {
+        fill: #5373FD;
+    &:active {
+        fill: yellow;
+    }
+    }
+    }
 }

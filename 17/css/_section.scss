@@ -19,8 +19,7 @@
         margin: 0 auto;
     }
     &__title {        
-        margin-bottom: 48px;
-        
+        margin-bottom: 48px;        
         
     &--white {
         font-family: 'Josefin Sans';
@@ -28,7 +27,7 @@
         font-weight: 700;
         font-size: 48px;
         line-height: 52px;
-        color: #FFFFFF;
+        color: $white;
     }      
     &--subtitle {
         font-family: 'Josefin Sans';
@@ -36,13 +35,13 @@
         font-size: 22px;
         line-height: 28px;
         letter-spacing: 0.31em;
-        color: #FFFFFF;  
+        color: $white;  
         margin: 8px 0 0; 
     }  
     }
     &__block {
         width: 100%;
-        background-color: #5373FD;
+        background-color: $blue;
     }
     &__container {
         @include container; 
@@ -53,9 +52,6 @@
         justify-content: space-between;
     }     
     }
-    &__logo {        
-        
-    }
     &__list {
         text-decoration: none;
         @include inline;
@@ -65,9 +61,30 @@
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.1em;
-        color: #FFFFFF;
+        color: $white;
         margin-right: 40px;
+
+    &:hover {
+        text-decoration: underline;
     }
+    &:active {
+         color: $yellow;
+    }
+    }
+&__scroll {
+    margin-top: 211px;
+    
+&_title {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: $white;
+    margin-bottom: 7.86px;
+}
+}
 }
     .menu {
         &--inline {            
@@ -75,20 +92,20 @@
         }
     }
     .form {  
-        background-color: #FFFFFF;
+        background-color: $white;
         padding: 4px 5px;
         display: flex;
                 
     &__button {
-        background: #5373FD;
-        border: none;
-        @mixin flex;
-        padding: 16px 24px;        
-        }
+        background: $blue;
+        border: none;        
+        padding: 16px 24px;   
+       
+    }
     &__svg {
         width: 16px;
         height: 16px;
-        fill: #FFFFFF;
+        fill: $white;
         margin-right: 12px;
         }
     &__input {
@@ -100,7 +117,7 @@
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.2em;
-        color: #999999;
+        color: $grey;
         border: none;
         outline: none;
         margin-left: 32px;;
@@ -112,9 +129,8 @@
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.1em;
-        color: #FFFFFF;
+        color:$white;
         }
-    }
-        
+    }   
 
     
