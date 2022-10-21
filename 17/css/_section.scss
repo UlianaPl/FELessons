@@ -1,22 +1,26 @@
 .header {    
     &__photo {
-    @include relative; 
+    @include relative;
+    height: 862px; 
     
     &--size {
-        width: 1920px;
-        height: 862px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     }
     &__wrapper {
         @include absolute;
         text-align: center;
         top: 295px;
-        left: 530px;
+        left: 0;
+        right: 0;
+        max-width: 647px;
+        margin: 0 auto;
     }
-    &__title {
-        max-width: 345px;
+    &__title {        
         margin-bottom: 48px;
-        margin-left: 280px;
+        
         
     &--white {
         font-family: 'Josefin Sans';
@@ -25,32 +29,32 @@
         font-size: 48px;
         line-height: 52px;
         color: #FFFFFF;
-        margin-bottom: 8px;
     }      
     &--subtitle {
         font-family: 'Josefin Sans';
-        font-style: normal;
         font-weight: 400;
         font-size: 22px;
         line-height: 28px;
         letter-spacing: 0.31em;
-        color: #FFFFFF;        
+        color: #FFFFFF;  
+        margin: 8px 0 0; 
     }  
     }
     &__block {
-        width: 1920px;
+        width: 100%;
         background-color: #5373FD;
     }
     &__container {
         @include container; 
-        margin-left: 300px;
+        margin: 0 auto;
 
     &--flex {
         @include flex;
+        justify-content: space-between;
     }     
     }
     &__logo {        
-        margin-right: 500px;
+        
     }
     &__list {
         text-decoration: none;
@@ -73,15 +77,13 @@
     .form {  
         background-color: #FFFFFF;
         padding: 4px 5px;
-        margin-left: 107px;
-        
+        display: flex;
+                
     &__button {
-        width: 139px;
-        height: 52px;
-        left: calc(50% - 139px/2 + 249.5px);
-        top: 435px;
         background: #5373FD;
         border: none;
+        @mixin flex;
+        padding: 16px 24px;        
         }
     &__svg {
         width: 16px;
