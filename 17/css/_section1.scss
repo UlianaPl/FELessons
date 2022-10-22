@@ -36,7 +36,7 @@
     }
     }
     &__text_title {
-        font-family: 'Aleo';
+        font-family: 'Aleo', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 36px;
@@ -44,7 +44,7 @@
         color: $white;
     }
     &__text_info {
-        font-family: 'Josefin Sans';
+        font-family: 'Josefin Sans', sans-serif;
         font-weight: 300;
         font-size: 16px;
         line-height: 28px;

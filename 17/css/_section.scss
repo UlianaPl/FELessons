@@ -22,7 +22,7 @@
         margin-bottom: 48px;        
         
     &--white {
-        font-family: 'Josefin Sans';
+        font-family: 'Josefin Sans', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
@@ -30,7 +30,7 @@
         color: $white;
     }      
     &--subtitle {
-        font-family: 'Josefin Sans';
+        font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
         font-size: 22px;
         line-height: 28px;
@@ -56,7 +56,7 @@
     &__list {
         text-decoration: none;
         @include inline;
-        font-family: 'Aleo';
+        font-family: 'Aleo', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -79,7 +79,7 @@
     margin-top: 211px;
     
 &_title {
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -130,7 +130,7 @@
     &__input {
         width: 503px;
         text-decoration: none;
-        font-family: 'Josefin Sans';
+        font-family: 'Josefin Sans', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -142,7 +142,7 @@
         margin-left: 32px;;
         }
     &--search {
-        font-family: 'Aleo';
+        font-family: 'Aleo', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
