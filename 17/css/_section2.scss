@@ -1,26 +1,32 @@
 .section2 {
-    background: #333333;    
+    background: $darkgrey;
+    background-repeat: no-repeat;
+    background-position: center 59px;
+    padding: 107px 0 59px 0;
+    background-image: url(../img/Line.png);
+    background-size: 50% 40% 50% 60%;
       
 &__block {      
     width: 100%;
-    height: 306px;
-    object-fit: cover
+    object-fit: cover;
            
 }
 &__container {
         @include container;
         margin: 0 auto; 
+
+    @media screen and (max-width: $desktopbig) {
+        max-width: 1140;
+    }
 } 
 }
-.items {   
-   
-    &__line {
-        @include absolute;        
-    }
+.items { 
+    text-align: center;  
+    
     &__item {
         @include flex;        
         justify-content: space-between;
-        padding-bottom: 103px;
+        padding-top: 20px;        
     }
     &__text {
         font-family: 'Aleo';
@@ -29,6 +35,7 @@
         line-height: 40px;
         text-align: center;
         text-transform: capitalize;
-        color: #FFFFFF;
+        color: $white;
+        padding-bottom: 60px;
     }
 }

@@ -2,11 +2,7 @@
     @include relative;
 
 &__block {
-    @include absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    @include absolute;    
 
 &_photo {
     width: 100%;
@@ -17,7 +13,11 @@
 &__position {
     @include relative;;
     padding: 120px 0 180px;
-}   
+}  
+&__container {
+    @include container;
+    margin: 0 auto;
+} 
 &__wrapper {
     @include flex;
 
@@ -37,19 +37,20 @@
     font-size: 36px;
     line-height: 40px;
     text-align: center;
-    color: #FFFFFF;
+    color: $white;
     margin-bottom: 60px;
 }
 &__content {
-    background: #333333;
-    padding-left: 60px;
+    background: $darkgrey;
+    padding: 48px 65px 48px 60px;
+    width: 57.3%;
 
 &_title {
     font-family: 'Josefin Sans';
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: $white;
     margin: 0 0 16px;
     text-transform: uppercase;
 }
@@ -60,7 +61,7 @@
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: $white;
 }
 }
 }
@@ -68,7 +69,10 @@
     &__svg {
         width: 20px;
         height: 20px;
-        fill: #5373FD;
+        fill: $blue;
         padding-right: 6px;
+    @media screen and (max-width:$desktopbig) {
+            margin-left: 110px;    
+        }
     }
 }

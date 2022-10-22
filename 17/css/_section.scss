@@ -111,8 +111,15 @@
     &__button {
         background: $blue;
         border: none;        
-        padding: 16px 24px;   
-       
+        padding: 16px 24px;
+        display: flex;
+        align-items: center; 
+    &:hover {
+        background: $darkblue;
+    }
+    &:active {
+        background:$yellow;
+    }
     }
     &__svg {
         width: 16px;
