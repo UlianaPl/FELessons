@@ -3,14 +3,15 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body {
-    width: 
-}
-.animation {   
-    max-width: 200px;
+.block {
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
 }
 .title {
-    padding-left: 5px;
+    padding-left: 4px;
     padding-bottom: 30px;
 }
 .title_down {
@@ -21,7 +22,7 @@ body {
     width: 15px;
     height: 15px;
     margin-bottom: -5px;
-}
+}  
 .down_text {
     transform: rotate(180deg);
     margin-right: 5px;
@@ -29,6 +30,19 @@ body {
 .pik-1 {
     width: 15px;
     height: 15px;
+}
+.pik-1__bottom {
+    margin-bottom: 10px;
+    width: 15px;
+    height: 15px;    
+}
+.center__king,
+.center__jack, 
+.center__queen {
+    width: 60px;
+    height: 140px;
+    margin-top: -50px;
+    margin-bottom: -20px;
 }
 .pik-2 {
     width: 50px;
@@ -38,17 +52,24 @@ body {
 .center {
     text-align: center;
 }
+.wrapper {
+    width: 100px;    
+    margin: 0 auto;
+    display: flex;  
+    flex-direction: column;
+    margin-top: -15px; 
+}
 .container {
     max-width: 140px;
     margin: 0 auto;
     height: 200px;   
     border: 2px solid black;
-    border-radius: 6px;  
+    border-radius: 6px; 
 }
 .card {
     position: relative;
-    height: 200px;
-    margin-bottom: 10px;    
+    width: 200px;
+    height: 200px; 
 }
 .card--front {
     position: absolute;
@@ -76,6 +97,12 @@ body {
 .cover {
     height: 100%;
     width: 100%;
+}
+.item {
+    margin-top: -30px;
+}
+.item2 {
+    margin-bottom: -13px;
 }
 
 
