@@ -1,29 +1,33 @@
-.header {
-    &_container {
-        @include container
-    }
-
+.header {  
+    width: 1440px;
+    &__container {
+        @include container;
+        margin: 0 auto;
 
     &_wrapper {
         @include flex;
         justify-content: space-between;
     }
-    &_middle {
+    &_menu {
         display: inline-block;
         vertical-align: middle;
-        list-style: none;
-        
-            &_a {
-                    font-family: 'Lato', sans-serif;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 17px;
-                    letter-spacing: 0.3em;
-                    color: $black;
-                    margin-right: 42px;
-                }
-        } 
-        &_search {
-            margin-left: 42px;
-        }       
+        list-style: none;        
+        margin-right: px;
+
+    &-a {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.3em;
+        color: $black;
+        margin-right: 42px;
+        text-decoration: none;
+    }
+    }
+    &_search {
+        margin-left: 42px;
+    }       
+    }
+    
     }

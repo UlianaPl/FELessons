@@ -1,0 +1,44 @@
+.section2 {
+    width: 1440px;
+    margin-bottom: 50px;
+
+    &__container {
+        @include container;
+    
+    }
+    &__wrapper {
+        @include flex;
+        flex-direction: row;
+    
+    &_right {
+        width: 50%;  
+    }
+    &_left {
+        width: 50%;
+    }
+    }
+    }
+    .content {
+    &__text {
+        max-width: 448px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 166%;
+        letter-spacing: 0.05em;
+        color: #565656;
+
+    &_arrow {
+        margin-left: 10px;
+    }
+    }
+    &__title {
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 166%;
+        color: $black;
+    }
+    }
+    

@@ -1,12 +1,15 @@
 @mixin container {
-    max-width: 1170;
+    max-width: 1170px;
     margin: 0 auto;
 }
-
 @mixin flex {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: center;    
+}
+@mixin relative {
+    position: relative;
+}
+@mixin absolut {
+    position: absolute;    
 }
 
-https: //css-tricks.com/snippets/css/a-guide-to-flexbox/

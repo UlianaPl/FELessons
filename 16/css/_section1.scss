@@ -1,0 +1,25 @@
+.section1 {
+    width: 1440px;
+    margin-bottom: 50px;
+
+&__wrapper {
+    @include relative;
+    
+&_photo {
+    width: 100%;
+}
+}
+&__title {
+    @include absolut;
+    width: 770px;
+    top: 200px;
+    left: 135px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+}

@@ -1,25 +1,43 @@
-.second {
-    &_container {
-        @include container;
-    }
-    &_wrapper {
-        @include flex;
-        flex-direction: column;
-    }
-    &_right {
-        width: 50%;
-    }
-    &_left {
-        width: 50%;
-    }
-    &_text {
-        max-width: 448px;
-    }
-    &_title {
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 500;
-        font-size: 23px;
-        line-height: 166%;
-        color: $black;
-    }
+.between {
+    width: 1440px;
+
+&__container {
+    @include container;
+    margin-top: 40px;
+
+&_title {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+}
+
+&__wrapper {
+    @include flex; 
+    justify-content: space-between;
+    
+&_left{    
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+&_right {    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #7B7B7B;
+}
+}
 }
