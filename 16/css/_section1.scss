@@ -1,9 +1,9 @@
 .section1 {
-    width: 1440px;
     margin-bottom: 50px;
 
 &__wrapper {
     @include relative;
+    @include flex;
     
 &_photo {
     width: 100%;

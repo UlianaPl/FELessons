@@ -1,5 +1,4 @@
 .section6 {
-    width: 1440px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -16,7 +15,7 @@
     &__wrapper {
         @include flex;
         justify-content: space-between;
-        gap: 230px;
+        gap: 30px;
         
         &_left {
             max-width: 470px;  
@@ -31,6 +30,15 @@
 
         &_right {
             max-width: 470px;
+
+        & p {
+            :first-child {
+                margin-bottom: 40px;
+            }
+        & p {
+            margin: 0;
         }
+        }
+        }        
     }   
 }

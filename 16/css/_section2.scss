@@ -1,5 +1,4 @@
 .section2 {
-    width: 1440px;
     margin-bottom: 50px;
 
     &__container {
@@ -19,7 +18,17 @@
     }
     }
     .content {
-    &__text {
+    &__block {
+        max-width: 448px;
+        margin-left: auto;
+        margin-right: 30px;
+
+    &--left {
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    &_text {
         max-width: 448px;
         font-family: 'Lato';
         font-style: normal;
@@ -29,11 +38,12 @@
         letter-spacing: 0.05em;
         color: #565656;
 
-    &_arrow {
+    &-arrow {
         margin-left: 10px;
     }
     }
-    &__title {
+
+    &_title {
         font-family: 'Red Hat Display', sans-serif;
         font-weight: 500;
         font-size: 23px;
@@ -41,4 +51,4 @@
         color: $black;
     }
     }
-    
+    } 

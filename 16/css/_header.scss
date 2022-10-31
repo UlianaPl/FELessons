@@ -1,18 +1,26 @@
 .header {  
-    width: 1440px;
     &__container {
         @include container;
         margin: 0 auto;
 
+    &_logo {
+        margin-right: 428px;
+
+    &--size {
+        width: 142px;
+            height: 12px;
+    }
+    }
+
     &_wrapper {
         @include flex;
         justify-content: space-between;
+        align-items: center;
     }
     &_menu {
         display: inline-block;
         vertical-align: middle;
-        list-style: none;        
-        margin-right: px;
+        list-style: none;           
 
     &-a {
         font-family: 'Lato', sans-serif;
@@ -28,6 +36,5 @@
     &_search {
         margin-left: 42px;
     }       
-    }
-    
+    }    
     }
