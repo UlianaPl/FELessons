@@ -10,14 +10,42 @@
 &__container {
     @include container;
     margin-bottom: 72px;
+
+@media screen and (max-width:$tablet) {
+    max-width: 700px;
+    }
 }
 &__wrapper {
     @include flex;
     justify-content: space-between;
     gap: 30px;
 
-&_left {
+@media screen and (max-width:$tablet) {
+        justify-content: center;
+        flex-direction: column;
+    }
 
+&_center {
+    @media screen and (max-width:$tablet) {
+    @include flex;
+}
+}
+
+&_left {
+    @media screen and (max-width:$tablet) {
+    @include flex;
+}
+
+&-photo {
+@media screen and (max-width:$tablet) {
+        width: 50%;
+    }
+}
+&-text {
+    @media screen and (max-width:$tablet) {
+        width: 50%;
+    }
+}
 &--wrap {
     @include flex;
     justify-content: space-between;
@@ -40,5 +68,22 @@
     color: #000000;
 }
 }  
+&_center {
+    @media screen and (max-width:$tablet) {
+    @include flex;
+}
+}
+&_right {
+    @media screen and (max-width:$tablet) {
+        @include flex;
+    }
+}
+}
+}
+
+.picture {
+    
+&--width {
+    width: 340px;        
 }
 }

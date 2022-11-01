@@ -11,12 +11,22 @@ body {
   margin: 0 auto;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .header__container {
+    max-width: 700px;
+  }
+}
 .header__container_logo {
   margin-right: 428px;
 }
+@media screen and (max-width: 768px) {
+  .header__container_logo {
+    margin-left: 34px;
+  }
+}
 .header__container_logo--size {
-  width: 142px;
-  height: 12px;
+  max-width: 141px;
+  max-height: 12px;
 }
 .header__container_wrapper {
   display: flex;
@@ -54,7 +64,7 @@ body {
 }
 .section1__title {
   position: absolute;
-  width: 770px;
+  max-width: 770px;
   top: 200px;
   left: 135px;
   font-family: "Red Hat Display";
@@ -65,11 +75,22 @@ body {
   letter-spacing: 0.05em;
   color: #000000;
 }
+@media screen and (max-width: 768px) {
+  .section1__title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
 
 .between__container {
   max-width: 1170px;
   margin: 0 auto;
   margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .between__container {
+    max-width: 700px;
+  }
 }
 .between__container_title {
   font-family: "Red Hat Display";
@@ -93,6 +114,16 @@ body {
   letter-spacing: 0.1em;
   color: #000000;
 }
+.between__wrapper_left--down {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-bottom: 50px;
+}
 .between__wrapper_right {
   font-family: "Lato";
   font-style: normal;
@@ -110,6 +141,11 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .section2__container {
+    max-width: 700px;
+  }
+}
 .section2__wrapper {
   display: flex;
   flex-direction: row;
@@ -119,6 +155,12 @@ body {
 }
 .section2__wrapper_left {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .section2__wrapper_left-photo {
+    width: 340px;
+    height: 280px;
+  }
 }
 
 .content__block {
@@ -165,10 +207,41 @@ body {
   margin: 0 auto;
   margin-bottom: 72px;
 }
+@media screen and (max-width: 768px) {
+  .section4__container {
+    max-width: 700px;
+  }
+}
 .section4__wrapper {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .section4__wrapper {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section4__wrapper_center {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section4__wrapper_left {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section4__wrapper_left-photo {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section4__wrapper_left-text {
+    width: 50%;
+  }
 }
 .section4__wrapper_left--wrap {
   display: flex;
@@ -191,6 +264,20 @@ body {
   letter-spacing: 0.1em;
   color: #000000;
 }
+@media screen and (max-width: 768px) {
+  .section4__wrapper_center {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section4__wrapper_right {
+    display: flex;
+  }
+}
+
+.picture--width {
+  width: 340px;
+}
 
 .section5 {
   font-family: "Lato";
@@ -206,10 +293,20 @@ body {
   margin: 0 auto;
   margin-top: 46px;
 }
+@media screen and (max-width: 768px) {
+  .section5__container {
+    max-width: 700px;
+  }
+}
 .section5__wrapper {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .section5__wrapper_left-photo {
+    width: 340px;
+  }
 }
 .section5__wrapper_left--wrap {
   display: flex;
@@ -236,6 +333,11 @@ body {
   margin-left: 495px;
   margin-top: 54px;
   margin-bottom: 90px;
+}
+@media screen and (max-width: 768px) {
+  .section5__button {
+    margin-left: 260px;
+  }
 }
 .section5__button_item {
   width: 180px;
@@ -265,10 +367,21 @@ body {
   margin: 0 auto;
   margin-bottom: 90px;
 }
+@media screen and (max-width: 768px) {
+  .section6__container {
+    max-width: 700px;
+  }
+}
 .section6__wrapper {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .section6__wrapper {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 .section6__wrapper_left {
   max-width: 470px;
@@ -282,6 +395,13 @@ body {
 }
 .section6__wrapper_right {
   max-width: 470px;
+}
+@media screen and (max-width: 768px) {
+  .section6__wrapper_right {
+    margin-left: auto;
+    text-align: end;
+    max-width: 100%;
+  }
 }
 .section6__wrapper_right p :first-child {
   margin-bottom: 40px;
@@ -306,6 +426,11 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .footer__container {
+    max-width: 700px;
+  }
+}
 .footer__container_end {
   font-family: "Lato";
   font-style: normal;
@@ -319,8 +444,24 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .footer__wrapper {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.footer__wrapper_right {
+  margin-top: 51px;
+  margin-bottom: 40px;
+}
 .footer__wrapper_left {
   text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .footer__wrapper_left {
+    text-align: center;
+  }
 }
 .footer__wrapper_left-title {
   font-family: "Red Hat Display";
@@ -339,6 +480,9 @@ body {
   border: 1px solid #565656;
   padding: 10px;
   margin-right: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .item :last-child {
   margin-right: 0;

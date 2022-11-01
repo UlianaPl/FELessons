@@ -12,6 +12,10 @@
 
 &__container {
     @include container;
+
+    @media screen and (max-width:$tablet) {
+            max-width: 700px;
+        }
     &_end {
             font-family: 'Lato';
             font-style: normal;
@@ -25,14 +29,25 @@
     @include flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width:$tablet) {
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
     
+&_right {
+    margin-top: 51px;
+    margin-bottom: 40px;
+}
+
 &_left {
     text-align: left;
 
-&_right {
-   
-}
-    
+    @media screen and (max-width:$tablet) {
+            text-align: center;
+    }
+
 &-title {
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -52,6 +67,9 @@
     border: 1px solid #565656;
     padding: 10px;
     margin-right: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
 :last-child {
     margin-right: 0;

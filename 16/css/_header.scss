@@ -3,12 +3,19 @@
         @include container;
         margin: 0 auto;
 
+    @media screen and (max-width:$tablet) {
+        max-width: 700px;
+    }
+
     &_logo {
         margin-right: 428px;
+    @media screen and (max-width:$tablet) {
+            margin-left: 34px;
+        }
 
     &--size {
-        width: 142px;
-            height: 12px;
+        max-width: 141px;
+        max-height: 12px;
     }
     }
 
