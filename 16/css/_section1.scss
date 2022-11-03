@@ -9,7 +9,7 @@
     }
 
 @media screen and (max-width:$mobile) {
-    max-width: 300px;
+    
 }
 }
 
@@ -19,8 +19,7 @@
 &_photo {
     width: 100%;
 @media screen and (max-width:$mobile) {
-    width: 320px;    
-    height: 500px;
+    
     }
 }
 }

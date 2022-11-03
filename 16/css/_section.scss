@@ -16,6 +16,7 @@
     line-height: 64px;
     letter-spacing: 0.05em;
     color: #000000;
+    padding-bottom: 50px
 }
 }
 
@@ -52,6 +53,19 @@
     line-height: 166%;
     letter-spacing: 0.1em;
     color: #7B7B7B;
+
+&:hover {
+        color: #000000;
+    }
+
+&-svg {
+
+    fill:#7B7B7B;
+
+    &:hover {
+    fill: #000000;
+    }
+}
 }
 }
 }
