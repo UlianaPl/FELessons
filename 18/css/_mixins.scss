@@ -1,0 +1,14 @@
+@mixin container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+@mixin flex {
+    display: flex;
+}
+@mixin relative {
+    position: relative;
+}
+@mixin absolut {
+    position: absolute;    
+}
+

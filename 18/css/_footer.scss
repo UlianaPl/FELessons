@@ -1,0 +1,94 @@
+.footer {
+    background-color: #F4F4F4;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+    text-align: center;
+    padding: 70px 0 30px;
+
+&__container {
+    @include container;
+
+    @media screen and (max-width:$tablet) {
+            max-width: 700px;
+        }
+    &_end {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            color: #000000;
+    }
+}
+&__wrapper {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width:$tablet) {
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    
+&_right {
+    margin-top: 51px;
+    margin-bottom: 40px;
+}
+
+&_left {
+    text-align: left;
+
+    @media screen and (max-width:$tablet) {
+            text-align: center;
+    }
+
+&-title {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+}
+}
+}
+.item {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #565656;
+    padding: 10px;
+    margin-right: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+:last-child {
+    margin-right: 0;
+}
+
+&__instagram {
+    width: 26px;
+    height: 24px;
+}
+&__facebook {
+    width: 14px;
+    height: 24px;
+}
+&__twitter {
+    width: 30px;
+    height: 24px;
+}
+&__lin {
+    width: 24px;
+    height: 24px;
+}
+}

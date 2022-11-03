@@ -19,12 +19,12 @@
     &__wrapper {
         @include flex;
         justify-content: space-between;
+        align-items: baseline;
         gap: 30px;
 
     @media screen and (max-width:$tablet) {
             justify-content: center;
             flex-direction: column;
-
         }
         
         &_left {
@@ -36,6 +36,22 @@
             line-height: 166%;
             letter-spacing: 0.1em;
             color: #000000;
+
+        &-text {           
+                    
+        &--style {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 166.3%;
+            letter-spacing: 0.1em;
+            color: #000000;
+            margin-left: 8px; 
+                         
+        }
+        }
+        }
         }
 
         &_right {
@@ -57,4 +73,3 @@
         }
         }        
     }   
-}

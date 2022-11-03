@@ -70,6 +70,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    background: white;
+
+&:hover {
+    background: #565656;
+}
 
 :last-child {
     margin-right: 0;
@@ -78,6 +83,12 @@
 &__instagram {
     width: 26px;
     height: 24px;
+    color:#565656;
+
+&:hover {
+    color: white;
+}
+
 }
 &__facebook {
     width: 14px;

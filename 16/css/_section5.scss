@@ -21,9 +21,15 @@
         justify-content: space-between;
         gap: 30px;
 
+        &_right {
+            width: 50%;
+        }
+
         &_left {
+            width: 50%;
 
             &-photo {
+                max-width: 100%;
                 @media screen and(max-width:$tablet) {
                     width:340px;
                 }
@@ -74,6 +80,10 @@
     letter-spacing: 0.1em;
     color: #FFFFFF;
     border: none;
+
+&:hover {
+    background: #323232;
+}
 }
 }
 }

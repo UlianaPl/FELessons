@@ -7,21 +7,36 @@
     @media screen and (max-width:$tablet) {
             max-width: 700px;
         }
+    @media screen and (max-width:$mobile) {
+            max-width: 300px;
+        }
     }
     &__wrapper {
         @include flex;
+        align-items:center;
         flex-direction: row;
+
+    @media screen and (max-width:$mobile) {
+            justify-content: center;
+            flex-direction: column;    
+        }
     
     &_right {
-        width: 50%;  
+    @media screen and (max-width:$tablet) {
+            max-width: 50%;
+        }
     }
     &_left {
-        width: 50%;
-    &-photo {
     @media screen and (max-width:$tablet) {
-         width: 340px;
-         height: 280px;       
+        max-width: 50%;
     }
+    &-photo {        
+    @media screen and (max-width:$tablet) {
+        max-width: 100%;
+    }
+        @media screen and (max-width:$mobile) {
+            max-width: 100%;
+        }
     }
     }
     }

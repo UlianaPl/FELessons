@@ -16,9 +16,6 @@ body {
     max-width: 700px;
   }
 }
-.header__container_logo {
-  margin-right: 428px;
-}
 @media screen and (max-width: 768px) {
   .header__container_logo {
     margin-left: 34px;
@@ -31,6 +28,10 @@ body {
 .header__container_wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header__container_wrapper-wrap {
+  display: flex;
   align-items: center;
 }
 .header__container_menu {
@@ -48,25 +49,43 @@ body {
   margin-right: 42px;
   text-decoration: none;
 }
-.header__container_search {
-  margin-left: 42px;
+.header__container_menu-a:active {
+  text-decoration: underline;
 }
 
 .section1 {
   margin-bottom: 50px;
 }
+.section1__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .section1__container {
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section1__container {
+    max-width: 300px;
+  }
+}
 .section1__wrapper {
   position: relative;
-  display: flex;
 }
 .section1__wrapper_photo {
   width: 100%;
+}
+@media screen and (max-width: 320px) {
+  .section1__wrapper_photo {
+    width: 320px;
+    height: 500px;
+  }
 }
 .section1__title {
   position: absolute;
   max-width: 770px;
   top: 200px;
-  left: 135px;
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 600;
@@ -79,6 +98,11 @@ body {
   .section1__title {
     font-size: 36px;
     line-height: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section1__title {
+    font-size: 30px;
   }
 }
 
@@ -146,20 +170,40 @@ body {
     max-width: 700px;
   }
 }
+@media screen and (max-width: 320px) {
+  .section2__container {
+    max-width: 300px;
+  }
+}
 .section2__wrapper {
   display: flex;
+  align-items: center;
   flex-direction: row;
 }
-.section2__wrapper_right {
-  width: 50%;
+@media screen and (max-width: 320px) {
+  .section2__wrapper {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
-.section2__wrapper_left {
-  width: 50%;
+@media screen and (max-width: 768px) {
+  .section2__wrapper_right {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section2__wrapper_left {
+    max-width: 50%;
+  }
 }
 @media screen and (max-width: 768px) {
   .section2__wrapper_left-photo {
-    width: 340px;
-    height: 280px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section2__wrapper_left-photo {
+    max-width: 100%;
   }
 }
 
@@ -303,6 +347,15 @@ body {
   justify-content: space-between;
   gap: 30px;
 }
+.section5__wrapper_right {
+  width: 50%;
+}
+.section5__wrapper_left {
+  width: 50%;
+}
+.section5__wrapper_left-photo {
+  max-width: 100%;
+}
 @media screen and (max-width: 768px) {
   .section5__wrapper_left-photo {
     width: 340px;
@@ -352,6 +405,9 @@ body {
   color: #FFFFFF;
   border: none;
 }
+.section5__button_item:hover {
+  background: #323232;
+}
 
 .section6 {
   font-family: "Lato";
@@ -375,6 +431,7 @@ body {
 .section6__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   gap: 30px;
 }
 @media screen and (max-width: 768px) {
@@ -393,20 +450,30 @@ body {
   letter-spacing: 0.1em;
   color: #000000;
 }
-.section6__wrapper_right {
+.section6__wrapper_left-text--style {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166.3%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-left: 8px;
+}
+.section6_right {
   max-width: 470px;
 }
 @media screen and (max-width: 768px) {
-  .section6__wrapper_right {
+  .section6_right {
     margin-left: auto;
     text-align: end;
     max-width: 100%;
   }
 }
-.section6__wrapper_right p :first-child {
+.section6_right p :first-child {
   margin-bottom: 40px;
 }
-.section6__wrapper_right p p {
+.section6_right p p {
   margin: 0;
 }
 
@@ -483,6 +550,10 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  background: white;
+}
+.item:hover {
+  background: #565656;
 }
 .item :last-child {
   margin-right: 0;
@@ -490,6 +561,10 @@ body {
 .item__instagram {
   width: 26px;
   height: 24px;
+  color: #565656;
+}
+.item__instagram:hover {
+  color: white;
 }
 .item__facebook {
   width: 14px;

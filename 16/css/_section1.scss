@@ -1,19 +1,33 @@
 .section1 {
     margin-bottom: 50px;
 
+&__container {
+    @include container;
+
+@media screen and (max-width:$tablet) {
+        max-width: 700px;
+    }
+
+@media screen and (max-width:$mobile) {
+    max-width: 300px;
+}
+}
+
 &__wrapper {
     @include relative;
-    @include flex;
     
 &_photo {
     width: 100%;
+@media screen and (max-width:$mobile) {
+    width: 320px;    
+    height: 500px;
+    }
 }
 }
 &__title {
     @include absolut;
     max-width: 770px;
-    top: 200px;
-    left: 135px;
+    top: 200px;    
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 600;
@@ -25,6 +39,9 @@
 @media screen and (max-width:$tablet) {
     font-size: 36px;
     line-height: 50px;
+}
+@media screen and (max-width:$mobile) {
+    font-size: 30px;
 }
 }
 }
