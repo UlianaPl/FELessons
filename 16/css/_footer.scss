@@ -1,12 +1,12 @@
 .footer {
-    background-color: #F4F4F4;
+    background-color: $white;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 166%;
     letter-spacing: 0.1em;
-    color: #000000;
+    color: $black;
     text-align: center;
     padding: 70px 0 30px;
 
@@ -16,13 +16,23 @@
     @media screen and (max-width:$tablet) {
             max-width: 700px;
         }
+    @media screen and (max-width:$mobile) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 10px;
+            text-align: center;
+        }
     &_end {
             font-family: 'Lato';
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
             letter-spacing: 0.1em;
-            color: #000000;
+            color: $black;
+            margin-top: 26px;
+    @media screen and (max-width:$mobile) {
+            max-width: 300px;            
+        }
     }
 }
 &__wrapper {
@@ -55,7 +65,11 @@
     font-size: 48px;
     line-height: 64px;
     letter-spacing: 0.05em;
-    color: #000000;
+    color: $black;
+}
+&-data {
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 }
 }
@@ -64,16 +78,16 @@
     text-decoration: none;
     width: 50px;
     height: 50px;
-    border: 1px solid #565656;
+    border: 1px solid $grey;
     padding: 10px;
     margin-right: 13px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: $white;
 
 &:hover {
-    background: #565656;
+    background: $grey;
 }
 
 :last-child {
@@ -83,12 +97,46 @@
 &__instagram {
     width: 26px;
     height: 24px;
-    color:#565656;
-
+    
+&_path {
+    fill: $grey;
 &:hover {
-    color: white;
+    fill: $white;
 }
-
+}
+}
+&__facebook {
+    width: 26px;
+    height: 24px;
+    
+&_path {
+    fill: $grey;
+&:hover {
+    fill: $white;
+}
+}
+}
+&__twitter {
+    width: 26px;
+    height: 24px;
+    
+&_path {
+    fill: $grey;
+&:hover {
+    fill: $white;
+}
+}
+}
+&__lin {
+    width: 26px;
+    height: 24px;
+    
+&_path {
+    fill: $grey;
+&:hover {
+    fill: $white;
+}
+}
 }
 &__facebook {
     width: 14px;

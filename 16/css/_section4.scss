@@ -5,7 +5,7 @@
     font-size: 16px;
     line-height: 166%;
     letter-spacing: 0.05em;
-    color: #565656;
+    color: $grey;
 
 &__container {
     @include container;
@@ -14,11 +14,17 @@
 @media screen and (max-width:$tablet) {
     max-width: 700px;
     }
+@media screen and (max-width:$mobile) {
+    max-width: unset;
+    width: 100%;
+    padding: 0 10px;
+}
 }
 &__wrapper {
     @include flex;
     justify-content: space-between;
-    
+    gap: 30px;    
+
 @media screen and (max-width:$tablet) {
         justify-content: center;
         flex-direction: column;
@@ -28,22 +34,36 @@
     @media screen and (max-width:$tablet) {
     @include flex;
 }
+@media screen and (max-width:$mobile) {
+    @include flex;
+    flex-direction: column;
+}
 }
 
 &_left {
     @media screen and (max-width:$tablet) {
     @include flex;
 }
+@media screen and (max-width:$mobile) {
+    @include flex;
+    flex-direction: column;
+}
 
 &-photo {
 @media screen and (max-width:$tablet) {
-        width: 50%;
+    width: 50%;
     }
+@media screen and (max-width:$mobile) {
+    width: 100%;
 }
-&-text {
+}
+&-text {    
     @media screen and (max-width:$tablet) {
         width: 50%;
     }
+    @media screen and (max-width:$mobile) {
+    width: 100%;
+}
 }
 &--wrap {
     @include flex;
@@ -55,7 +75,9 @@
     font-size: 12px;
     line-height: 166%;
     letter-spacing: 0.1em;
-    color: #7B7B7B;
+    color: $lightgrey;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 &-title {
     font-family: 'Red Hat Display';
@@ -64,7 +86,8 @@
     font-size: 22px;
     line-height: 166%;
     letter-spacing: 0.1em;
-    color: #000000;
+    color: $black;
+    margin-bottom: 20px;
 }
 }  
 &_center {
@@ -76,13 +99,18 @@
     @media screen and (max-width:$tablet) {
         @include flex;
     }
+@media screen and (max-width:$mobile) {
+    @include flex;
+    flex-direction: column;
+}
+}
+}
+}
+.picture {
+&--width {
+    @media screen and (max-width:$mobile) {
+            width: 100%;
 }
 }
 }
 
-.picture {
-    
-&--width {
-    width: 340px;        
-}
-}

@@ -5,7 +5,7 @@
     font-size: 19px;
     line-height: 32px;
     letter-spacing: 0.05em;
-    color: #565656;
+    color: $grey;
 
     &__container {
         @include container;  
@@ -13,6 +13,11 @@
         
     @media screen and (max-width:$tablet) {
             max-width: 700px;
+        }
+    @media screen and (max-width:$mobile) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 10px;
         }
     }
 
@@ -35,15 +40,25 @@
             font-size: 23px;
             line-height: 166%;
             letter-spacing: 0.1em;
-            color: #000000;        
+            color: $black;        
         }
         &_right {
             max-width: 470px;
+
+        &-up {
+            margin-bottom: 20px;
+        }
 
     @media screen and (max-width:$tablet) {
         margin-left: auto;  
         text-align: end; 
         max-width: 100%;     
+        }
+    @media screen and (max-width:$mobile) {
+            text-align: left;
+            margin-right: auto;
+            max-width: 100%;
+            }
         }
 
         & p {
@@ -52,7 +67,6 @@
             }
         & p {
             margin: 0;
-        }
         }
         }        
     } 
@@ -65,12 +79,26 @@
                 font-size: 16px;
                 line-height: 166.3%;
                 letter-spacing: 0.1em;
-                color: #000000;
-                margin-left: 8px;
-                transform: scale(0, 0);                                                  
-            }
+                color: $black;
+                margin-right: 8px;
+                display: inline-block;        
+                transition: transform .3s ease;
+                transform: scale(0, 0);
+
             &:hover {
-                    transform: scale(1, 1);
+                transform: scale(1, 1);
+            }                                                 
+            }
+            &__svg {
+                transform: translateX(-104px);
+                transition: all .0.2s linear;
+            
+            &:hover {
+                transform: translateX(0);
             }
         }
-        
+        &:hover {
+                transform: scale(1, 1);
+        }
+    }
+    

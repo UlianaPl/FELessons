@@ -9,7 +9,9 @@
     }
 
 @media screen and (max-width:$mobile) {
-    
+    max-width: unset;
+    width: 100%;
+    padding: 0 10px;
 }
 }
 
@@ -33,7 +35,7 @@
     font-size: 48px;
     line-height: 64px;
     letter-spacing: 0.05em;
-    color: #000000;
+    color: $black;
 
 @media screen and (max-width:$tablet) {
     font-size: 36px;

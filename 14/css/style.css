@@ -99,10 +99,21 @@
     width: 100%;
 }
 .item {
-    margin-top: -30px;
+    margin-top: -15px;
 }
 .item2 {
     margin-bottom: -13px;
 }
-
+.item-six {
+    margin-top: 15px;
+}
+.six {
+    margin-top: 14px;
+}
+.heart {
+    margin-left: 5px;
+}
+.heart1 {
+    margin-left: -5px;
+}
 

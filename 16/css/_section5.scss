@@ -5,47 +5,79 @@
     font-size: 16px;
     line-height: 166%;
     letter-spacing: 0.05em;
-    color: #565656;
-    
+    color: $grey;
+        
     &__container {
         @include container;
         margin-top: 46px;
-
+        text-align: center;
+        
     @media screen and (max-width:$tablet) {
         max-width: 700px;
     }
+        @media screen and (max-width:$mobile) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 10px;
+        }
     }
 
     &__wrapper {
         @include flex;
         justify-content: space-between;
+        align-items: center;
+        text-align: left;
         gap: 30px;
+    @media screen and (max-width:$mobile) {
+            @include flex;
+            flex-direction: column;
+        }
 
         &_right {
             width: 50%;
+        @media screen and (max-width:$mobile) {
+                width: 100%;
+            }
+        &-photo {
+                max-width: 100%;
+                @media screen and(max-width:$tablet) {
+                    width:340px;
+                }
+                        @media screen and (max-width:$mobile) {
+                            width: 100%;
+                        }
+            }
         }
 
         &_left {
             width: 50%;
+        @media screen and (max-width:$mobile) {
+                width: 100%;
+            }
 
             &-photo {
                 max-width: 100%;
                 @media screen and(max-width:$tablet) {
                     width:340px;
                 }
+                        @media screen and (max-width:$mobile) {
+                            width: 100%;
+                            margin-top: -50px;
+                        }
             }
 
             &--wrap {
                 @include flex;
                 justify-content: space-between;
                 margin-top: 20px;
+                margin-bottom: 20px;
                 font-family: 'Lato';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 166%;
                 letter-spacing: 0.1em;
-                color: #7B7B7B;
+                color: $lightgrey;
             }
 
             &-title {
@@ -55,34 +87,30 @@
                 font-size: 22px;
                 line-height: 166%;
                 letter-spacing: 0.1em;
-                color: #000000;
+                color: $black;
+                margin-bottom: 20px;
             }
         }
     }
-&__button {
-    margin-left: 495px;
+&__button {    
     margin-top: 54px;
     margin-bottom: 90px;
 
-@media screen and(max-width:$tablet) {
-        margin-left: 260px;
-    }
-    
 &_item {
     width: 180px;
     height: 46px;
-    background: #565656;
+    background: $grey;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 166%;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: $white;
     border: none;
 
 &:hover {
-    background: #323232;
+    background: $darkgrey;
 }
 }
 }

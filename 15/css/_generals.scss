@@ -50,7 +50,7 @@
 .block {
     width: 50%;
     border-left: 1px solid $gold;
-  
+      
 &--relative {
     position: relative;    
     height: 400px;
@@ -123,8 +123,8 @@
     font-size: 14px;
     line-height: 24px;
     color: $darkgrey;
-    margin-bottom: 20px;
     max-width: 430px;
+    margin: 0 auto;
 }
 &__decor {
     margin-bottom: 28px;

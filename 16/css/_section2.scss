@@ -1,35 +1,46 @@
 .section2 {
     margin-bottom: 50px;
-
+    
     &__container {
         @include container;
-
+        
     @media screen and (max-width:$tablet) {
             max-width: 700px;
         }
     @media screen and (max-width:$mobile) {
-            max-width: 300px;
+            max-width: unset;
+            width: 100%;
+            padding: 0 10px;
         }
     }
     &__wrapper {
-        @include flex;
+        @include flex;        
         align-items:center;
         flex-direction: row;
 
     @media screen and (max-width:$mobile) {
-            justify-content:center;
-            flex-direction: column;
+        flex-direction: column;
         }
     
     &_right {
+        
     @media screen and (max-width:$tablet) {
             max-width: 50%;
         }
+     @media screen and (max-width:$mobile) {
+            width: 100%;
+        }
     }
     &_left {
+        
     @media screen and (max-width:$tablet) {
         max-width: 50%;
     }
+    @media screen and (max-width:$mobile) {
+            width: 100%;
+            order: 2;
+            max-width: unset;
+        }
     &-photo {        
     @media screen and (max-width:$tablet) {
         max-width: 100%;
@@ -42,37 +53,108 @@
     }
     }
     .content {
+    @media screen and (max-width:$mobile) {
+            order: 1;
+            max-width: unset;
+            margin-left: 0;
+    }
+
     &__block {
         max-width: 448px;
         margin-left: auto;
-        margin-right: 30px;
+        margin-right: 30px;  
+    @media screen and (max-width:$mobile) {
+            margin: 0;
+        }
 
-    &--left {
-        margin-left: 30px;
-        margin-right: auto;
-    }
-
-    &_text {
-        max-width: 448px;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 166%;
-        letter-spacing: 0.05em;
-        color: #565656;
-
-    &-arrow {
-        margin-left: 10px;
-    }
-    }
-
+    &_subtitle {
+            max-width: 448px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: $grey;
+        }
+    
     &_title {
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 500;
-        font-size: 23px;
-        line-height: 166%;
-        color: $black;
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 166%;
+            color: $black;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+    
+    &_down {
+            max-width: 448px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 166%;
+            letter-spacing: 0.05em;
+            color: $grey;
+            margin-bottom: 50px;
+    @media screen and (max-width:$mobile) {
+            margin-top: 40px;
+        }
+    &-arrow {
+            margin-left: 10px;
+        }
+    }
+    
+    &_left {
+        max-width: 448px;
+        margin-left: 30px;
+        margin-right: auto; 
+
+    @media screen and (max-width:$mobile) {             
+            margin: 0;        
+        }
+
+        &-subtitle {
+            max-width: 448px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: $grey;
+        }
+        &-title {
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 166%;
+            color: $black;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }    
+        &-down {
+                max-width: 448px;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 166%;
+                letter-spacing: 0.05em;
+                color: $grey;
+                margin-bottom: 50px;
+        @media screen and (max-width:$mobile) {
+                margin-top: 40px;
+            }
+            }
+    
+        &-arrow {
+                margin-left: 10px;
+            }
+        }
     }
     }
-    } 
+    
+    
+    
