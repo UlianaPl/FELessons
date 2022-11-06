@@ -6,6 +6,135 @@ body {
 :before,
 :after {
   box-sizing: border-box;
+  margin: 0;
+}
+
+.section__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .section__container {
+    max-width: unset;
+    width: 100%;
+    padding: 0 34px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section__container {
+    max-width: unset;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.section__container_pretitle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  color: #000000;
+  margin: 38px 0;
+}
+.section__container_title {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 70px;
+}
+.section__container_subtitle {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+.section__container_text {
+  max-width: 570px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+@media screen and (max-width: 768px) {
+  .section__container_text {
+    max-width: unset;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section__container_text {
+    max-width: unset;
+  }
+}
+.section__container_text-space {
+  margin-bottom: 40px;
+}
+
+.section1__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .section1__container {
+    max-width: unset;
+    width: 100%;
+    padding: 0 34px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section1__container {
+    max-width: unset;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.section1__container_subtitle {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+.section1__container_text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+  margin-top: 20px;
+}
+.section1__container_text-space {
+  margin-bottom: 40px;
+}
+
+.content {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+  margin-top: 20px;
+  margin-bottom: 90px;
 }
 
 .footer {
@@ -29,6 +158,14 @@ body {
     max-width: 700px;
   }
 }
+@media screen and (max-width: 320px) {
+  .footer__container {
+    max-width: unset;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+}
 .footer__container_end {
   font-family: "Lato";
   font-style: normal;
@@ -36,6 +173,12 @@ body {
   font-size: 12px;
   letter-spacing: 0.1em;
   color: #000000;
+  margin-top: 26px;
+}
+@media screen and (max-width: 320px) {
+  .footer__container_end {
+    max-width: 300px;
+  }
 }
 .footer__wrapper {
   display: flex;
@@ -70,6 +213,10 @@ body {
   letter-spacing: 0.05em;
   color: #000000;
 }
+.footer__wrapper_left-data {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
 
 .item {
   text-decoration: none;
@@ -81,6 +228,10 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  background: #F4F4F4;
+}
+.item:hover {
+  background: #565656;
 }
 .item :last-child {
   margin-right: 0;
@@ -88,6 +239,42 @@ body {
 .item__instagram {
   width: 26px;
   height: 24px;
+}
+.item__instagram_path {
+  fill: #565656;
+}
+.item__instagram_path:hover {
+  fill: #F4F4F4;
+}
+.item__facebook {
+  width: 26px;
+  height: 24px;
+}
+.item__facebook_path {
+  fill: #565656;
+}
+.item__facebook_path:hover {
+  fill: #F4F4F4;
+}
+.item__twitter {
+  width: 26px;
+  height: 24px;
+}
+.item__twitter_path {
+  fill: #565656;
+}
+.item__twitter_path:hover {
+  fill: #F4F4F4;
+}
+.item__lin {
+  width: 26px;
+  height: 24px;
+}
+.item__lin_path {
+  fill: #565656;
+}
+.item__lin_path:hover {
+  fill: #F4F4F4;
 }
 .item__facebook {
   width: 14px;

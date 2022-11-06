@@ -1,0 +1,67 @@
+.section {
+
+&__container {
+    @include container;
+    @media screen and (max-width:$tablet) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 34px;
+        }
+        @media screen and (max-width:$mobile) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 10px;
+        }
+&_pretitle {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.5em;
+        color: $black;
+        margin: 38px 0;
+}
+&_title {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.05em;
+        color: $black;
+        margin-bottom: 70px;
+}
+&_subtitle {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $black;
+        margin-top: 90px;
+        margin-bottom: 50px;
+}
+&_text {
+        max-width: 570px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: $grey;
+    @media screen and (max-width:$tablet) {
+           max-width: unset;         
+        }
+        @media screen and (max-width:$mobile) {
+           max-width: unset;         
+        }
+&-space {
+    margin-bottom: 40px;
+}
+}
+}
+
+}

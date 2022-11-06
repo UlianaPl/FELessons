@@ -1,0 +1,52 @@
+.section1 {
+
+&__container {
+    @include container;
+    @media screen and (max-width:$tablet) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 34px;
+        }
+        @media screen and (max-width:$mobile) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 10px;
+        }
+&_subtitle {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $black;
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+    &_text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: $grey;
+        margin-top: 20px;
+    
+        &-space {
+            margin-bottom: 40px;
+        }
+    }
+    }
+    }
+    .content {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+            color: $grey;
+            margin-top: 20px;
+            margin-bottom: 90px;
+        }
