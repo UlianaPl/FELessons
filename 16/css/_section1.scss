@@ -21,7 +21,8 @@
 &_photo {
     width: 100%;
 @media screen and (max-width:$mobile) {
-    
+    width: 320px;
+    height: 500px;
     }
 }
 }
@@ -38,11 +39,14 @@
     color: $black;
 
 @media screen and (max-width:$tablet) {
+    top: 90px;
     font-size: 36px;
     line-height: 50px;
 }
 @media screen and (max-width:$mobile) {
+    top: 70px;
     font-size: 30px;
+    line-height: 50px;
 }
 }
 }
