@@ -51,18 +51,36 @@
 
 &-photo {
 @media screen and (max-width:$tablet) {
-    width: 50%;
+    width: 50%;    
     }
 @media screen and (max-width:$mobile) {
     width: 100%;
+}
+&--order {
+@media screen and (max-width:$tablet) {
+    order: 2;
+    margin-left: 20px;
+}
+@media screen and (max-width:$mobile) {
+    order: 1;
+    margin-left: 0;
+}
 }
 }
 &-text {    
     @media screen and (max-width:$tablet) {
         width: 50%;
-    }
+}
     @media screen and (max-width:$mobile) {
     width: 100%;
+}
+&--order {
+@media screen and (max-width:$tablet) {
+    order: 1;
+}
+@media screen and (max-width:$mobile) {
+    order: 2;
+}
 }
 }
 &--wrap {
@@ -108,6 +126,10 @@
 }
 .picture {
 &--width {
+    @media screen and (max-width:$tablet) {
+            width: 340px;
+            height: 240px;
+        }
     @media screen and (max-width:$mobile) {
             width: 100%;
 }

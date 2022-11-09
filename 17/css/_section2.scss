@@ -5,6 +5,9 @@
     padding: 107px 0 59px 0;
     background-image: url(../img/Line.png);
     background-size: 50% 40% 50% 60%;
+    @media screen and (max-width:$tablet) {
+            background-image: none;
+        }
       
 &__block {      
     width: 100%;
@@ -14,10 +17,16 @@
 &__container {
         @include container;
         margin: 0 auto; 
-
-    @media screen and (max-width: $desktopbig) {
-        max-width: 1140;
-    }
+        @media screen and (max-width:$desktop) {
+                max-width: unset;
+                width: 100%;
+                padding: 0 32px;
+            }
+        @media screen and (max-width:$tablet) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 24px;
+        }   
 } 
 }
 .items { 
@@ -26,7 +35,10 @@
     &__item {
         @include flex;        
         justify-content: space-between;
-        padding-top: 20px;        
+        padding-top: 20px; 
+    @media screen and (max-width:$tablet) {
+            flex-direction: column;
+        }
     }
     &__text {
         font-family: 'Aleo', sans-serif;
@@ -36,6 +48,6 @@
         text-align: center;
         text-transform: capitalize;
         color: $white;
-        padding-bottom: 60px;
+        padding-bottom: 44px;
     }
 }

@@ -83,22 +83,22 @@
                 margin-right: 8px;
                 display: inline-block;        
                 transition: transform .3s ease;
-                transform: scale(0, 0);
-
-            &:hover {
-                transform: scale(1, 1);
-            }                                                 
+                transform: scale(0, 0);                 
             }
             &__svg {
                 transform: translateX(-104px);
                 transition: all .0.2s linear;
-            
+            }            
             &:hover {
                 transform: translateX(0);
-            }
-        }
-        &:hover {
+            .block__text {
                 transform: scale(1, 1);
-        }
-    }
+            }
+            .block__svg {
+                transform: translateX(0);
+            }
+            }
+            }
+        
+    
     

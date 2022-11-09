@@ -13,6 +13,16 @@
     &__container {
         @include container;
         margin: 0 auto;
+        @media screen and (max-width:$desktop) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 32px;
+        }
+        @media screen and (max-width:$tablet) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 24px;
+        }
     }
     &__wrapper {
         @include relative;
@@ -20,19 +30,43 @@
     }
     &__wrapper1 {
         @include flex;
+    @media screen and (max-width:$tablet) {
+            flex-direction: column;
+        }
     }
 }
-.content {   
+.content { 
+    &__left {
+        order: 2;
+        text-align: center;
+        align-items: center;
+    }
     &__right {
-        
+    @media screen and (max-width:$tablet) {
+            @include flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            order: 1;
+            padding-top: 60px;
+            padding-bottom: 32px;
+        }
     &_image {
         margin-left: 136px;
         margin-bottom: 16px;
         padding-top: 124px;
+    @media screen and (max-width:$tablet) {
+            margin: 0;
+            padding: 0;
+        }
         }
     &_item {
         margin-left: 210px;
         padding-bottom: 124px;
+    @media screen and (max-width:$tablet) {
+            margin: 0;
+            padding: 0;
+        }
     }
     }
     &__text_title {
@@ -42,6 +76,7 @@
         font-size: 36px;
         line-height: 40px;
         color: $white;
+        margin-bottom: 24px;
     }
     &__text_info {
         font-family: 'Josefin Sans', sans-serif;
@@ -52,6 +87,9 @@
         color: $white;
         max-width: 648px;
         margin-bottom: 32px;
+    @media screen and (max-width:$tablet) {
+            max-width: none;
+        }
     }
     &__text_button {        
         display: flex;              
@@ -60,7 +98,10 @@
         @include relative;   
         text-align: center;
         padding: 0px 32px;
-        
+    @media screen and (max-width:$tablet) {
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
       
     &::after {
         content: url(../img/Rectangle\ 8.png);

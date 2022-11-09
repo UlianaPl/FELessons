@@ -17,10 +17,22 @@
 &__container {
     @include container;
     margin: 0 auto;
+@media screen and (max-width:$desktop) {
+        max-width: unset;
+        width: 100%;
+        padding: 0 32px;
+    }
+@media screen and (max-width:$tablet) {
+            max-width: unset;
+            width: 100%;
+            padding: 0 24px;
+        }
 } 
 &__wrapper {
     @include flex;
-
+@media screen and (max-width:$tablet) {
+        flex-direction: column;
+    }
 &_photo {
     align-self: stretch;
     @include flex;
@@ -29,6 +41,13 @@
 &_photo1 {
     height: 100%;
     object-fit: cover;
+@media screen and (max-width:$desktop) {
+        width: 320px;
+        height: 336px;
+    }
+@media screen and (max-width:$tablet) {
+    width: 100%;
+}
 }
 }
 &__name {
@@ -44,6 +63,13 @@
     background: $darkgrey;
     padding: 48px 65px 48px 60px;
     width: 57.3%;
+@media screen and (max-width:$desktop) {
+        width: 640px;
+        height: 336px;;
+    }
+@media screen and (max-width:$tablet) {
+        width: 100%;
+}
 
 &_title {
     font-family: 'Josefin Sans', sans-serif;
@@ -66,13 +92,11 @@
 }
 }
 .text {
+    
     &__svg {
         width: 20px;
         height: 20px;
         fill: $blue;
-        padding-right: 6px;
-    @media screen and (max-width:$desktopbig) {
-            margin-left: 110px;    
-        }
+        padding-right: 6px;    
     }
 }

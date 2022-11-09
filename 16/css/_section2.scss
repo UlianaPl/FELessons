@@ -23,16 +23,22 @@
         }
     
     &_right {
-        
+    
+    &--down {
+        margin-left: 125px;
+        @media screen and (max-width:$tablet) {
+            margin-left:0;            
+        }
+    }    
     @media screen and (max-width:$tablet) {
-            max-width: 50%;
+            max-width: 50%;            
         }
      @media screen and (max-width:$mobile) {
             width: 100%;
         }
     }
     &_left {
-        
+    
     @media screen and (max-width:$tablet) {
         max-width: 50%;
     }
@@ -66,7 +72,7 @@
     @media screen and (max-width:$mobile) {
             margin: 0;
         }
-
+    
     &_subtitle {
             max-width: 448px;
             font-family: 'Lato';
@@ -76,6 +82,9 @@
             line-height: 166%;
             letter-spacing: 0.1em;
             color: $grey;
+        @media screen and (max-width:$tablet) {
+                max-width: none;
+            }
         }
     
     &_title {

@@ -5,7 +5,7 @@
     @include container;
 
 @media screen and (max-width:$tablet) {
-        max-width: 700px;
+        max-width: 700px;        
     }
 
 @media screen and (max-width:$mobile) {
@@ -44,7 +44,7 @@
     line-height: 50px;
 }
 @media screen and (max-width:$mobile) {
-    top: 70px;
+    top: 130px;
     font-size: 30px;
     line-height: 50px;
 }
