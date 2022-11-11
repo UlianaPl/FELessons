@@ -37,9 +37,12 @@
 }
 .content { 
     &__left {
-        order: 2;
-        text-align: center;
-        align-items: center;
+        
+    @media screen and (max-width:$tablet) {
+           order: 2;  
+           text-align: center;
+           align-items: center;
+        }
     }
     &__right {
     @media screen and (max-width:$tablet) {
@@ -55,18 +58,32 @@
         margin-left: 136px;
         margin-bottom: 16px;
         padding-top: 124px;
+
     @media screen and (max-width:$tablet) {
             margin: 0;
             padding: 0;
+        }
+        &--size {
+    @media screen and (max-width:$mobile) {
+            width: 258px;
+            height: 162px;
+          }
         }
         }
     &_item {
         margin-left: 210px;
         padding-bottom: 124px;
+
     @media screen and (max-width:$tablet) {
             margin: 0;
             padding: 0;
         }
+        &--size {
+            @media screen and (max-width:$mobile) {
+                width: 258px;
+                height: 162px;
+            }
+    }
     }
     }
     &__text_title {
@@ -97,23 +114,22 @@
         border: none;
         @include relative;   
         text-align: center;
-        padding: 0px 32px;
+        padding: 20px 32px;
+
     @media screen and (max-width:$tablet) {
             margin: 0 auto;
             margin-bottom: 60px;
         }
       
-    &::after {
+    &:after {
         content: url(../img/Rectangle\ 8.png);
-        @include relative; 
-        left: -30px;
-         
+        @include absolute;
+        left: -105px;
+
+               
     }
     &--overlay {    
-        @include absolute;
-        top: 20px;        
-        width: 100%;
-        height: 100%;
+        @include relative;
         z-index: 1;
         font-family: 'Aleo';
         font-style: normal;
@@ -131,6 +147,7 @@
     }
     }
 }
+
 .part {
     &__text {
         margin-bottom: 30px;

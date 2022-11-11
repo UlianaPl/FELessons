@@ -5,7 +5,10 @@
     margin-top: 40px;
 
 @media screen and (max-width:$tablet) {
-        max-width: 700px;
+            max-width: unset;
+            width: 100%;
+            padding: 0 34px;
+            text-align: center;
     }
     @media screen and (max-width:$mobile) {
         max-width: unset;

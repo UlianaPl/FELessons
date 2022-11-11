@@ -37,6 +37,19 @@
             margin-bottom: 40px;
         }
     }
+        &_photo {
+            &--size {
+    
+                @media screen and (max-width:$tablet) {
+                    width: 699px;
+                    height: 380px;
+                }
+                        @media screen and (max-width:$mobile) {
+                            width: 300px;
+                            height: 300px;
+                        }
+            }
+        }
     }
     }
     .content {
