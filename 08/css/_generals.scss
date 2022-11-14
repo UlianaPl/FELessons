@@ -8,6 +8,7 @@
 .section1 {
     &__container {
         @include container;
+        margin: 0 auto
     }
 &__wrapper {
     @include flex;
@@ -47,6 +48,7 @@
 .section2 {
     &__container {
             @include container;
+            margin: 0 auto;
         }
     
         &__wrapper {
@@ -77,10 +79,13 @@
             }
         }
         .block {
-            margin-top: 40px;
+            margin-top: 40px;  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         &__content {
             display: flex;
-            justify-content: space-between;
+            flex-direction: row;
             gap: 30px;  
             margin-bottom: 30px;
         }
