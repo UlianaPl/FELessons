@@ -175,6 +175,19 @@
     border-top: 2px solid $black;
     border-bottom: 2px solid $black;
 
+    &_input {
+        display: none;        
+    @media screen and (max-width:$mobile) {
+        &:checked {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+    }
+    &_label {
+
+    }
+
     @media screen and (min-width:577px) {
         display: none;
     }

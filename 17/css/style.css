@@ -199,6 +199,15 @@
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
 }
+.header__burger_input {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .header__burger_input:checked {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @media screen and (min-width: 577px) {
   .header__burger {
     display: none;
