@@ -52,6 +52,11 @@
   background-color: #5373FD;
   padding: 32px 0;
 }
+@media screen and (max-width: 576px) {
+  .header__block {
+    position: relative;
+  }
+}
 .header__container {
   width: 1320px;
   margin: 0 auto;
@@ -93,8 +98,18 @@
   .header__container--flex {
     display: flex;
     align-items: center;
-    text-align: center;
-    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header__list {
+    display: block;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header__list .header__list + .header__list {
+    margin: 24px 0 0;
   }
 }
 .header__list_item {
@@ -132,19 +147,45 @@
   color: #FFFFFF;
   margin-bottom: 7.86px;
 }
-@media screen and (min-width: 577px) {
-  .header__scroll__menu {
+@media screen and (max-width: 578px) {
+  .header__menu {
     display: none;
   }
 }
-.header__scroll__menu_list {
+@media screen and (max-width: 576px) {
+  .header__menu_nav {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: #5373FD;
+    transform: translateX(-100%);
+    transition: opacity 0.3s linear;
+    z-index: 1;
+  }
+}
+.header__menu_list {
   padding: 0;
   margin: 0;
 }
-.header__scroll__logo {
+.header__logo {
   line-height: 20px;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .header__logo {
+    margin-left: 186px;
+  }
 }
 .header__burger {
   display: flex;
@@ -176,39 +217,37 @@
 .header__burger:after {
   opacity: 0;
 }
-
-.menu--inline {
+.header .menu--inline {
   display: inline-block;
   vertical-align: middle;
 }
-
-.form {
+.header .form {
   background-color: #FFFFFF;
   padding: 4px 5px;
   display: flex;
   margin-left: 18px;
   margin-right: 18px;
 }
-.form__button {
+.header .form__button {
   background: #5373FD;
   border: none;
   padding: 16px 24px;
   display: flex;
   align-items: center;
 }
-.form__button:hover {
+.header .form__button:hover {
   background: darkblue;
 }
-.form__button:active {
+.header .form__button:active {
   background: yellow;
 }
-.form__svg {
+.header .form__svg {
   width: 16px;
   height: 16px;
   fill: #FFFFFF;
   margin-right: 12px;
 }
-.form__input {
+.header .form__input {
   width: 503px;
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
@@ -222,7 +261,7 @@
   outline: none;
   margin-left: 32px;
 }
-.form--search {
+.header .form--search {
   font-family: "Aleo", sans-serif;
   font-style: normal;
   font-weight: 400;
