@@ -52,6 +52,10 @@ body {
     display: flex;
   }
 }
+.header__menu_nav {
+  opacity: 1;
+  transform: translateX(0);
+}
 .header__menu_list {
   list-style: none;
   display: flex;

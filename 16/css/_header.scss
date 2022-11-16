@@ -38,6 +38,10 @@
     @media screen and (min-width:992px) {
             display: flex;
     }
+&_nav {
+    opacity: 1;
+    transform: translateX(0);
+}
 &_list {
     list-style: none;  
     @include flex;  
