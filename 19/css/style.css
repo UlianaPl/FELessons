@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  background-color: #E5E5E5;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.section__container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.section__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1C1C1C;
+  padding-top: 35px;
+  margin-bottom: 20px;
+}
+.section__sex {
+  margin-bottom: 21px;
+}
+.section__sex--label {
+  margin-right: 21px;
+}
+.section__hr {
+  margin: 20px 34px 20px 36px;
+}
+.section__footer {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+.section__text_add {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #969696;
+  max-width: 410px;
+}
+.section__text_add-a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #007BFF;
+  text-decoration: none;
+}
+.section__text_add--left {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: -13px;
+}
+.section__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-top: 55px;
+}
+.section__wrapper_left {
+  width: 50%;
+  background-color: #FFFFFF;
+}
+.section__wrapper_left-container {
+  width: 500px;
+  margin: 0 auto;
+}
+.section__wrapper_right {
+  width: 50%;
+  background-color: #FFFFFF;
+}
+.section__form_flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.section__form_flex--inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 9px;
+  position: relative;
+}
+.section__form_flex--icon {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+.section__form_flex--input {
+  width: 138px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.section__form_flex--delete {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+}
+.section__form_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.section__form_wrapper-left {
+  width: 50%;
+}
+.section__form_wrapper-left--input {
+  width: 100%;
+  height: 38px;
+  margin-bottom: 20px;
+  margin-top: 7px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+}
+.section__form_wrapper-left--input::-moz-placeholder {
+  padding-left: 10px;
+}
+.section__form_wrapper-left--input:-ms-input-placeholder {
+  padding-left: 10px;
+}
+.section__form_wrapper-left--input::placeholder {
+  padding-left: 10px;
+}
+.section__form_wrapper-right {
+  width: 50%;
+}
+.section__form_wrapper-right--input {
+  width: 100%;
+  height: 38px;
+  margin-bottom: 20px;
+  margin-top: 7px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+}
+.section__email {
+  width: 100%;
+  height: 38px;
+  margin-bottom: 20px;
+  margin-top: 7px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+}
+.section__email:invalid {
+  border-color: red;
+}
+.section__email:valid {
+  border-color: blue;
+}
+.section__button {
+  background: #007BFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  padding: 8px 220px 8px 220px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+  margin-bottom: 22px;
+}
+.section__button--login {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  color: #007BFF;
+  border: none;
+  background-color: #FFFFFF;
+}
+.section__button--update {
+  background: #007BFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+  padding: 8px 40px 8px 40px;
+  margin-bottom: 87px;
+}/*# sourceMappingURL=style.css.map */
