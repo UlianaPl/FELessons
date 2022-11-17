@@ -166,28 +166,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/*&_menu {
-    display: inline-block;
-    vertical-align: middle;
-    list-style: none;
-    padding-top: 42px;
-    padding-bottom: 42px;
-
-    &-a {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 0.3em;
-        color: $black;
-        margin-right: 42px;
-        text-decoration: none;
-
-        &:active {
-            text-decoration: underline;
-        }
-    }
-}*/
 .section1 {
   margin-bottom: 50px;
 }
