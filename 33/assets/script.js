@@ -1,8 +1,8 @@
 let shopList = [
-  new Item('Banana', 2, 'No', 20),
-  new Item('Orange', 4, 'Yes', 30),
-  new Item('Bread', 1, 'Yes', 40),
-  new Item('Joghurt', 2, 'Yes', 50),
+  newItem('Banana', 2, 'No', 20),
+  newItem('Orange', 4, 'Yes', 30),
+  newItem('Bread', 1, 'Yes', 40),
+  newItem('Joghurt', 2, 'Yes', 50),
 ]
 
 function shopItem(name, amount, inCart, price) {
