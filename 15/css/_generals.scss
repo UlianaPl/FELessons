@@ -16,6 +16,7 @@
     line-height: 66px;
     color: $gold;
     margin-bottom: 40px;
+    margin-top: 0;
 }
 &_line {
     @include flex;
@@ -115,15 +116,21 @@
 &_socials {
     margin-right: 5px;
     text-decoration: none;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    background: $white;
+    border: 2px solid $lightgrey;
+    border-radius: 50%;
 }
 }
 &__text {
-    margin: 0 auto;
+    margin: 0 auto 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
-    color: $darkgrey;
+    color: #333333;
     max-width: 430px;
 }
 
@@ -146,12 +153,8 @@
 }
 }
 .item {
-    width: 30px;
-    height: 30px;
-    padding: 9px;
-    background: $white;
-    border: 2px solid $lightgrey;
-    border-radius: 50%;
+    width: 26px;    
+    padding: 9px;    
 }
 .photo {
     border: none;

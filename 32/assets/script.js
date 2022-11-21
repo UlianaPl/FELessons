@@ -29,7 +29,7 @@ let fuel = prompt("Введіть розхід палива при середн�
 
 let timeInWay = distance/speed;
 
-let timeInRest = (timeInWay%4 == 0)? (timeInWay/4 | 0) - 1: timeInWay/4| 0;
+let timeInRest = (timeInWay%4 == 0) ? (timeInWay/4 | 0) - 1: timeInWay/4| 0;
 
 let timeTotal = distance / speed + timeInRest;
 
@@ -39,9 +39,7 @@ alert(`Загальний час в дорозі = ${timeTotal} годин. Ва
 
 
 
-let d;
-
-d = new Date();
+let d = new Date();
 
 console.log(d);
 

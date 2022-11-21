@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #9789F9;
 }
 
 *,
@@ -9,7 +10,8 @@ body {
     margin: 0;
 }
 .main {
-    background-color: #9789F9;
+   width: 100%; 
+   
 &__container {
     width: 1200px;
     margin: 0 auto;
@@ -22,12 +24,18 @@ body {
     
 &_left {
     background: #F5F3F9;
-    margin: 151px 0 151px 0;
+    margin-top: 151px;
+    margin-bottom: 151px;
+    text-align: center;
+    &:hover {
+            transform: scale(1.2);
+        }
     
 &-up {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 }
 }
@@ -39,7 +47,7 @@ body {
         font-size: 24px;
         line-height: 28px;
         color: #181818;
-        
+        margin-top: -7px;
 }
 &__number {
         font-family: 'Bebas Neue Thin';
@@ -58,21 +66,17 @@ body {
         line-height: 16px;
         letter-spacing: 0.08em;
         color: #000000;
-        
+        margin-top: 47px;
 }
-&__middle {
-    align-items: center;
-&_svg {
-    position: relative;
-    padding-bottom: 57px;
-    
+&__symbols {
+    margin-bottom: 30px;
 }
-&_content {
-    position: absolute;
-    top: 355px; 
-    width: 100%;     
+&__middle {  
+        background-image: url(../img/bg-image.png);
+        text-align:center;
+        padding-top: 40px;        
     
-&-text {    
+&_content {    
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 300;
@@ -87,10 +91,15 @@ body {
 & p:first-child {
     margin-top: 40px;
 }
-}  
-&-button {
+& p:last-child {
+    padding-bottom: 60px;
+}
+} 
+
+&_button {
+    
     margin: 30px 84px -27px 86px;
-    padding: 20px 50px;
+    padding: 20px 50px 20px 50px;
             font-family: 'Bebas Neue';
             font-style: normal;
             font-weight: 400;
@@ -101,7 +110,7 @@ body {
             color: #FFFFFF;
             background: #6FCFFB;
             border-radius: 30px;
-}
+    
 }
 }
 }

@@ -8,15 +8,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        @media screen and (max-width:$desktop) {
-            width: 1024px;            
-        }
-                @media screen and (max-width:$tablet) {
-                    width: 768px;                    
-                }
-         @media screen and (max-width:$mobile) {
-                    width: 576px;                    
-                }
+        
     }
     &__container {
         @include container;
@@ -35,6 +27,9 @@
     &__position {
         @include relative;
         padding: 220px 0 120px;
+    @media screen and (max-width:$tablet) {
+            padding: 120px 0;
+        }
     }
     &__position1 {
         @include absolute;

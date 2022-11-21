@@ -112,9 +112,17 @@ body {
   gap: 9px;
   position: relative;
 }
+.section__form_flex--relative {
+  position: relative;
+}
 .section__form_flex--icon {
   position: absolute;
-  top: 7px;
+  top: 6px;
+  left: 135px;
+}
+.section__form_flex--icondelete {
+  position: absolute;
+  top: -20px;
   left: 7px;
 }
 .section__form_flex--input {
@@ -133,6 +141,7 @@ body {
   background: #FFFFFF;
   border: 1px solid #E4E4E4;
   border-radius: 6px;
+  margin-top: -27px;
 }
 .section__form_wrapper {
   display: flex;

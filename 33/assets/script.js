@@ -1,11 +1,63 @@
-let shopList = [
-  newItem('Banana', 2, 'No', 20),
-  newItem('Orange', 4, 'Yes', 30),
-  newItem('Bread', 1, 'Yes', 40),
-  newItem('Joghurt', 2, 'Yes', 50),
+let shopProducts = [
+  {
+    name: "Banana",
+    quantity: 2,
+    inCart: 'No',
+    price: 20
+  },
+  {
+    name: "Orange",
+    quantity: 2,
+    inCart: 'Yes',
+    price: 30
+  },
+  {
+    name: "Joghurt",
+    quantity: 2,
+    inCart: 'No',
+    price: 40
+  },
+  {
+    name: "Bread",
+    quantity: 1,
+    inCart: 'Yes',
+    price: 20
+  },
+  {
+    name: "Tomato",
+    quantity: 2,
+    inCart: 'No',
+    price: 30
+  },
 ]
 
-function shopItem(name, amount, inCart, price) {
+shopProducts.sort(function (x, y) {
+  return x.inCart, y.inCart
+  
+}
+)
+console.log(shopProducts)
+
+/*shopProducts.forEach(myFunction)
+
+function myFunction() {
+  alert("Bought")
+}*/
+
+shopProducts.splice(0, 1) 
+
+shopProducts.push("Kiwi")
+
+function totalPrice(shopProducts) {
+let sum = 0;
+for(var i = 0; i < shopProducts.length; i++){
+    sum += shopProducts[i];
+    }
+console.log(sum);
+}
+
+
+/*function shopItem(name, amount, inCart, price) {
   {
     this.name = name;
     this.amount = amount;
@@ -39,7 +91,7 @@ for(var i = 0; i < array.length; i++){
     }
 console.log(sum);
 }
-arraySum(arr);
+arraySum(arr);*/
 
 
 

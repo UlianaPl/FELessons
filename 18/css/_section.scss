@@ -21,6 +21,13 @@
         letter-spacing: 0.5em;
         color: $black;
         margin: 38px 0;
+@media screen and (max-width:$tablet) {
+                margin: 18px 0;
+        }
+
+        @media screen and (max-width:$mobile) {
+                margin: 18px 0;
+        }
 }
 &_title {
         font-family: 'Red Hat Display';
@@ -31,6 +38,17 @@
         letter-spacing: 0.05em;
         color: $black;
         margin-bottom: 70px;
+@media screen and (max-width:$tablet) {
+                font-size: 33px;
+                line-height: 50px;
+                margin-bottom: 50px;
+        }
+
+        @media screen and (max-width:$mobile) {
+                font-size: 33px;
+                line-height: 50px;
+                margin-bottom: 40px;
+}
 }
 &_subtitle {
         font-family: 'Red Hat Display';
@@ -42,6 +60,10 @@
         color: $black;
         margin-top: 90px;
         margin-bottom: 50px;
+@media screen and (max-width:578px) {
+                margin-top: 70px;
+                margin-bottom: 40px;
+        }
 }
 &_text {
         max-width: 570px;
@@ -72,6 +94,9 @@
 @media screen and (max-width:$mobile) {
         width: 300px;
         height: 300px;
+}
+& img {
+        max-width: 100%;
 }
 }
 }

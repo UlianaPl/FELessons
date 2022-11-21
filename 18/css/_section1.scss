@@ -22,6 +22,12 @@
         color: $black;
         margin-top: 90px;
         margin-bottom: 50px;
+        @media screen and (max-width:768px) {
+                margin-top: 70px;
+            }
+    @media screen and (max-width:578px) {
+            margin-bottom: 40px;
+        }
     }
     &_text {
         font-family: 'Lato';
@@ -41,13 +47,18 @@
             &--size {
     
                 @media screen and (max-width:$tablet) {
-                    width: 699px;
-                    height: 380px;
+                    & img {
+                            max-width: 100%;
+                        }
                 }
                         @media screen and (max-width:$mobile) {
-                            width: 300px;
-                            height: 300px;
+                            & img {
+                                    max-width: 100%;
+                                }
                         }
+                & img {
+                    max-width: 100%;
+                }
             }
         }
     }

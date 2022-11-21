@@ -117,10 +117,19 @@ body {
     gap: 9px;
     position: relative;
 }
+&--relative {
+    position: relative;
+}
 &--icon {
     position: absolute;
-    top: 7px;
+    top: 6px;
+    left: 135px;
+}
+&--icondelete {
+    position: absolute;
+    top: -20px;
     left: 7px;
+
 }
 &--input {
     width: 138px;
@@ -138,6 +147,7 @@ body {
         background: #FFFFFF;
         border: 1px solid #E4E4E4;
         border-radius: 6px;
+        margin-top: -27px;
     }
 }
 &_wrapper {

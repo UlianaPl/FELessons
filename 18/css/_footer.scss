@@ -15,6 +15,7 @@
 
         @media screen and (max-width:$tablet) {
             max-width: 700px;
+            padding: 50px 0;
         }
 
         @media screen and (max-width:$mobile) {
@@ -53,6 +54,9 @@
         &_right {
             margin-top: 51px;
             margin-bottom: 40px;
+            @media screen and (max-width:$tablet) {
+                    margin-top: 40px;
+                }
         }
 
         &_left {
@@ -75,6 +79,9 @@
             &-data {
                 margin-top: 30px;
                 margin-bottom: 15px;
+            @media screen and (max-width:$tablet) {
+                    margin-top: 20px;
+                }
             }
         }
     }
@@ -93,9 +100,12 @@
     background: $white;
 
     &:hover {
-        background: $grey;
+        background: $grey; 
+        path {
+                fill: #F4F4F4;
+            }
     }
-
+        
     :last-child {
         margin-right: 0;
     }
