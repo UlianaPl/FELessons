@@ -69,3 +69,5 @@ var playList = [
 for (let i = 0; i < playList.length; i++) {
    console.log(playList[i])
 }
+
+console.log(playlist, Array.from())
