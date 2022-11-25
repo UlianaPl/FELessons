@@ -93,6 +93,13 @@ body {
   text-align: center;
   position: relative;
 }
+.section1::after {
+  content: "";
+  background-color: #55B7FF;
+  height: 470px;
+  width: 585px;
+  position: absolute;
+}
 .section1__container {
   width: 1170px;
   margin: 0 auto;
@@ -127,14 +134,6 @@ body {
 }
 .section1__wrapper_picture {
   position: relative;
-}
-.section1__wrapper_picture::after {
-  content: "";
-  background-color: #55B7FF;
-  height: 470px;
-  width: 585px;
-  position: absolute;
-  left: 100px;
 }
 .section1__wrapper_pretitle {
   font-family: "Montserrat";
