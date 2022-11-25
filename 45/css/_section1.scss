@@ -1,5 +1,6 @@
 .section1 {
     text-align: center;
+    position: relative;
 &__container {
     @include container;
     margin: 0 auto;
@@ -31,6 +32,18 @@
     text-align: left;
     justify-content: space-between;
     gap: 70px;
+&_picture {
+    position: relative;
+    &::after {
+            content: "";
+            background-color: #55B7FF;
+            height: 470px;
+            
+            width: 585px;
+            position: absolute;
+            left: 100px;
+        }
+}
 &_pretitle {
         font-family: 'Montserrat';
         font-style: normal;

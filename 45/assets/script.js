@@ -55,7 +55,7 @@ if (contact) {
     contact.addeventListener('click',scrollToElementFunc)
 }
 function scrollToElementFunc() {
-    let sectionTitle = document.querySelector('.form__title');
+    let sectionTitle = document.querySelector('.section4__title');
     if (sectionTitle) {
         sectionTitle.scrollIntoView({
             block: 'start',
@@ -63,9 +63,12 @@ function scrollToElementFunc() {
         })
     }
 }
-$('.header__title').slick({
-    infinite: true,
-    dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,    
+$(function() {
+    $('.header__slider').slick({
+        infinite: true,
+        arrows: false,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+    })
 })

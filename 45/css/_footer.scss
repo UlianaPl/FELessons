@@ -1,3 +1,41 @@
 .footer {
     background-image: url(../img/Background.png);
+&__container {
+        width: 770px;
+        margin: 0 auto;
+    }
+&__logo {
+    padding-top: 203px;
+    margin-bottom: 41px;
+}
+&__wrapper {
+        display: flex;
+        justify-content: space-between;
+        
+&_left {
+        &-text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding-bottom: 234px;
+        }
+}
+&_right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    &-socials {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #FFFFFF;
+        border-radius: 30px;
+        padding-top: 11px;
+        padding-left: 12px;
+    }
+}
+}
 }
