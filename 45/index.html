@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montichello</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,29 +19,29 @@
                 <div class="header__wrapper_menu menu">
                     <nav>
                         <ul class="menu__content">
-                            <li class="menu__content_item">
+                            <li id="about_us" class="menu__content_item">
                                 <svg class="menu__content_item-svg" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4.5" cy="4.5" r="4" stroke="white" />
                                 </svg>
                                 ABOUT US
                             </li>
-                            <li class="menu__content_item">
+                            <li id="projects" class="menu__content_item">
                                 <svg class="menu__content_item-svg" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4.5" cy="4.5" r="4" stroke="white" />
                                 </svg>
                                 PROJECTS
                             </li>
-                            <li class="menu__content_item">
+                            <li id="news" class="menu__content_item">
                                 <svg class="menu__content_item-svg" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4.5" cy="4.5" r="4" stroke="white" />
                                 </svg>
                                 NEWS
                             </li>
-                            <li class="menu__content_item">
+                            <li id="contact" class="menu__content_item">
                                 <svg class="menu__content_item-svg" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4.5" cy="4.5" r="4" stroke="white" />
                                 </svg>
-                                CONTACTS
+                                CONTACT
                             </li>
                         </ul>
                     </nav>
@@ -67,11 +69,18 @@
                         </svg>
                     </div>
                 </div>
-
             </div>
             <div>
                 <div class="header__title">
-                SIMPLE & MODERN
+                <div>
+                    SIMPLE & MODERN
+                </div>
+                <div>
+                    NEW & FRESH
+                </div>
+                <div>
+                    OLD & FASHIONED
+                </div>
                 </div>
                 <div class="header__subtitle">
                 WE MAKE THE WORLD BEAUTIFUL EVERYDAY
@@ -94,25 +103,25 @@
             <div class="section1__title">
                 WHAT WE DO
             </div>
-            <div>
+            <div class="section1__wrapper">
                 <div>
                     <img src="./img/joel-filipe-151697 1.png" alt="">
                 </div>
                 <div>
-                    <div>
+                    <div class="section1__wrapper_pretitle">
                         ONE WORLD
                     </div>
-                    <div>
+                    <div class="section1__wrapper_title">
                         TRADE CENTER
                     </div>
-                    <div>
+                    <div class="section1__wrapper_text">
                         Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are
                         very powerful.
                     </div>
-                    <div>
+                    <div class="section1__wrapper_button">
                         More Details
                     </div>
-                    <div>
+                    <div class="section1__wrapper_location">
                         <div>
                             <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -128,109 +137,167 @@
             </div>
         </div>
         </section>
-        <section>
-            <div>
-            <div>
+        <section class="section1">
+            <div class="section1__container">
+                <div class="section1__wrapper sectiondown">
+                    <div class="section1__wrapper_photo">
+                        <img src="./img/photos-1284iH4Hjf4mhNgW 1.png" alt="">
+                    </div>
+                    <div class="section1__wrapper_down">
+                        <div class="section1__wrapper_pretitle">
+                            INTERNATIONAL
+                        </div>
+                        <div class="section1__wrapper_title">
+                            COMMERCE CENTRE
+                        </div>
+                        <div class="section1__wrapper_text">
+                            Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital
+                            advertising network may help.
+                        </div>
+                        <div class="section1__wrapper_button">
+                            More Details
+                        </div>
+                        <div class="section1__wrapper_location">
+                            <div>
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.42857 4.5C6.42857 5.68025 5.46596 6.64286 4.28571 6.64286C3.10547 6.64286 2.14286 5.68025 2.14286 4.5C2.14286 3.31975 3.10547 2.35714 4.28571 2.35714C5.46596 2.35714 6.42857 3.31975 6.42857 4.5ZM8.57143 4.5C8.57143 2.13114 6.65458 0.214285 4.28571 0.214285C1.91685 0.214285 0 2.13114 0 4.5C0 5.0106 0.0585938 5.53795 0.276228 5.99833L3.33147 12.4771C3.49888 12.8454 3.88393 13.0714 4.28571 13.0714C4.6875 13.0714 5.07254 12.8454 5.24833 12.4771L8.2952 5.99833C8.51284 5.53795 8.57143 5.0106 8.57143 4.5Z"
+                                        fill="#2C4058" />
+                                </svg>
+                            </div>
+                            <div>
+                                Hong Kong - 1588 feet
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="section2__container">
+            <div class="section2__title">
                 LATEST NEWS
             </div>
-            <div>
-                <div>
+            <div class="section2__wrapper">
+                <div class="section2__wrapper_base">
                     <div>
                         <img src="./img/lauren-mancke-60633 1.png" alt="">
                     </div>
-                    <div>
+                    <div class="section2__wrapper_container">
+                    <div class="section2__wrapper_title">
                         SEE THE UNMATCHED BEAUTY OF THE GREAT.
                     </div>
-                    <div>
+                    <div class="section2__wrapper_text">
                         Free directories: directories are perfect for customers that are searching for...
                     </div>
                     <div>
-                        <div>
-                            <div>
+                        <div class="section2__wrapper_wrap">
+                            <div class="section2__wrapper_wrap-photo">
                                 <img src="./img/photos-13323TAfapiSrc9IO23 1.png" alt="">
                             </div>
                             <div>
-                                <p>
+                                <p class="section2__wrapper_wrap-name">
                                 ALJA BRUN
                                 </p>
-                                <p>
+                                <p class="section2__wrapper_wrap-date">
                                 20 Jan 2020
                                 </p>
                             </div>
                         </div>                        
                     </div>
+                    </div>
                 </div>
-                <div>
+                <div class="section2__wrapper">
+                <div class="section2__wrapper_base">
                     <div>
-                        <img src="./img/lauren-mancke-60633 1.png" alt="">
+                        <img src="./img/matthew-hamilton-202227 1.png" alt="">
+                    </div>
+                    <div class="section2__wrapper_container">
+                    <div class="section2__wrapper_title">
+                        EFFECTIVE ADVERTISING POINTERS.
+                    </div>
+                    <div class="section2__wrapper_text">
+                        Having a home based business is a wonderful asset to your life...
                     </div>
                     <div>
-                        SEE THE UNMATCHED BEAUTY OF THE GREAT.
-                    </div>
-                    <div>
-                        Free directories: directories are perfect for customers that are searching for...
-                    </div>
-                    <div>
-                        <div>
-                            <div>
-                                <img src="./img/photos-13323TAfapiSrc9IO23 1.png" alt="">
+                        <div class="section2__wrapper_wrap">
+                            <div class="section2__wrapper_wrap-photo">
+                                <img src="./img/photos-13323vsWmKApDZJIh 1.png" alt="">
                             </div>
                             <div>
-                                <p>
-                                    ALJA BRUN
+                                <p class="section2__wrapper_wrap-name">
+                                    DOMINIC FREEMAN
                                 </p>
-                                <p>
-                                    20 Jan 2020
+                                <p class="section2__wrapper_wrap-date">
+                                    13 October 2019
                                 </p>
                             </div>
                         </div>                
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="./img/lauren-mancke-60633 1.png" alt="">
-                    </div>
-                    <div>
-                        SEE THE UNMATCHED BEAUTY OF THE GREAT.
-                    </div>
-                    <div>
-                        Free directories: directories are perfect for customers that are searching for...
-                    </div>
-                    <div>
-                        <div>
-                            <div>
-                                <img src="./img/photos-13323TAfapiSrc9IO23 1.png" alt="">
-                            </div>
-                            <div>
-                                <p>
-                                    ALJA BRUN
-                                </p>
-                                <p>
-                                    20 Jan 2020
-                                </p>
-                            </div>
-                        </div>                
-                    </div>
                 </div>
-            </div>
+                <div class="section2__wrapper">
+                    <div class="section2__wrapper_base">
+                        <div>
+                            <img src="./img/joel-filipe-151690 1.png" alt="">
+                        </div>
+                        <div class="section2__wrapper_container">
+                            <div class="section2__wrapper_title">
+                                HYPNOTIZE YOURSELF INTO THE GHOST.
+                            </div>
+                            <div class="section2__wrapper_text">
+                                There are many things that are important to catalog design...
+                            </div>
+                            <div>
+                                <div class="section2__wrapper_wrap">
+                                    <div class="section2__wrapper_wrap-photo">
+                                        <img src="./img/photos-13323TAfapiSrc9IO 1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="section2__wrapper_wrap-name">
+                                            ALICE WARD
+                                        </p>
+                                        <p class="section2__wrapper_wrap-date">
+                                            30 Nov 2019
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
         </div>
         </section>
-        <section>
-            <div>
-                <div>
+        <section class="section3">
+            <div class="section3__container">
+                <div class="section3__title">
                     GALLERY
                 </div>
-                <div>
-
+                <div class="section3__wrapper">
+                    <div class="section3__wrapper_one">
+                        <img src="./img/scott-webb-176434 1.png" alt="">
+                    </div>
+                    <div class="section3__wrapper_two">
+                        <img src="./img/photos-13323p6Bdc0uhr8Bq 1.png" alt="">
+                    </div>
+                    <div class="section3__wrapper_three">
+                        <img src="./img/echo-grid-156713 1.png" alt="">
+                    </div>
+                    <div class="section3__wrapper_four">
+                        <img src="./img/fuse-brussels-169216 1.png" alt="">
+                    </div>
+                    <div class="section3__wrapper_five">
+                        <img src="./img/tu-tram-pham-202263 2.png" alt="">
+                    </div>
                 </div>
-                <div>
+                <div class="section3__button">
                     SEE MORE
                 </div>
             </div>
         </section>
         <section>
             <div>
-                <div>
+                <div class="form__title">
                     GET IN TOUCH
                 </div>
                 <div>
@@ -262,10 +329,15 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
-        <div>
+        <section class="section4">
             <div>
+                <img src="./img/snazzy-image-2 1.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <div class="footer__logo">
                 <img src="./img/Logo.png" alt="">
             </div>
             <div>
@@ -297,6 +369,7 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
