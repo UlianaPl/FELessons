@@ -1,6 +1,6 @@
 let scroll = document.getElementById('scroll')
 if (scroll) {
-    scroll.addeventListener('click',scrollToElementFunc)
+    scroll.addEventListener('click',scrollToElementFunc)
 }
 function scrollToElementFunc() {
     let sectionTitle = document.querySelector('.section1__title');
@@ -13,7 +13,7 @@ function scrollToElementFunc() {
 }
 let aboutUs = document.getElementById('about_us')
 if (aboutUs) {
-    aboutUs.addeventListener('click',scrollToElementFunc)
+    aboutUs.addEventListener('click',scrollToElementFunc)
 }
 function scrollToElementFunc() {
     let sectionTitle = document.querySelector('.header__title');
@@ -26,7 +26,7 @@ function scrollToElementFunc() {
 }
 let projects = document.getElementById('projects')
 if (projects) {
-    projects.addeventListener('click',scrollToElementFunc)
+    projects.addEventListener('click',scrollToElementFunc)
 }
 function scrollToElementFunc() {
     let sectionTitle = document.querySelector('.section1__title');
@@ -39,7 +39,7 @@ function scrollToElementFunc() {
 }
 let news = document.getElementById('news')
 if (news) {
-    news.addeventListener('click',scrollToElementFunc)
+    news.addEventListener('click',scrollToElementFunc)
 }
 function scrollToElementFunc() {
     let sectionTitle = document.querySelector('.section2__wrapper_title');
@@ -52,7 +52,7 @@ function scrollToElementFunc() {
 }
 let contact = document.getElementById('contact')
 if (contact) {
-    contact.addeventListener('click',scrollToElementFunc)
+    contact.addEventListener('click',scrollToElementFunc)
 }
 function scrollToElementFunc() {
     let sectionTitle = document.querySelector('.section4__title');
