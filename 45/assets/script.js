@@ -1,9 +1,9 @@
 let scroll = document.getElementById('scroll')
 if (scroll) {
-    scroll.addEventListener('click',scrollToElementFunc)
+    scroll.addEventListener('click',scrollToFunc)
 }
-function scrollToElementFunc() {
-    let sectionTitle = document.querySelector('.section1__title');
+function scrollToFunc() {
+    let sectionTitle = document.querySelector('.section1');
     if (sectionTitle) {
         sectionTitle.scrollIntoView({
             block: 'start',
@@ -13,9 +13,9 @@ function scrollToElementFunc() {
 }
 let aboutUs = document.getElementById('about_us')
 if (aboutUs) {
-    aboutUs.addEventListener('click',scrollToElementFunc)
+    aboutUs.addEventListener('click',scrollElementFunc)
 }
-function scrollToElementFunc() {
+function scrollElementFunc() {
     let sectionTitle = document.querySelector('.header__title');
     if (sectionTitle) {
         sectionTitle.scrollIntoView({
@@ -26,10 +26,10 @@ function scrollToElementFunc() {
 }
 let projects = document.getElementById('projects')
 if (projects) {
-    projects.addEventListener('click',scrollToElementFunc)
+    projects.addEventListener('click',scrollFunc)
 }
-function scrollToElementFunc() {
-    let sectionTitle = document.querySelector('.section1__title');
+function scrollFunc() {
+    let sectionTitle = document.querySelector('.section1__container');
     if (sectionTitle) {
         sectionTitle.scrollIntoView({
             block: 'start',
@@ -39,10 +39,10 @@ function scrollToElementFunc() {
 }
 let news = document.getElementById('news')
 if (news) {
-    news.addEventListener('click',scrollToElementFunc)
+    news.addEventListener('click',toElementFunc)
 }
-function scrollToElementFunc() {
-    let sectionTitle = document.querySelector('.section2__wrapper_title');
+function toElementFunc() {
+    let sectionTitle = document.querySelector('.section2__container');
     if (sectionTitle) {
         sectionTitle.scrollIntoView({
             block: 'start',
@@ -52,10 +52,10 @@ function scrollToElementFunc() {
 }
 let contact = document.getElementById('contact')
 if (contact) {
-    contact.addEventListener('click',scrollToElementFunc)
+    contact.addEventListener('click',scrollFunc)
 }
-function scrollToElementFunc() {
-    let sectionTitle = document.querySelector('.section4__title');
+function scrollFunc() {
+    let sectionTitle = document.querySelector('.section4__container');
     if (sectionTitle) {
         sectionTitle.scrollIntoView({
             block: 'start',
@@ -63,12 +63,30 @@ function scrollToElementFunc() {
         })
     }
 }
+
 $(function() {
     $('.header__slider').slick({
         infinite: true,
         arrows: false,
         dots: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
+        vertical: true,
+        verticalSwiping: true
     })
 })
+/*
+$(document).ready(function() {
+    $('.multiple__slider').slick({
+        infinite: true,
+        arrows: true,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        
+    })
+})
+
+setInterval(function () {
+    $('.slickPrev').slick("slickPrev");
+}, 2000);*/

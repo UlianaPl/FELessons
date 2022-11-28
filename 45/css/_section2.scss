@@ -1,7 +1,12 @@
 .section2 {
-background-image: url(../img/Rectangle\ 5.png);
+background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
 text-align: center;
-
+position: relative;
+width: 1600px;
+    &__photo {
+        position: absolute;
+        width: 100%;
+    }
     &__container {
         @include container;
         margin: 0 auto;
@@ -33,9 +38,11 @@ text-align: center;
         display: flex;
         text-align: left;
         gap: 30px;
+        
     &_container {
         width: 330px;
         margin: 0 auto;
+        margin-bottom: 170px;
     }    
     &_base {
         background-color: #FFFFFF;

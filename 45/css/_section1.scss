@@ -1,15 +1,36 @@
 .section1 {
     text-align: center;
     position: relative;
-    &::after {
+    height: 100vh;
+    width: 1600px;
+    &__after {
+        &_wrapper {
+            position: relative;
+            padding-top: 57px;
+        
+        &::after {
             content: "";
             background-color: #55B7FF;
             height: 470px;
-    
             width: 585px;
             position: absolute;
-            
+            top: 0;
+            left: 0;
         }
+    &--right {
+        
+        &::after {
+            content: "";
+            background-color: #7E5AFF;
+            height: 470px;
+            width: 585px;
+            position: absolute;
+            top: -57px;
+            right: 0;
+        }
+    }
+    }
+}           
 &__container {
     @include container;
     margin: 0 auto;
@@ -23,7 +44,7 @@
         color: #2C4058;
         position: relative;
         margin-top: 130px;
-        margin-bottom: 80px;
+        margin-bottom: 90px;
     &::before {
         content: "";
         color: #2C4058;
@@ -41,10 +62,8 @@
     text-align: left;
     justify-content: space-between;
     gap: 70px;
-&_picture {
-    position: relative;
-    
-}
+    position: relative;    
+    z-index: 1;
 &_pretitle {
         font-family: 'Montserrat';
         font-style: normal;
@@ -84,6 +103,9 @@
     padding-top: 16px;
     padding-bottom: 17px;
     margin-bottom: 60px;
+&:hover {
+        background-color: orange;
+    }
 }
 &_location {
         font-family: 'Open Sans';

@@ -1,5 +1,6 @@
 .section3 {
     text-align: center;
+    width: 1600px;
     &__container {
         @include container;
         margin: 0 auto;
@@ -14,6 +15,7 @@
             color: #2C4058;
             margin-top: 180px;
             margin-bottom: 90px;
+            position: relative;
         &::before {
                 content: "";
                 color: #2C4058;
@@ -21,7 +23,8 @@
                 border: solid;
                 width: 100px;
                 position: absolute;
-                left: 543px;                
+                left: 535px;  
+                top: -30px;              
             }
     }
     &__wrapper {
@@ -80,5 +83,9 @@
     padding-bottom: 17px;
     margin-top: 60px;
     margin-bottom: 150px;
+    margin-left: 490px;
+&:hover {
+        background-color: orange;
+    }
     }
 }

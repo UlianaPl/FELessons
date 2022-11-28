@@ -1,11 +1,19 @@
 .header {
-    background-image: url(../img/Background\ \(1\).png);
-
-    &__container {
+    background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+    position: relative;
+    width: 1600px;    
+    height: 800px;
+    
+&__photo {
+    position: absolute;
+    width: 100%;
+}
+&__container {
     @include container;
     margin: 0 auto; 
     text-align: center;
-    align-items: center;   
+    align-items: center; 
+    position: relative;  
 }
 &__wrapper {
     @include flex;
@@ -23,7 +31,10 @@
     border: 1px solid #FFFFFF;
     border-radius: 30px;
     padding-top: 11px;
-
+    
+&:hover {
+    background-color: orange;
+}
 }
 }
 &__title {
@@ -44,9 +55,16 @@
         font-size: 18px;
         line-height: 22px;
         color: #FFFFFF;
-}
+    }
 &__scroll {
-    padding-bottom: 45px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 240px;
+
 &_down {
     width: 40px;
     height: 40px;
@@ -57,7 +75,6 @@
     align-items: center;
     justify-content: center
 }
-
 }
 }
 .menu {
@@ -75,8 +92,14 @@
         font-size: 14px;
         line-height: 18px;
         color: #FFFFFF;
+&:hover {
+    text-decoration: underline;
+    }
 &-svg {
     margin-right: 14px;
+&:hover {
+    fill: #FFFFFF;
+}
 }
 }
 }

@@ -1,6 +1,8 @@
 .footer {
-    background-image: url(../img/Background.png);
-&__container {
+    background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+    width: 1600px;
+
+    &__container {
         width: 770px;
         margin: 0 auto;
     }
@@ -35,6 +37,9 @@
         border-radius: 30px;
         padding-top: 11px;
         padding-left: 12px;
+    &:hover {
+        background-color: orange;
+    }
     }
 }
 }
