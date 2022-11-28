@@ -56,6 +56,7 @@ body {
   letter-spacing: -0.1px;
   color: #969696;
   max-width: 410px;
+  margin-left: 47px;
 }
 .section__text_add-a {
   font-family: "Inter";
@@ -105,6 +106,10 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
+.section__form_flex--input:focus {
+  outline: none;
+  border-color: blue;
+}
 .section__form_flex--inside {
   display: flex;
   flex-direction: column;
@@ -135,6 +140,10 @@ body {
   margin-left: 20px;
   margin-right: 10px;
 }
+.section__form_flex--input:focus {
+  outline: none;
+  border-color: blue;
+}
 .section__form_flex--delete {
   width: 30px;
   height: 30px;
@@ -143,11 +152,19 @@ body {
   border-radius: 6px;
   margin-top: -27px;
 }
+.section__form_flex--delete:focus {
+  outline: none;
+  border-color: blue;
+}
 .section__form_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+}
+.section__form_wrapper-down {
+  text-align: center;
+  align-items: center;
 }
 .section__form_wrapper-left {
   width: 50%;
@@ -160,6 +177,10 @@ body {
   background: #FFFFFF;
   border: 1px solid #E4E4E4;
   border-radius: 6px;
+}
+.section__form_wrapper-left--input:focus {
+  outline: none;
+  border-color: blue;
 }
 .section__form_wrapper-left--input::-moz-placeholder {
   padding-left: 10px;
@@ -182,6 +203,10 @@ body {
   border: 1px solid #E4E4E4;
   border-radius: 6px;
 }
+.section__form_wrapper-right--input:focus {
+  outline: none;
+  border-color: blue;
+}
 .section__email {
   width: 100%;
   height: 38px;
@@ -191,11 +216,12 @@ body {
   border: 1px solid #E4E4E4;
   border-radius: 6px;
 }
+.section__email:focus {
+  outline: none;
+  border-color: blue;
+}
 .section__email:invalid {
   border-color: red;
-}
-.section__email:valid {
-  border-color: blue;
 }
 .section__button {
   background: #007BFF;
@@ -223,6 +249,10 @@ body {
   border: none;
   background-color: #FFFFFF;
 }
+.section__button--login:focus {
+  outline: none;
+  border-color: blue;
+}
 .section__button--update {
   background: #007BFF;
   border: 1px solid #E4E4E4;
@@ -237,4 +267,8 @@ body {
   color: #FFFFFF;
   padding: 8px 40px 8px 40px;
   margin-bottom: 87px;
+}
+.section__button--update:focus {
+  outline: none;
+  border-color: blue;
 }/*# sourceMappingURL=style.css.map */

@@ -58,6 +58,7 @@ body {
         letter-spacing: -0.1px;
         color: #969696;
         max-width: 410px;
+        margin-left: 47px;
 &-a {
         font-family: 'Inter';
         font-style: normal;
@@ -110,6 +111,12 @@ body {
     justify-content:flex-start;
     align-items: center;
     margin-bottom: 20px;
+&--input {
+    &:focus {
+            outline: none;
+            border-color: blue;
+        }
+}
 &--inside {
     display: flex;
     flex-direction: column;
@@ -140,6 +147,10 @@ body {
         text-decoration: none;
         margin-left: 20px;
         margin-right: 10px;
+    &:focus {
+            outline: none;
+            border-color: blue;
+        }
 }
 &--delete {
     width: 30px;
@@ -148,6 +159,10 @@ body {
         border: 1px solid #E4E4E4;
         border-radius: 6px;
         margin-top: -27px;
+    &:focus {
+            outline: none;
+            border-color: blue;
+        }
     }
 }
 &_wrapper {
@@ -155,7 +170,10 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    
+&-down {
+    text-align: center;
+    align-items: center;
+}
 &-left {
     width: 50%;  
 &--input {
@@ -166,6 +184,10 @@ body {
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
+    &:focus {
+            outline: none;
+            border-color: blue;
+        }
     &::placeholder {
             padding-left: 10px;
         }
@@ -181,6 +203,11 @@ body {
             background: #FFFFFF;
             border: 1px solid #E4E4E4;
             border-radius: 6px;
+    
+            &:focus {
+                    outline: none;
+                    border-color: blue;
+                }
         }
 }
 }
@@ -194,12 +221,13 @@ body {
         background: #FFFFFF;
         border: 1px solid #E4E4E4;
         border-radius: 6px;
+    &:focus {
+        outline: none;
+        border-color: blue;
+    }
     &:invalid {
         border-color: red;
-    }
-        &:valid {
-            border-color: blue;
-        }
+    }       
 }
 &__button {
         background: #007BFF;
@@ -225,6 +253,10 @@ body {
             color: #007BFF;
             border: none;
             background-color: #FFFFFF;
+        &:focus {
+                outline: none;
+                border-color: blue;
+            }
     }
     &--update {
             background: #007BFF;
@@ -240,6 +272,10 @@ body {
                 color: #FFFFFF;
                 padding: 8px 40px 8px 40px;
                 margin-bottom: 87px;
+            &:focus {
+                    outline: none;
+                    border-color: blue;
+                }
     }
 }
 }
