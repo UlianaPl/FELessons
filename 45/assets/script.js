@@ -69,12 +69,27 @@ $(function() {
         infinite: true,
         arrows: false,
         dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
         vertical: true,
-        verticalSwiping: true
+        verticalSwiping: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,        
+        
     })
 })
+
+$(function() {
+    $('.section2__wrapper').slick({
+        infinite: true,
+        arrows: false,
+        dots: true,        
+        slidesToShow: 3,
+        slidesToScroll: 3,        
+        
+    })
+})
+
+
+
 /*
 $(document).ready(function() {
     $('.multiple__slider').slick({
