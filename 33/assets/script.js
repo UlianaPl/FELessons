@@ -1,59 +1,126 @@
 let shopProducts = [
-  {
-    name: "Banana",
-    quantity: 2,
-    inCart: 'No',
-    price: 20
-  },
-  {
-    name: "Orange",
-    quantity: 2,
-    inCart: 'Yes',
-    price: 30
-  },
-  {
-    name: "Joghurt",
-    quantity: 2,
-    inCart: 'No',
-    price: 40
-  },
-  {
-    name: "Bread",
-    quantity: 1,
-    inCart: 'Yes',
-    price: 20
-  },
-  {
-    name: "Tomato",
-    quantity: 2,
-    inCart: 'No',
-    price: 30
-  },
+    {
+        name: "Banana",
+        quantity: 2,
+        inCart: false,
+        price: 20
+    },
+    {
+        name: "Orange",
+        quantity: 2,
+        inCart: true,
+        price: 30
+    },
+    {
+        name: "Joghurt",
+        quantity: 2,
+        inCart: false,
+        price: 40
+    },
+    {
+        name: "Bread",
+        quantity: 1,
+        inCart: true,
+        price: 20
+    },
+    {
+        name: "Tomato",
+        quantity: 2,
+        inCart: false,
+        price: 30
+    }
 ]
 
-shopProducts.sort(function (x, y) {
-  return x.inCart, y.inCart
-  
+for (let i = 0; i < shopProducts.length; i++) {
+    // створення поля sum, яке містить загальну суму товару
+    shopProducts[i].sum = shopProducts[i].price * shopProducts[i].quantity;
 }
-)
 console.log(shopProducts)
 
-/*shopProducts.forEach(myFunction)
+let getSort = function () {
+    return shopProducts.sort((a, b) => (b.inCart - a.inCart));
+}
 
-function myFunction() {
-  alert("Bought")
-}*/
+getSort()
 
-shopProducts.splice(0, 1) 
+console.log("Sorted array:");
+console.log(shopProducts);
 
-shopProducts.push("Kiwi")
+let newProductName = prompt("Enter the name of the product to add"),
+    newProductQuantity = +prompt("Enter the amount of the product to add");
+
+// перевіряємо чи ввели, якщо - так, викликаємо функцію
+if(newProductName && newProductQuantity) {
+    addNewroduct(newProductName)
+}
+
+function addNewroduct(product) {
+    let neededProduct = shopProducts.find(el => el.name === product);
+
+    if(neededProduct) {
+        // якщо введена назва вже є - змінюємо кількість
+        neededProduct.quantity += newProductQuantity
+
+        // перераховуємо поле sum
+        let sum = neededProduct.price * neededProduct.quantity;
+        neededProduct.sum = sum
+    } else {
+        // якщо введеної назви немає - питаємо ціну, рахуємо значення поля sum і додаємо
+        let newProductPrice = +prompt("Enter the price of the product to add");
+
+        if(newProductPrice) {
+            let sum = newProductPrice * newProductQuantity;
+
+            shopProducts.push({
+                name: newProductName,
+                quantity: newProductQuantity,
+                inCart: true,
+                price: newProductPrice,
+                sum: sum
+            })
+        }
+    }
+
+
+    console.log('Array afer adding product:')
+    console.log(shopProducts)
+}
+
+let productName = prompt("Enter the name of the product to remove")
+if(productName) {
+    // якщо користувач щось ввів - викликаємо функцію для видалення
+    deleteProduct(productName)
+}
+
+function deleteProduct(productName) {
+    // шукаємо продукт в масиві, якщо є - видаляємо, якщо немає - виводимо повідомлення, що такого товару немає
+    // у завданні пише, що потрібно сформувати новий масив, де не буде нашого товару, тому використовуємо метод filter
+    // за новий масив відповідає змінна newShopProducts, за замовчуванням присвоюємо їй значення shopProducts, щоб коли не буде знайдено 
+    // продукту від користувача - було виведено всі покупки
+
+    let neededProduct = shopProducts.find(el => el.name === productName),
+        newShopProducts = shopProducts;
+    if(neededProduct) {
+        newShopProducts = shopProducts.filter(el => el.name !== productName)
+    } else {
+        console.log("No such product!")
+    }
+
+    console.log("New array:")
+    console.log(newShopProducts)
+}
+
+totalPrice(shopProducts)
 
 function totalPrice(shopProducts) {
-let sum = 0;
-for(var i = 0; i < shopProducts.length; i++){
-    sum += shopProducts[i];
+    let sum = 0;
+
+    for (let i = 0; i < shopProducts.length; i++) {
+        // додаємо поле де зберігається загальна сума кожного продукта
+        sum += shopProducts[i].sum;
     }
-console.log(sum);
+    console.log("Total sum:")
+    console.log(sum);
 }
 
 

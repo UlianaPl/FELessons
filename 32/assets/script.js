@@ -39,12 +39,45 @@ alert(`Загальний час в дорозі = ${timeTotal} годин. Ва
 
 
 
-let d = new Date();
+let date = new Date()
 
-console.log(d);
+let time = {
+    hours: date.getHours(),
+    minutes: date.getMinutes(),
+    seconds: date.getSeconds(),
+}
 
-alert(d)
+function getYourTime(a, b, c) {
+    console.log(`${a}:${b}:${c}`)
+}
 
-let count = prompt("Скільки секунд ви б хотіли додати до поточного часу");
+getYourTime(time.hours, time.minutes, time.seconds)
 
+let changeTime = () => {
+    let a = +prompt("Введіть кількість секунд на яку збільшьтся час"),
+        b = +prompt("Введіть кількість хвилин на яку збільшьтся час"),
+        c = +prompt("Введіть кількість годин на яку збільшьтся час");
+    time.seconds += a;
+    time.minutes += b;
+    time.hours += c;
 
+    if (time.seconds > 60) {
+        time.minutes += Math.floor(time.seconds / 60);
+        time.seconds = (time.seconds / 60 - Math.floor(time.seconds / 60)) * 60;
+        time.seconds = time.seconds.toFixed()
+    }
+
+    if (time.minutes > 60) {
+        time.hours += Math.floor(time.minutes / 60);
+        time.minutes = (time.minutes / 60 - Math.floor(time.minutes / 60)) * 60;
+        time.minutes = time.minutes.toFixed()
+    }
+
+    if (time.hours >= 24) {
+        time.hours = (time.hours / 24 - Math.floor(time.hours / 24)) * 24;
+        time.hours = time.hours.toFixed()
+    }
+    getYourTime(time.hours, time.minutes, time.seconds)
+}
+
+changeTime();

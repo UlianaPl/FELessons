@@ -38,6 +38,39 @@ body {
   align-items: center;
 }
 
+.block {
+  position: relative;
+}
+.block__svg {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  left: 300px;
+  top: -5px;
+}
+.block__svg_letter {
+  position: relative;
+  top: 35px;
+  font-family: "Bebas Neue Book";
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.block__svg_popular {
+  position: relative;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+  top: 24px;
+}
+.block__svg:hover {
+  opacity: 1;
+}
 .block__dollar {
   font-family: "Bebas Neue Thin";
   font-size: 24px;
@@ -90,7 +123,18 @@ body {
 .block__middle_content p:last-child {
   padding-bottom: 60px;
 }
-.block__middle_button {
+
+.part__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 18px;
+  color: #A9A9A9;
+  transition: transform 0.3s ease;
+  transform: scale(0, 0);
+}
+.part__button {
   margin: 30px 84px -27px 86px;
   padding: 20px 50px 20px 50px;
   font-family: "Bebas Neue";
@@ -103,4 +147,15 @@ body {
   color: #FFFFFF;
   background: #6FCFFB;
   border-radius: 30px;
+  transform: translateY(0);
+  transition: all 0 0.2s linear;
+}
+.part:hover {
+  transform: translateY(-54px);
+}
+.part:hover .part__text {
+  transform: scale(1, 1);
+}
+.part:hover .part__button {
+  transform: translateY(-54px);
 }/*# sourceMappingURL=style.css.map */

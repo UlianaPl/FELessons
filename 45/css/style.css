@@ -1,8 +1,6 @@
 .header {
   background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
   position: relative;
-  width: 1600px;
-  height: 800px;
 }
 .header__photo {
   position: absolute;
@@ -116,7 +114,6 @@ body {
   text-align: center;
   position: relative;
   height: 100vh;
-  width: 1600px;
 }
 .section1__after_wrapper {
   position: relative;
@@ -243,7 +240,6 @@ body {
   background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
   text-align: center;
   position: relative;
-  width: 1600px;
 }
 .section2__photo {
   position: absolute;
@@ -340,7 +336,6 @@ body {
 
 .section3 {
   text-align: center;
-  width: 1600px;
 }
 .section3__container {
   width: 1170px;
@@ -433,7 +428,6 @@ body {
   background-image: url(../img/snazzy-image-2\ 1.png);
   height: 700px;
   position: relative;
-  width: 1600px;
 }
 .section4__container {
   width: 770px;
@@ -540,7 +534,6 @@ body {
 
 .footer {
   background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
-  width: 1600px;
 }
 .footer__container {
   width: 770px;
