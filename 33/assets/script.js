@@ -46,8 +46,22 @@ getSort()
 console.log("Sorted array:");
 console.log(shopProducts);
 
+let buyProduct = prompt("Ввеіть назву продукту,який потрібно відзначити,як придбаний")
+if (buyProduct) {
+    buyFunction(buyProduct) 
+}
+
+function buyFunction(buyProduct) {
+    let neededProduct = shopProducts.find(el => el.name === buyProduct);
+    if (neededProduct) {
+        neededProduct.inCart = true;
+        console.log(shopProducts);        
+    }
+    }
+
 let newProductName = prompt("Enter the name of the product to add"),
     newProductQuantity = +prompt("Enter the amount of the product to add");
+
 
 // перевіряємо чи ввели, якщо - так, викликаємо функцію
 if(newProductName && newProductQuantity) {
@@ -60,7 +74,7 @@ function addNewroduct(product) {
     if(neededProduct) {
         // якщо введена назва вже є - змінюємо кількість
         neededProduct.quantity += newProductQuantity
-
+        //neededProduct.quantity = neededProduct.quantity + newProductQuantity
         // перераховуємо поле sum
         let sum = neededProduct.price * neededProduct.quantity;
         neededProduct.sum = sum
@@ -75,6 +89,7 @@ function addNewroduct(product) {
                 name: newProductName,
                 quantity: newProductQuantity,
                 inCart: true,
+                //Бо це ф-ція додавання
                 price: newProductPrice,
                 sum: sum
             })
@@ -123,6 +138,31 @@ function totalPrice(shopProducts) {
     console.log(sum);
 }
 
+unBought(shopProducts)
+function unBought(shopProducts) {
+    let sum = 0;
+
+    for (let i = 0; i < shopProducts.length; i++) {
+        if (!shopProducts[i].inCart) {
+           sum += shopProducts[i].sum; 
+        }
+    }
+    console.log("Total unbought sum:")
+    console.log(sum);
+}
+
+let bigger = confirm("Натисніть ок,якщо від більшого до меншого")
+
+let sortSum = function () {
+    if (bigger) {
+      console.log(shopProducts.sort((a, b) => (b.sum - a.sum)));  
+    }
+    else {
+      console.log(shopProducts.sort((a, b) => (a.sum - b.sum)));
+    }    
+}
+
+sortSum()
 
 /*function shopItem(name, amount, inCart, price) {
   {

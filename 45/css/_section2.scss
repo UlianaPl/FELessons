@@ -6,6 +6,8 @@ position: relative;
     &__photo {
         position: absolute;
         width: 100%;
+        right: 0;
+        top: 0;
     }
     &__container {
         @include container;
@@ -39,10 +41,9 @@ position: relative;
         text-align: left;
         gap: 30px;
         
-    &_container {
-        width: 330px;
+    &_container {        
         margin: 0 auto;
-        margin-bottom: 170px;
+        padding: 30px 30px;
     }    
     &_base {
         background-color: #FFFFFF;
@@ -55,7 +56,6 @@ position: relative;
             font-size: 22px;
             line-height: 27px;
             color: #2C4058;
-            margin-top: 30px;
             margin-bottom: 15px;
     }
     &_text {
@@ -71,7 +71,7 @@ position: relative;
         align-items: center;
         gap: 20px;
         margin-top: 39px;
-        padding-bottom: 30px;
+        
     &-name {
             font-family: 'Montserrat';
             font-style: normal;
