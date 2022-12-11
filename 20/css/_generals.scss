@@ -27,8 +27,9 @@ body {
     margin-top: 151px;
     margin-bottom: 151px;
     text-align: center;
+    flex-grow: 1;
     &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     
 &-up {
@@ -126,49 +127,60 @@ body {
 }
 & p:last-child {
     padding-bottom: 60px;
+    margin: 0;
 }
 } 
 }
 }
 .part {
-    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
 &__text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 11px;
-        line-height: 18px;
-        color: #A9A9A9;
-        transition: transform .3s ease;
-        transform: scale(0, 0);
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 18px;
+            color: #A9A9A9;
+            transition: transform 0.3s ease;
+            transform: scale(0, 0);
+            opacity: 0;
+            padding-top: 9px;
+            padding-bottom: 30px;
         
     }
 &__button {
-    margin: 30px 84px -27px 86px;
-    padding: 20px 50px 20px 50px;
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background: #6FCFFB;
-    border-radius: 30px;
-    transform: translateY(0);
-    transition: all .0.2s linear;
-
+        position: absolute;
+        padding: 20px 50px;
+        font-family: "Bebas Neue";
+        font-style: normal;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background: #6FCFFB;
+        border-radius: 30px;
+        transition: all 0.5s linear;
+        bottom: -50%;
+        transform: translateY(0);
 }
     &:hover {
             transform: translateY(-54px);
     
             .part__text {
-                transform: scale(1, 1);
+                    transform: scale(1, 1);
+                    opacity: 1;
+                    padding-top: 47px;
             }
     
             .part__button {
-                transform: translateY(-54px);
+                background-color: #fd8d7b;
+                transform: translateY(-112px);
             }
         }
 }
