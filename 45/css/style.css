@@ -547,14 +547,6 @@ body {
   line-height: 27px;
   color: #4B5562;
 }
-.section4__input:-ms-input-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: #4B5562;
-}
 .section4__input::placeholder {
   font-family: "Montserrat";
   font-style: normal;

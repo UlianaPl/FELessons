@@ -185,9 +185,6 @@ body {
 .section__form_wrapper-left--input::-moz-placeholder {
   padding-left: 10px;
 }
-.section__form_wrapper-left--input:-ms-input-placeholder {
-  padding-left: 10px;
-}
 .section__form_wrapper-left--input::placeholder {
   padding-left: 10px;
 }
