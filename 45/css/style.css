@@ -419,6 +419,10 @@ body {
   grid-row-start: 1;
   grid-row-end: 3;
   width: 100%;
+  transition: transform 0.3s ease;
+}
+.section3__wrapper_one:hover {
+  transform: scale(1.2);
 }
 .section3__wrapper_two {
   grid-column-start: 3;
@@ -466,6 +470,10 @@ body {
 }
 .section3__button:hover {
   background-color: orange;
+}
+
+.section3__wrapper_one.zoomed {
+  transform: scale(1.2);
 }
 
 .section4 {
@@ -566,6 +574,11 @@ body {
 }
 .section4__button:hover {
   background-color: orange;
+}
+
+#map {
+  height: 700px;
+  width: 100%;
 }
 
 .footer {

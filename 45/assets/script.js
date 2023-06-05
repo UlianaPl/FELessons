@@ -88,9 +88,45 @@ $(function() {
     })
 })
 
+function initMap() {
+    // Координати центру карти
+    const center = { lat: 51.5074, lng: -0.1278 };
+  
+    // Створення карти
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: center,
+      zoom: 12,
+    });
+  
+    // Створення кастомного маркера
+    const marker = new google.maps.Marker({
+      position: center,
+      map: map,
+      icon: "path/to/custom-marker.png", // Шлях до зображення кастомного маркера
+      draggable: true, // Якщо ви хочете, щоб маркер був пересуваним
+    });
+  }
 
+  const image = document.querySelector('.section3__wrapper_one');
 
+  image.addEventListener('mouseenter', function() {
+    image.classList.add('zoomed');
+  });
+  
+  image.addEventListener('mouseleave', function() {
+    image.classList.remove('zoomed');
+  });
+  
 /*
+const icon = document.querySelector('.header__scroll_down');
+icon.addEventListener('click', smoothScroll);
+
+function smoothScroll() {
+    const targetElement = document.querySelector('.section1__container');
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+AIzaSyBN9XcuV-uz8KNK8lOg-r9lDuFXD7mS1Rs
 $(document).ready(function() {
     $('.multiple__slider').slick({
         infinite: true,
@@ -104,4 +140,14 @@ $(document).ready(function() {
 
 setInterval(function () {
     $('.slickPrev').slick("slickPrev");
-}, 2000);*/
+}, 2000);
+function initMap() {
+    new google.maps.Map(document.getElementById("map"), {
+      mapId: "8e0a97af9386fef",
+      center: { lat: 48.85, lng: 2.35 },
+      zoom: 12,
+    });
+  }
+  
+  window.initMap = initMap;
+  */
