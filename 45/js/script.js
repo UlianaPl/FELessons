@@ -1,3 +1,10 @@
+// Burger menu
+
+$('.burger-menu').on('click', function (e){
+    $('.burger-menu').toggleClass('active');
+    $('header').toggleClass('active');
+})
+
 let scroll = document.getElementById('scroll')
 if (scroll) {
     scroll.addEventListener('click',scrollToFunc)

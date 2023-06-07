@@ -1,0 +1,105 @@
+header {
+  .container {
+    display: grid;
+    grid-template-columns: 241px 1fr 160px;
+    height: 54px;
+    align-items: center;
+    .main-menu {
+      ul {
+        display: flex;
+        gap: 70px;
+        justify-content: center;
+        a {
+          font-family: 'Source Sans Pro', 'sans-serif';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          text-decoration: none;
+          line-height: 18px;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 14px;
+          &:before {
+            content: '';
+            display: block;
+            box-sizing: border-box;
+            width: 9px;
+            height: 9px;
+            border: 1px solid #FFFFFF;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .social {
+      display: flex;
+      justify-content: space-between;
+      a {
+        box-sizing: border-box;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .burger-menu {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  header .container .main-menu ul {
+    gap: unset;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  header .container {
+    padding: 0 15px;
+    box-sizing: border-box;
+    grid-template-columns: 241px 1fr 40px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo social burger"
+                         "menu menu menu";
+    .logo {
+      grid-area: logo;
+    }
+    .main-menu {
+      grid-area: menu;
+      display: none;
+    }
+    .social {
+      grid-area: social;
+      justify-content: center;
+      gap: 15px;
+    }
+    .burger-menu {
+      grid-area: burger;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      span {
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
+  }
+  header.active .container .main-menu {
+    display: block;
+    ul {
+      flex-direction: column;
+      padding-top: 31px;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+}
