@@ -1,3 +1,69 @@
+.main__slider {
+  height: 100vh;
+  position: relative;
+}
+.main__slider .slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+}
+.main__slider .slide img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.main__slider .slide h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.main__slider .slide p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  color: #fff;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.main__slider .slick-dots {
+  position: absolute;
+  right: 52px;
+  justify-content: center;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: unset;
+}
+.main__slider .slick-dots li button {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.main__slider .slick-dots li button:before {
+  display: none;
+}
+.main__slider .slick-dots li.slick-active button {
+  background-color: #fff;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -341,6 +407,12 @@ textarea {
   padding: 0.2em 0;
 }
 
+header {
+  position: fixed;
+  top: 53px;
+  width: 100%;
+  z-index: 999999;
+}
 header .container {
   display: grid;
   grid-template-columns: 241px 1fr 160px;

@@ -1,4 +1,8 @@
 header {
+  position: fixed;
+  top: 53px;
+  width: 100%;
+  z-index: 999999;
   .container {
     display: grid;
     grid-template-columns: 241px 1fr 160px;
