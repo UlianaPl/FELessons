@@ -72,7 +72,7 @@ function scrollFunc() {
 }
 
 $(function() {
-    $('.header__slider').slick({
+    $('.main__slider').slick({
         infinite: true,
         arrows: false,
         dots: true,
