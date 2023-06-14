@@ -67,6 +67,7 @@
 @media (max-width: 1025px) {
   .main__slider .slide h2 {
     font-size: 60px;
+    background-color: red;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/
