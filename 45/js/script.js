@@ -1,9 +1,12 @@
 // Burger menu
-
 $('.burger-menu').on('click', function (e){
     $('.burger-menu').toggleClass('active');
     $('header').toggleClass('active');
 })
+
+// Fancybox
+Fancybox.bind('[data-fancybox="gallery"]', {
+});
 
 let scroll = document.getElementById('scroll')
 if (scroll) {
