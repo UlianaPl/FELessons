@@ -40,6 +40,17 @@
       box-sizing: border-box;
     }
   }
+  .arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40.09px;
+    height: 40px;
+    z-index: 1;
+    background-color: red;
+    visibility: visible;
+  }
   .slick-dots {
     position: absolute;
     right: 52px;
@@ -63,8 +74,14 @@
     }
   }
 }
+
 @media (max-width: 1025px) {
   .main__slider .slide h2 {
   font-size: 60px;
+  }
+}
+@media (max-width: 840px) {
+  .main__slider .slide h2 {
+  font-size: 40px;
   }
 }

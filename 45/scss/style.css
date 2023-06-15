@@ -41,6 +41,17 @@
   padding: 0 15px;
   box-sizing: border-box;
 }
+.main__slider .arrow {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40.09px;
+  height: 40px;
+  z-index: 1;
+  background-color: red;
+  visibility: visible;
+}
 .main__slider .slick-dots {
   position: absolute;
   right: 52px;
@@ -67,7 +78,11 @@
 @media (max-width: 1025px) {
   .main__slider .slide h2 {
     font-size: 60px;
-    background-color: red;
+  }
+}
+@media (max-width: 840px) {
+  .main__slider .slide h2 {
+    font-size: 40px;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -413,7 +428,7 @@ header {
   position: fixed;
   top: 53px;
   width: 100%;
-  z-index: 999999;
+  z-index: 9;
 }
 header .container {
   display: grid;
@@ -743,42 +758,49 @@ header .container .burger-menu {
   overflow: hidden;
 }
 
-.section3 {
-  text-align: center;
+.gallery {
+  padding: 150px 0;
 }
-.section3__container {
-  width: 1170px;
-  margin: 0 auto;
-}
-.section3__title {
+.gallery h2 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
   line-height: 54px;
-  text-align: center;
   color: #2C4058;
-  margin-top: 180px;
-  margin-bottom: 90px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
 }
-.section3__title::before {
+.gallery h2:before {
   content: "";
-  color: #2C4058;
-  height: 1px;
-  border: solid;
   width: 100px;
-  position: absolute;
-  left: 535px;
-  top: -30px;
+  height: 0;
+  border: 1px solid #2C4058;
 }
-.section3__wrapper {
+.gallery .items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 6px;
 }
-.section3__wrapper_one {
+.gallery .items div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.gallery .items div img.zoom {
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+.gallery .items div:hover img.zoom {
+  display: block;
+}
+.gallery .items div:nth-child(1) {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -786,38 +808,35 @@ header .container .burger-menu {
   width: 100%;
   transition: transform 0.3s ease;
 }
-.section3__wrapper_one:hover {
-  transform: scale(1.2);
-}
-.section3__wrapper_two {
+.gallery .items div:nth-child(2) {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
   width: 100%;
 }
-.section3__wrapper_three {
+.gallery .items div:nth-child(3) {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
   width: 100%;
 }
-.section3__wrapper_four {
+.gallery .items div:nth-child(4) {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
 }
-.section3__wrapper_five {
+.gallery .items div:nth-child(5) {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
 }
-.section3__button {
+.gallery button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -833,7 +852,7 @@ header .container .burger-menu {
   margin-bottom: 150px;
   margin-left: 490px;
 }
-.section3__button:hover {
+.gallery button:hover {
   background-color: orange;
 }
 
