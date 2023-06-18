@@ -6,13 +6,18 @@ header {
   .container {
     display: grid;
     grid-template-columns: 241px 1fr 160px;
-    height: 54px;
+    min-height: 54px;
+    height: auto;
     align-items: center;
     .main-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       ul {
         display: flex;
-        gap: 70px;
-        justify-content: center;
+        width: 100%;
+        max-width: 500px;
+        justify-content: space-between;
         a {
           font-family: 'Source Sans Pro', 'sans-serif';
           font-style: normal;
@@ -62,16 +67,6 @@ header {
     gap: unset;
     justify-content: space-between;
   }
-}
-@media (max-width: 900px) {
-  header .container .main-menu ul a {
-&:first-child {
-  padding-left: 30px;
-  }
-&:last-child {
-padding-right: 30px;
-  }
- }
 }
 @media (max-width: 768px) {
   header .container {

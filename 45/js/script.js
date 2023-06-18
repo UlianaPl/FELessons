@@ -4,6 +4,19 @@ $('.burger-menu').on('click', function (e){
     $('header').toggleClass('active');
 })
 
+const swiper = new Swiper('.news-slider', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
 // Fancybox
 /*Fancybox.bind('[data-fancybox="gallery"]', {
 });*/
@@ -80,7 +93,7 @@ function scrollFunc() {
 }
 
 $(function() {
-    $('.main__slider').slick({
+    $('.top-slider').slick({
         infinite: true,
         arrows: false,
         dots: true,
