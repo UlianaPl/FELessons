@@ -41,6 +41,13 @@
   padding: 0 15px;
   box-sizing: border-box;
 }
+.main__slider .arrow {
+  position: absolute;
+  width: 40.09px;
+  height: 40px;
+  left: 450px;
+  top: 900px;
+}
 .main__slider .slick-dots {
   position: absolute;
   right: 52px;
@@ -67,6 +74,39 @@
 @media (max-width: 1025px) {
   .main__slider .slide h2 {
     font-size: 60px;
+  }
+}
+@media (max-width: 840px) {
+  .main__slider .slide h2 {
+    font-size: 50px;
+  }
+  .main__slider .slide p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 720px) {
+  .main__slider .slide h2 {
+    font-size: 34px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .main__slider .slide p {
+    font-size: 12px;
+  }
+  .main__slider .arrow {
+    left: 330px;
+  }
+}
+@media (max-width: 500px) {
+  .main__slider .slide h2 {
+    max-width: 250px;
+    line-height: normal;
+  }
+  .main__slider .slide p {
+    max-width: 300px;
+  }
+  .main__slider .arrow {
+    left: 200px;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -475,6 +515,14 @@ header .container .burger-menu {
     justify-content: space-between;
   }
 }
+@media (max-width: 900px) {
+  header .container .main-menu ul a:first-child {
+    padding-left: 30px;
+  }
+  header .container .main-menu ul a:last-child {
+    padding-right: 30px;
+  }
+}
 @media (max-width: 768px) {
   header .container {
     padding: 0 15px;
@@ -487,7 +535,6 @@ header .container .burger-menu {
     grid-area: logo;
   }
   header .container .main-menu {
-    grid-area: menu;
     display: none;
   }
   header .container .social {
@@ -509,13 +556,27 @@ header .container .burger-menu {
     background-color: #fff;
   }
   header.active .container .main-menu {
-    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(119, 137, 238);
   }
   header.active .container .main-menu ul {
     flex-direction: column;
-    padding-top: 31px;
-    align-items: flex-start;
+    padding: 15px;
     gap: 20px;
+  }
+}
+@media (max-width: 587px) {
+  header .container .social {
+    display: none;
+  }
+}
+@media (max-width: 587px) {
+  header .container .burger-menu {
+    margin-left: -420px;
   }
 }
 .container {
@@ -761,6 +822,7 @@ header .container .burger-menu {
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  padding-bottom: 90px;
 }
 .gallery h2:before {
   content: "";

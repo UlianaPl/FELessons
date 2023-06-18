@@ -37,19 +37,15 @@
       letter-spacing: 0.3em;
       color: #fff;
       padding: 0 15px;
-      box-sizing: border-box;
+      box-sizing: border-box ;
     }
   }
   .arrow {
-    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 40.09px;
     height: 40px;
-    z-index: 1;
-    background-color: red;
-    visibility: visible;
+    left: 450px;
+    top: 900px;
   }
   .slick-dots {
     position: absolute;
@@ -82,6 +78,35 @@
 }
 @media (max-width: 840px) {
   .main__slider .slide h2 {
-  font-size: 40px;
+  font-size: 50px;
+  }
+    .main__slider .slide p {
+      font-size: 16px;
+    }
+  }
+@media (max-width: 720px) {
+  .main__slider .slide h2 {
+  font-size: 34px;
+  padding: 0;
+  margin: 0 auto;
+  }
+    .main__slider .slide p {
+      font-size: 12px;
+  }
+    .main__slider .arrow {
+      left: 330px;
   }
 }
+@media (max-width: 500px) {
+  .main__slider .slide h2 {
+  max-width: 250px;
+  line-height: normal;
+  }
+    .main__slider .slide p {
+      max-width: 300px;
+    }
+    .main__slider .arrow {
+      left: 200px;
+  }
+  }
+

@@ -5,8 +5,13 @@ $('.burger-menu').on('click', function (e){
 })
 
 // Fancybox
-Fancybox.bind('[data-fancybox="gallery"]', {
-});
+/*Fancybox.bind('[data-fancybox="gallery"]', {
+});*/
+$(document).ready(function() {
+    $("[data-fancybox-trigger='gallery']").fancybox({
+      // Опції FancyBox, якщо необхідно
+    });
+  });
 
 let scroll = document.getElementById('scroll')
 if (scroll) {
