@@ -101,13 +101,16 @@ header {
       }
     }
   }
+  header.active {
+    background-color: rgb(119, 137, 238);
+    top: 0;
+  }
   header.active .container .main-menu {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(119, 137, 238);
     ul {
       flex-direction: column;
       padding: 15px;
@@ -119,9 +122,30 @@ header {
   header .container .social {
   display: none;
   }
-}
-@media (max-width: 587px) {
   header .container .burger-menu {
   margin-left: -420px;
+  }
+  header .container {
+    padding: 0 15px;
+    box-sizing: border-box;
+    grid-template-columns: 241px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "logo burger"
+                         "social"
+                         "menu menu";
+    .logo {
+      grid-area: logo;
+    }
+    .main-menu {
+      display: none;
+    }
+    .social {
+      grid-area: social;
+      justify-content: center;
+      gap: 15px;
+    }
+    .burger-menu {
+      grid-area: burger;
+    }
   }
 }
