@@ -48,7 +48,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  z-index: 9;
+  z-index: 8;
 }
 .main__slider .slick-dots {
   position: absolute;
@@ -148,6 +148,15 @@
   height: 0;
   border: 1px solid #FFFFFF;
 }
+.news .slider-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1370px;
+  position: relative;
+  margin: 0 auto;
+}
 .news .news-slider {
   margin-top: 90px;
 }
@@ -156,7 +165,6 @@
 }
 .news .news-slider .swiper-slide {
   background-color: #fff;
-  max-width: 370px;
   width: 100%;
 }
 .news .news-slider .swiper-slide .text {
@@ -232,13 +240,13 @@
 .news .news-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fff;
 }
-.news .news-slider .swiper-button-prev, .news .news-slider .swiper-button-next {
+.news .swiper-button-prev, .news .swiper-button-next {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 1px solid #fff;
 }
-.news .news-slider .swiper-button-prev:after, .news .news-slider .swiper-button-next:after {
+.news .swiper-button-prev:after, .news .swiper-button-next:after {
   font-size: 15px;
   color: #fff;
 }
@@ -650,12 +658,6 @@ header .container .burger-menu {
   display: none;
 }
 
-@media (max-width: 860px) {
-  header .container .main-menu ul {
-    gap: unset;
-    justify-content: space-between;
-  }
-}
 @media (max-width: 768px) {
   header .container {
     padding: 0 15px;
@@ -691,47 +693,35 @@ header .container .burger-menu {
   header.active {
     background-color: rgb(119, 137, 238);
     top: 0;
+    padding-top: 53px;
   }
   header.active .container .main-menu {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
   }
   header.active .container .main-menu ul {
     flex-direction: column;
     padding: 15px;
     gap: 20px;
+    max-width: 100%;
+  }
+  header.active .container .main-menu ul a {
+    justify-content: flex-start;
   }
 }
-@media (max-width: 587px) {
-  header .container .social {
-    display: none;
-  }
-  header .container .burger-menu {
-    margin-left: -420px;
-  }
+@media (max-width: 475px) {
   header .container {
-    padding: 0 15px;
-    box-sizing: border-box;
-    grid-template-columns: 241px 1fr;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "logo burger" "social" "menu menu";
-  }
-  header .container .logo {
-    grid-area: logo;
-  }
-  header .container .main-menu {
-    display: none;
+    grid-template-areas: "logo logo burger" "menu menu menu" "social social social";
   }
   header .container .social {
-    grid-area: social;
-    justify-content: center;
-    gap: 15px;
+    display: none;
   }
-  header .container .burger-menu {
-    grid-area: burger;
+  .active .container .social {
+    display: flex;
+    padding-bottom: 15px;
   }
 }
 .container {

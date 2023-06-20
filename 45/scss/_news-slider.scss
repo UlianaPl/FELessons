@@ -1,7 +1,6 @@
 .news {
   position: relative;
   height: 978px;
-  //height: auto;
   padding: 120px 0;
   img.bg {
     position: absolute;
@@ -35,6 +34,15 @@
       border: 1px solid #FFFFFF;
     }
   }
+  .slider-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1370px;
+    position: relative;
+    margin: 0 auto;
+  }
   .news-slider {
     margin-top: 90px;
     .swiper-wrapper {
@@ -42,7 +50,6 @@
     }
     .swiper-slide {
       background-color: #fff;
-      max-width: 370px;
       width: 100%;
     .text {
       padding: 0 20px 30px 20px;
@@ -118,15 +125,15 @@
         background-color: #fff;
       }
     }
-    .swiper-button-prev, .swiper-button-next {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: 1px solid #fff
-    }
-    .swiper-button-prev:after, .swiper-button-next:after {
-      font-size: 15px;
-      color: #fff;
-    }
+  }
+  .swiper-button-prev, .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff
+  }
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 15px;
+    color: #fff;
   }
 }
