@@ -21,7 +21,7 @@ const swiper = new Swiper('.news-slider', {
 /*Fancybox.bind('[data-fancybox="gallery"]', {
 });*/
 $(document).ready(function() {
-    $("[data-fancybox-trigger='gallery']").fancybox({
+    $("[data-fancybox-trigger='gallery]").fancybox({
       // Опції FancyBox, якщо необхідно
     });
   });
@@ -93,7 +93,7 @@ function scrollFunc() {
 }
 
 $(function() {
-    $('.top-slider').slick({
+    $('.main__slider').slick({
         infinite: true,
         arrows: false,
         dots: true,
