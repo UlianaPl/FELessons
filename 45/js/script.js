@@ -6,7 +6,7 @@ $('.burger-menu').on('click', function (e){
 
 // Slick slider
 $(function() {
-    $('.main__slider').slick({
+    $('.main__slider .top-slider').slick({
         infinite: true,
         arrows: false,
         dots: true,
@@ -14,7 +14,6 @@ $(function() {
         verticalSwiping: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-
     })
 })
 
@@ -44,14 +43,18 @@ const swiper = new Swiper('.news-slider', {
     }
 });
 
-// Fancybox
-/*Fancybox.bind('[data-fancybox="gallery"]', {
-});*/
-// $(document).ready(function() {
-//     $("[data-fancybox-trigger='gallery']").fancybox({
-//       // Опції FancyBox, якщо необхідно
-//     });
-//   });
+Fancybox.bind('[data-fancybox="gallery"]', {
+    on: {
+      done: (fancybox) => {
+        // here `fancybox` refers to the current instance
+      },
+    },
+  });
+/*$(document).ready(function() {
+     $("[data-fancybox-trigger='gallery']").fancybox({
+       // Опції FancyBox, якщо необхідно
+     });
+   });
 
 // let scroll = document.getElementById('scroll')
 // if (scroll) {

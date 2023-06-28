@@ -26,7 +26,7 @@
 }
 &_right {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: 20px;
     &-socials {
@@ -34,8 +34,10 @@
         height: 40px;
         border: 1px solid #FFFFFF;
         border-radius: 30px;
-        padding-top: 11px;
-        padding-left: 12px;
+        svg {
+            padding-top: 13px;
+            padding-left: 13px;
+        }
     &:hover {
         background-color: orange;
     }
