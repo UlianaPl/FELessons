@@ -18,8 +18,9 @@ function MoviesList () {
     const [total_pages, setTotalPages] = useState(1);
     const [search, setSearch] = useState("");
     const [genre_ids, setGenreIds] = useState([]);
+    const [genre, setGenre] = useState("");
    
-async function fetchData(currentPage, search = null) {
+async function fetchData(currentPage, search = null, genre) {
 
     axios.get(genresURL, {
         params: {
@@ -40,6 +41,7 @@ async function fetchData(currentPage, search = null) {
                     params: {
                         api_key:apiKey,
                         page: currentPage,
+                        with_genres: genre,
                     }
                 })
                         .then(response => {
@@ -87,20 +89,21 @@ async function fetchData(currentPage, search = null) {
         
         const handleChange = (event, value) => {
             setPage(value);
-            fetchData(value, search);
+            fetchData(value, search,genre);
         };
 
         const handleSubmit = (event) => {
             event.preventDefault();
-            fetchData(page, search);
+            fetchData(page, search, genre);
         };
 
     if (error) {
         return( <div className="error"> <h2>{ error }</h2> </div>)
-    } else if (movies) {
+    } else if (movies && genre_ids) {
         const items = movies.map((movie, index) => {
           let genre = [];
           let genreids = movie.genre_ids;
+          if (genre_ids) {
           for (let i = 0; i < genreids.length; i++) {
             let id = genreids[i];
             for (let g = 0; g < genre_ids.length; g++) {
@@ -109,7 +112,8 @@ async function fetchData(currentPage, search = null) {
                     genre.push(genre_ids[g].name);
                 }
               }
-          }
+            }
+          }  
           genre = genre.toString();
 
         return (
@@ -122,6 +126,9 @@ async function fetchData(currentPage, search = null) {
         )
     });
 
+    const genre_option = genre_ids.map((genre, index) =>
+         <option value={genre.id}>{genre.name}</option>
+    );
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -130,6 +137,12 @@ async function fetchData(currentPage, search = null) {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             />
+            </label>
+            <label>
+                <select value={genre} onChange={(e) => setGenre(e.target.value)}>
+                   <option value="">All Genres</option>
+                   {genre_option}
+                </select>
             </label>
             <input type="submit" 
                    value="Search" 
