@@ -1,0 +1,76 @@
+.movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.movies .movie img {
+  width: 100%;
+  height: auto;
+}
+
+.search {
+  background-color: rgb(163, 189, 228);
+}
+
+main {
+  padding: 2rem 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr 200px;
+  align-items: center;
+  min-height: 80px;
+  background-color: #203657;
+}
+header .logo {
+  color: #fff;
+}
+header .burger-menu {
+  flex-direction: column;
+  gap: 10px;
+}
+header .burger-menu span {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+header nav ul a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 150px 1fr 50px;
+    grid-template-areas: "logo search burger" "menu menu menu";
+    grid-template-rows: auto auto;
+  }
+  .logo {
+    grid-area: logo;
+  }
+  .search {
+    grid-area: search;
+  }
+  nav {
+    grid-area: menu;
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+    grid-area: burger;
+  }
+}
+@media (max-width: 768px) {
+  header.active nav {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,7 @@
 import MainMenu from "../nav/MainMenu";
+import Search from "../layouts/Search";
+import {useState} from "react";
+import logo from "../../img/logo.png"
 
 const links = [
         {
@@ -19,10 +22,30 @@ const links = [
         },
     ];
 
-function header () {
+function Header () {
+    const [isActive, setActive] = useState(false);
+
+    function toggleBurger () {
+        setActive(!isActive);
+    }
     return (
-     <header><MainMenu links={links}/></header>
+     <header className={isActive ? 'active' : ''}>
+        <div className="logo">
+            <img src={logo} alt="logo"></img>
+        </div>
+        <MainMenu links={links}/>
+        <div className="search">
+            <Search />
+        </div>
+        <div className={isActive ? 'burger-menu active' : 'burger-menu'}
+             onClick={toggleBurger}
+             >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </header>
     )
  }
  
- export default header;
+ export default Header;

@@ -1,4 +1,5 @@
 import {useEffect} from "react";
+import MainSlider from "../layouts/MainSlider";
 
 function Home () {
     useEffect(() => {
@@ -6,7 +7,9 @@ function Home () {
     },[]);
     
     return (
-        <div>Home Page</div>
+        <div>
+            <MainSlider />
+        </div>
     )
 }
 
