@@ -1,27 +1,32 @@
-import MainMenu from "../nav/MainMenu";
+import NavWithImg from "../nav/NavWithImg";
+import instagram from '../../img/insta.png';
+import facebook from '../../img/fb.png';
+import twitter from '../../img/twitter.png';
 
-const links = [
+const links = {
+    class: 'social',
+    links: [
         {
-            link: "Home",
-            path: "/"
+            link: "instagram",
+            path: "/",
+            img: instagram,
         },
         {
-            link: "Movies",
-            path: "/movies"
+            link: "facebook",
+            path: "/",
+            img: facebook,
         },
         {
-            link: "About",
-            path: "/about"
+            link: "twitter",
+            path: "/",
+            img: twitter,
         },
-        {
-            link: "Contacts",
-            path: "/contacts"
-        },
-    ];
+    ]
+}
 
 function footer () {
    return (
-    <footer><MainMenu links={links}/></footer>
+    <footer><NavWithImg links={links} class={links.class}/></footer>
    )
 }
 

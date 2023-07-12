@@ -85,16 +85,22 @@ async function fetchData(currentPage, search = null, genre) {
           
         useEffect(() => {
             fetchData(page);
-        }, []);
+        }, [page]);
         
         const handleChange = (event, value) => {
             setPage(value);
-            fetchData(value, search,genre);
+            fetchData(value,search,genre);
         };
 
         const handleSubmit = (event) => {
             event.preventDefault();
             fetchData(page, search, genre);
+        };
+
+        const setWishList = (event) => {
+            event.preventDefault();
+            let id = event.target.attributes.getNamedItem('data-id').value;
+            window.localStorage.setItem('movie-'+id, id);
         };
 
     if (error) {
@@ -122,12 +128,13 @@ async function fetchData(currentPage, search = null, genre) {
             <h2>{movie.title}</h2>
             <p>{genre}</p>
             <Link to={"/movie/" + movie.id}>More</Link>
+            <button onClick={setWishList} data-id={movie.id}>Like</button>
           </div>
         )
     });
 
     const genre_option = genre_ids.map((genre, index) =>
-         <option value={genre.id}>{genre.name}</option>
+         <option key={genre.id} value={genre.id}>{genre.name}</option>
     );
     return (
         <div>

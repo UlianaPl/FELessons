@@ -7,6 +7,7 @@ import NotFoundPage from './components/pages/NotFoundPage';
 import Layout from './components/layouts/Layout';
 import MoviePage from "./components/pages/MoviePage";
 import SearchPage from "./components/pages/SearchPage";
+import WishListPage from "./components/pages/WishListPage";
 import "reset-css";
 import "./css/style.css";
 
@@ -21,6 +22,7 @@ function App() {
       <Route path="/about" element={<AboutPage />}/>
       <Route path="/contacts" element={<ContactsPage />}/>
       <Route path="/movies" element={<MoviesPage />}/>
+      <Route path="/wishlist" element={<WishListPage />}/>
       <Route path="*" element={<NotFoundPage />}/>
     </Route>
     </Routes>
