@@ -34,6 +34,10 @@ const WishList = () => {
     }
   }, []);
 
+  const setWishList = (movieId) => {
+    // Implement the logic for adding/removing movies from the wishlist
+  };
+
   if (error) {
     return (
       <div className="error">
@@ -47,7 +51,9 @@ const WishList = () => {
           <img src={imgBaseURL + movie.poster_path} alt={movie.title} />
           <h2>{movie.title}</h2>
           <Link to={"/movie/" + movie.id}>More</Link>
-          <button onClick={setWishList} data-id={movie.id}>More</button>
+          <button onClick={() => setWishList(movie.id)} data-id={movie.id}>
+            More
+          </button>
         </div>
       );
     });

@@ -29,7 +29,7 @@ function Header () {
         setActive(!isActive);
     }
     return (
-     <header className={isActive ? 'active' : ''}>
+     <header className={isActive ? 'active container' : 'container'}>
         <div className="logo">
             <img src={logo} alt="logo"></img>
         </div>

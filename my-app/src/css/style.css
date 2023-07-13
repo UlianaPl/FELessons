@@ -12,8 +12,117 @@
   background-color: rgb(163, 189, 228);
 }
 
+footer {
+  background-color: #203657;
+  padding: 60px 0;
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .footer-top .mail, footer .footer-top .phone {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  column-gap: 5px;
+}
+footer .footer-top a {
+  font-size: calc(27px + 18 + ((100vw - 320px) / 1090));
+  color: #fff;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-out 0s;
+  text-decoration: unset;
+  font-family: "Monserrat, sans-serif";
+}
+footer .footer-top a:hover {
+  color: rgb(163, 189, 228);
+}
+footer .footer-top span {
+  font-size: 16px;
+  color: #777;
+  line-height: 2.2;
+}
+footer .footer-wrapper {
+  margin: 40px 0;
+  position: relative;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer .footer-wrapper .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+footer .footer-wrapper .footer-content {
+  min-height: 195px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+footer .footer-wrapper .footer-content .address {
+  width: 100%;
+  max-width: 400px;
+}
+footer .footer-wrapper .footer-content .address h2 {
+  font-weight: 600;
+  color: #fff;
+  font-family: "Motserrat", sans-serif;
+}
+footer .footer-wrapper .footer-content .address p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Motserrat", sans-serif;
+  margin-bottom: 15px;
+  line-height: 26px;
+}
+footer .footer-wrapper .footer-content .social ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-wrapper .footer-content .social ul a {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: unset;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer-wrapper .footer-content .social ul a img {
+  width: 40px;
+  height: 40px;
+  color: #203657;
+}
+
+@media (max-width: 768px) {
+  footer .footer-top {
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer .footer-wrapper .footer-content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 15px;
+  }
+}
 main {
   padding: 2rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1410px;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 header {
