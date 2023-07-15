@@ -1,0 +1,88 @@
+header {
+  background-color: #203657;
+  .container {
+    display: grid;
+    grid-template-columns: 150px 1fr 200px;
+    align-items: center;
+    min-height: 80px;
+    .logo {
+      width: 100%;
+    }
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      ul {
+        display: flex;
+        max-width: 400px;
+        width: 100%;
+        justify-content: space-between;
+      }
+      a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+    .btn {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      a {
+        color: #fff;
+        text-decoration: unset;
+      }
+    }
+  }
+  .burger-menu {
+    flex-direction: column;
+    gap: 10px;
+    span {
+      width: 35px;
+      height: 2px;
+      background-color: #fff;
+    }
+  }
+}
+@media (max-width: 768px) {
+  header {
+    .container {
+      grid-template-columns: 150px 1fr 50px;
+      grid-template-areas: "logo btn burger"
+                         "menu menu menu";
+      grid-template-rows: 80px auto;
+      .logo {
+        grid-area: logo;
+      }
+      .btn {
+        grid-area: btn;
+      }
+      nav {
+        grid-area: menu;
+        display: none;
+      }
+      .burger-menu {
+        grid-area: burger;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  header.active {
+    .container {
+      nav {
+        grid-area: menu;
+        display: flex;
+        ul {
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}

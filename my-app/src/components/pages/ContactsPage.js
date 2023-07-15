@@ -1,4 +1,5 @@
 import {useEffect} from "react";
+import ContactForm from "../form/ContactForm";
 
 function Contacts () {
     useEffect(() => {
@@ -6,7 +7,10 @@ function Contacts () {
     },[]);
 
     return (
-        <div>Contacts Page</div>
+        <div className={'contact-page container'}>
+            <h2>Contacts Page</h2>
+            <ContactForm />
+        </div>
     )
 }
 

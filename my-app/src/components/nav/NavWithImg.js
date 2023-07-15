@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import defaultImg from '../../img/fb.png';
+import defaultImg from '../../img/facebook.png';
 
 function NavWithImg (props) {
   const listItems = props.links.links.map((item, index) => {

@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
 import NavWithImg from "../nav/NavWithImg";
-import instagram from '../../img/insta.png';
-import facebook from '../../img/fb.png';
+import instagram from '../../img/instagram.png';
+import facebook from '../../img/facebook.png';
 import twitter from '../../img/twitter.png';
 import logo from '../../img/logo.png';
+const currentYear = new Date().getFullYear();
 
 const links = {
     class: 'social',
@@ -40,28 +42,21 @@ const phone = {
 function footer () {
    return (
     <footer>
-        <div className={'footer-top container'}>
-        <div className={'mail'}>
-            <a href={"mailTo:"+ email.mail}>{email.mail}</a>
-            <span>{email.description}</span>
-        </div>
-        <div className={'phone'}>
-        <a href={"tel.:" + phone.phone}>{phone.phone}</a>
-            <span>{phone.description}</span>
-        </div>
-        </div>
-        <div className={'footer-wrapper'}>
         <div className={'footer-content container'}>
-           <img className={'logo'} src={logo} alt="logo"></img>
+          <Link className={'logo'} to={"/"}>
+            <img src={logo} alt="logo" />
+            <h2>What is Lorem Ipsum?</h2>
+          </Link>
            <div className={'address'}>
             <h2>{address.title}</h2>
             <p>{address.description}</p>
            </div>
            <NavWithImg links={links} class={links.class}/>
         </div>
-        <div className={'footer-copyright'}></div>
-        </div>
-        </footer>
+        <div className={'footer-copyright'}>
+        © { currentYear } <Link to={'/'}>More.tv</Link> All Rights Reserved.
+      </div>
+    </footer>
    )
 }
 
