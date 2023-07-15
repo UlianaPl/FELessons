@@ -604,6 +604,7 @@ header .container {
   display: grid;
   grid-template-columns: 241px 1fr 160px;
   min-height: 54px;
+  width: 100%;
   height: auto;
   align-items: center;
   background-color: #9dcaf1;
@@ -621,6 +622,7 @@ header .container .main-menu ul {
   display: flex;
   width: 100%;
   max-width: 500px;
+  width: 100%;
   justify-content: space-between;
 }
 header .container .main-menu ul a {
@@ -704,6 +706,16 @@ header .container .burger-menu {
     width: 40px;
     height: 2px;
     background-color: #fff;
+    transition: transform 0.3s;
+  }
+  header .container .burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  header .container .burger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  header .container .burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
   }
   header.active {
     background-color: rgb(119, 137, 238);

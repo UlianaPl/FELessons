@@ -4,6 +4,14 @@ $('.burger-menu').on('click', function (e){
     $('header').toggleClass('active');
 })
 
+const burgerMenu = document.querySelector('.burger-menu');
+const menu = document.querySelector('.main-menu ul');
+
+burgerMenu.addEventListener('click', () => {
+  burgerMenu.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
 // Slick slider
 $(function() {
     $('.main__slider .top-slider').slick({

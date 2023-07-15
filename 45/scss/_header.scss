@@ -7,6 +7,7 @@ header {
     display: grid;
     grid-template-columns: 241px 1fr 160px;
     min-height: 54px;
+    width: 100%;
     height: auto;
     align-items: center;
     background-color: #9dcaf1;
@@ -22,6 +23,7 @@ header {
         display: flex;
         width: 100%;
         max-width: 500px;
+        width: 100%;
         justify-content: space-between;
         a {
           font-family: 'Source Sans Pro', 'sans-serif';
@@ -105,7 +107,19 @@ header {
         width: 40px;
         height: 2px;
         background-color: #fff;
+        transition: transform 0.3s;
       }
+    }
+    .burger-menu.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+    
+    .burger-menu.active span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .burger-menu.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -6px);
     }
   }
   header.active {
@@ -146,3 +160,4 @@ header {
     }
   }
 }
+
