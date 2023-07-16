@@ -34,7 +34,7 @@ function ContactForm () {
                   required: "Required",
                   pattern: {
                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: "invalid email address"
+                    message: "Invalid email address"
                   }
                 })}
             />
@@ -70,7 +70,7 @@ function ContactForm () {
           />
           <p className={'error-message'}>{errors.message && errors.message.message}</p>
         </div>
-        <button className="form-item" type="submit">Submit</button>
+        <button className="form-item button" type="submit">Submit</button>
       </form>
   )
 }
