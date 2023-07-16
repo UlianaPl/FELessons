@@ -3,7 +3,11 @@ import SearchPopup from "./SearchPopUp";
 import {useState} from "react";
 import logo from "../../img/logo.png"
 import heart from "../../img/svg/heart.svg"
+import NavWithImg from "../nav/NavWithImg";
 import { Link } from 'react-router-dom';
+import instagram from "../../img/instagram.png";
+import facebook from "../../img/facebook.png";
+import twitter from "../../img/twitter.png";
 
 const links = [
         {
@@ -23,6 +27,26 @@ const links = [
             path: "/contacts"
         },
     ];
+const linksSocial = {
+  class: 'social',
+  links: [
+    {
+      link: "",
+      path: "/",
+      img: instagram,
+    },
+    {
+      link: "",
+      path: "/",
+      img: facebook,
+    },
+    {
+      link: "",
+      path: "/",
+      img: twitter,
+    },
+  ]
+}
 
 function Header () {
     const [isActive, setActive] = useState(false);
@@ -43,8 +67,11 @@ function Header () {
     return (
      <header className={isActive ? 'active' : ''}>
        <div className="container">
-         <img className="logo" src={logo} alt="logo"/>
+         <Link className="logo" to={"/"}>
+           <img src={logo} alt="logo"/>
+         </Link>
          <MainMenu links={links}/>
+         <NavWithImg links={linksSocial} class={linksSocial.class}/>
          <div className="btn">
            <SearchPopup />
            <Link to="/wishlist">

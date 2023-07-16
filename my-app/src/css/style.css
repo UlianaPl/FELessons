@@ -17,11 +17,11 @@ header {
 }
 header .container {
   display: grid;
-  grid-template-columns: 150px 1fr 200px;
+  grid-template-columns: 150px 1fr 200px 200px;
   align-items: center;
   min-height: 80px;
 }
-header .container .logo {
+header .container .logo img {
   width: 100%;
 }
 header .container nav {
@@ -39,6 +39,13 @@ header .container nav a {
   color: #fff;
   font-size: 20px;
   text-decoration: none;
+}
+header .container .social {
+  display: flex;
+}
+header .container .social img {
+  width: 24px;
+  height: 24px;
 }
 header .container .btn {
   display: flex;

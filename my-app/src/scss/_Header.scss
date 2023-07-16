@@ -2,10 +2,10 @@ header {
   background-color: #203657;
   .container {
     display: grid;
-    grid-template-columns: 150px 1fr 200px;
+    grid-template-columns: 150px 1fr 200px 200px;
     align-items: center;
     min-height: 80px;
-    .logo {
+    .logo  img {
       width: 100%;
     }
     nav {
@@ -22,6 +22,13 @@ header {
         color: #fff;
         font-size: 20px;
         text-decoration: none;
+      }
+    }
+    .social {
+      display: flex;
+      img {
+        width: 24px;
+        height: 24px;
       }
     }
     .btn {

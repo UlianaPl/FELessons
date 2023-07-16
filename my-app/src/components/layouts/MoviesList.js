@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 import Pagination from '@mui/material/Pagination/index';
 import Stack from '@mui/material/Stack/index';
 import Typography from '@mui/material/Typography/index';
+import like from "../../img/svg/like.svg"
+import dislike from "../../img/svg/dislike.svg"
 
 const baseURL = 'https://api.themoviedb.org/3/discover/movie';
 const apiKey = 'b03d508a9e788070ca877f98f3f8bbba';
@@ -105,20 +107,20 @@ function MoviesList() {
       genre = genre.toString();
       return (
           <div key={index} className="movie">
-            <img src={imgBaseURL + movie.poster_path}/>
-            <h2>{movie.title}</h2>
-            <p>{genre}</p>
-            <Link to={"/movie/" + movie.id}>More</Link>
-            <button onClick={setWishList} data-id={movie.id}>{liked.includes(movie.id) ? 'dislike' : 'like'}</button>
+            <Link to={"/movie/" + movie.id}>
+              <img src={imgBaseURL + movie.poster_path}/>
+              <h2>{movie.title}</h2>
+              <p>{genre}</p>
+              <img src={liked.includes(movie.id) ? dislike : like} onClick={setWishList} data-id={movie.id} />
+            </Link>
           </div>)
-
     });
     return (
         <div>
           <div className="movies">{items}</div>
           <Stack spacing={2}>
             <Typography>Page: {page}</Typography>
-            <Pagination count={total_pages} page={page} onChange={handleChange}/>
+            <Pagination className={'my-pagination'} count={total_pages} page={page} onChange={handleChange}/>
           </Stack>
         </div>
     )
