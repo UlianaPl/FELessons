@@ -1,26 +1,27 @@
 import { Link } from 'react-router-dom';
 import NavWithImg from "../nav/NavWithImg";
-import instagram from '../../img/instagram.png';
-import facebook from '../../img/facebook.png';
-import twitter from '../../img/twitter.png';
+import instagram from '../../img/insta.png';
+import facebook from '../../img/fb.png';
+import twitter from '../../img/twit.png';
 import logo from '../../img/logo.png';
+
 const currentYear = new Date().getFullYear();
 
 const links = {
     class: 'social',
     links: [
         {
-            link: "instagram",
+            link: "",
             path: "/",
             img: instagram,
         },
         {
-            link: "facebook",
+            link: "",
             path: "/",
             img: facebook,
         },
         {
-            link: "twitter",
+            link: "",
             path: "/",
             img: twitter,
         },
@@ -31,8 +32,8 @@ const email = {
     description:'Immediate response',
 }
 const address = {
-    title:'Main location:',
-    description:'79000 Lviv',
+    title:'',
+    description:'',
 }
 const phone = {
     phone:'+380999999999',
@@ -45,7 +46,6 @@ function footer () {
         <div className={'footer-content container'}>
           <Link className={'logo'} to={"/"}>
             <img src={logo} alt="logo" />
-            <h2>What is Lorem Ipsum?</h2>
           </Link>
            <div className={'address'}>
             <h2>{address.title}</h2>

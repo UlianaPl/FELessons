@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 import Pagination from '@mui/material/Pagination/index';
 import Stack from '@mui/material/Stack/index';
 import Typography from '@mui/material/Typography/index';
-import like from "../../img/svg/like.svg"
-import dislike from "../../img/svg/dislike.svg"
+import like from "../../img/icon_like.png"
+import dislike from "../../img/icon_dislike.png"
 
 const baseURL = 'https://api.themoviedb.org/3/discover/movie';
 const apiKey = 'b03d508a9e788070ca877f98f3f8bbba';

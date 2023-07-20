@@ -2,14 +2,47 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+  background-color: #5f646e;
+  padding: 20px;
+}
+.movies .movie a {
+  text-decoration: none;
+}
+.movies .movie a h2 {
+  color: #fff;
+}
+.movies .movie a h2:hover {
+  color: #96b5d0;
+}
+.movies .movie a p {
+  color: #fff;
+}
+.movies .movie a p:hover {
+  color: #96b5d0;
+}
+.movies .movie a img:last-child {
+  width: 24px;
+  height: 24px;
 }
 .movies .movie img {
   width: 100%;
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .movies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .search {
-  background-color: rgb(163, 189, 228);
+  background-color: #5f646e;
+}
+.search .movie a {
+  text-decoration: none;
+}
+.search .movie a h2 {
+  color: #fff;
 }
 
 header {
@@ -31,14 +64,20 @@ header .container nav {
 }
 header .container nav ul {
   display: flex;
-  max-width: 400px;
+  max-width: 350px;
   width: 100%;
   justify-content: space-between;
 }
 header .container nav a {
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none;
+}
+header .container nav a:hover {
+  color: #96b5d0;
+}
+header .container nav a:focus {
+  text-decoration: underline;
 }
 header .container .social {
   display: flex;
@@ -46,6 +85,9 @@ header .container .social {
 header .container .social img {
   width: 24px;
   height: 24px;
+}
+header .container .social ul {
+  margin-left: 80px;
 }
 header .container .btn {
   display: flex;
@@ -55,6 +97,9 @@ header .container .btn {
 header .container .btn img {
   width: 24px;
   height: 24px;
+}
+header .container .btn img:focus {
+  color: #96b5d0;
 }
 header .container .btn a {
   color: #fff;
@@ -72,12 +117,15 @@ header .burger-menu span {
 
 @media (max-width: 768px) {
   header .container {
-    grid-template-columns: 150px 1fr 50px;
-    grid-template-areas: "logo btn burger" "menu menu menu";
+    grid-template-columns: 150px 1fr 1fr 50px;
+    grid-template-areas: "logo social btn burger" "menu menu menu menu";
     grid-template-rows: 80px auto;
   }
   header .container .logo {
     grid-area: logo;
+  }
+  header .container .social {
+    grid-area: social;
   }
   header .container .btn {
     grid-area: btn;
@@ -90,6 +138,16 @@ header .burger-menu span {
     grid-area: burger;
     display: flex;
     align-items: center;
+  }
+}
+@media (max-width: 768px) and (max-width: 586px) {
+  header .container .social {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header.active .container .social {
+    display: none;
   }
   header.active .container nav {
     grid-area: menu;
@@ -139,7 +197,7 @@ footer .footer-content .address p {
 }
 footer .footer-content .social ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
 }
 footer .footer-content .social ul a {
@@ -216,10 +274,14 @@ footer .footer-copyright a {
 .contact-page .content p {
   margin-bottom: 20px;
 }
+.contact-page .content p:last-child {
+  text-decoration: underline;
+}
 .contact-page h2 {
   margin-bottom: 30px;
   padding-top: 30px;
-  font-size: 24px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .form-item input,
@@ -244,6 +306,114 @@ form {
 .about {
   background-color: #5f646e;
   color: #fff;
+  text-align: center;
+}
+.about .content {
+  font-size: 16px;
+}
+.about .content div img {
+  width: 100%;
+  max-width: 500px;
+}
+.about .content div h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.about .content div p:last-child {
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+body .MuiModal-root .MuiBox-root {
+  background-color: #5f646e;
+}
+body .MuiModal-root .MuiBox-root form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+body .MuiModal-root .MuiBox-root form label {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+body .MuiModal-root .MuiBox-root form label input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+body main .home {
+  background-color: #5f646e;
+  padding: 20px 20px 40px 20px;
+}
+body main .home .swiper .swiper-pagination {
+  margin-bottom: -20px;
+}
+body main .home .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+body main .home .swiper .swiper-button-prev::after {
+  display: none;
+}
+body main .home .swiper .swiper-button-next {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+body main .home .swiper .swiper-button-next::after {
+  color: #fff;
+}
+body main .MuiStack-root {
+  background-color: #5f646e;
+  padding-bottom: 40px;
+  align-items: center;
+}
+body main .MuiStack-root nav ul li .MuiButtonBase-root {
+  color: #fff;
+}
+body main .MuiStack-root .MuiTypography-root {
+  display: none;
+}
+body main .movie {
+  background-color: #5f646e;
+  padding: 20px 0 20px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+}
+body main .movie .single-movie h2 {
+  color: #fff;
+  font-size: 40px;
+  max-width: 400px;
+  margin-bottom: 50px;
+}
+body main .movie .single-movie p {
+  color: #fff;
+  font-size: 32px;
+  max-width: 400px;
+}
+body .not-found {
+  background-color: #5f646e;
+  color: #fff;
+  min-height: 600px;
+  text-align: center;
+}
+body .not-found h2 {
+  margin-bottom: 80px;
+  padding-top: 120px;
+  font-size: 120px;
+}
+body .not-found p {
+  font-size: 60px;
 }
 
 .container {

@@ -1,5 +1,8 @@
+import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -48,7 +51,15 @@ function MainSlider() {
             ));
 
         return (
-            <Swiper spaceBetween={50} slidesPerView={2}>
+            <Swiper 
+            modules={[Navigation, Pagination, Scrollbar]}
+            spaceBetween={50} 
+            slidesPerView={2}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')} >
                 {items}
             </Swiper>
         );

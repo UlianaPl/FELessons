@@ -7,7 +7,10 @@ function NotFound () {
     },[]);
     
     return (
-        <div>404 Page</div>
+        <div className='not-found'>
+            <h2>404 Page</h2>
+            <p>Oops!...I did it again</p>
+        </div>
     )
 }
 
