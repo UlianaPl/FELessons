@@ -14,6 +14,13 @@ function Movies () {
 
 export default Movies;
 
+
+
+
+
+
+
+
 /*import {useEffect} from "react";
 
 function Movies () {

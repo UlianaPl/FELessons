@@ -5,9 +5,9 @@ import logo from "../../img/logo.png"
 import heart from "../../img/svg/heart.svg"
 import NavWithImg from "../nav/NavWithImg";
 import { Link } from 'react-router-dom';
-import instagram from "../../img/instagram.png";
-import facebook from "../../img/facebook.png";
-import twitter from "../../img/twitter.png";
+import instagram from "../../img/insta.png";
+import facebook from "../../img/fb.png";
+import twitter from "../../img/twit.png";
 
 const links = [
         {

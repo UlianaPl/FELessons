@@ -1,3 +1,11 @@
 .search {
-background-color: rgb(163, 189, 228);
+    background-color: #5f646e;
+    .movie {
+        a {
+          text-decoration: none;
+            h2 {
+                color: #fff;
+            }
+        }
+    }
 }

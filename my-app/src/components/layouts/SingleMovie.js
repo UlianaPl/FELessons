@@ -34,9 +34,12 @@ async function fetchData() {
         return( <div className="error"> <h2>{ error }</h2> </div>)
     } else if (movie) {
     return (
-        <div className="movie">
+        <div className='movie'>
             <img src={imgBaseURL + movie.poster_path} alt={movie.title} />
-            <h2>{movie.title}</h2>
+            <div className='single-movie'>
+            <h2>{movie.title}</h2> 
+            <p>{movie.overview}</p>
+            </div>
         </div>
     )
 }

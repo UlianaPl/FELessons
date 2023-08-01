@@ -14,14 +14,20 @@ header {
       justify-content: flex-end;
       ul {
         display: flex;
-        max-width: 400px;
+        max-width: 350px;
         width: 100%;
         justify-content: space-between;
       }
       a {
         color: #fff;
-        font-size: 20px;
+        font-size: 16px;
         text-decoration: none;
+        &:hover {
+          color: #96b5d0;
+        }
+        &:focus {
+          text-decoration: underline;
+        }
       }
     }
     .social {
@@ -29,6 +35,9 @@ header {
       img {
         width: 24px;
         height: 24px;
+      }
+      ul {
+        margin-left: 80px;
       }
     }
     .btn {
@@ -38,6 +47,9 @@ header {
       img {
         width: 24px;
         height: 24px;
+        &:focus {
+          color: #96b5d0;
+        }
       }
       a {
         color: #fff;
@@ -58,12 +70,15 @@ header {
 @media (max-width: 768px) {
   header {
     .container {
-      grid-template-columns: 150px 1fr 50px;
-      grid-template-areas: "logo btn burger"
-                         "menu menu menu";
+      grid-template-columns: 150px 1fr 1fr 50px;
+      grid-template-areas: "logo social btn burger"
+                         "menu menu menu menu";
       grid-template-rows: 80px auto;
       .logo {
         grid-area: logo;
+      }
+      .social {
+        grid-area: social;
       }
       .btn {
         grid-area: btn;
@@ -79,8 +94,20 @@ header {
       }
     }
   }
+  @media (max-width: 586px) {
+    header {
+      .container {
+        .social {
+          display: none;
+        }
+      }
+    }
+  }
   header.active {
     .container {
+      .social {
+        display: none;
+      }
       nav {
         grid-area: menu;
         display: flex;

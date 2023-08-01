@@ -100,11 +100,15 @@ function SearchPopUp() {
         >
           <Box sx={style}>
             <form onChange={handleSearch}>
+              <label>
+                What are you looking for?
               <input
                   type="text"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
+                  placeholder={error ? "Error occurred" : "Search"}
               />
+              </label>
             </form>
             <div className="search">{ items }</div>
           </Box>

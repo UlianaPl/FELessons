@@ -4,6 +4,115 @@
 @import "Footer";
 @import "Contacts";
 
+body {
+    .MuiModal-root {
+        .MuiBox-root {
+            background-color: #5f646e;
+           form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+           label {
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+           input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 15px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            outline: none;
+           }
+           }
+           }
+        }
+    }
+    main {
+        .home {
+            background-color: #5f646e;
+            padding: 20px 20px 40px 20px;
+            .swiper {
+                    .swiper-pagination {
+                        margin-bottom: -20px;
+                        .swiper-pagination-bullet-active {
+                        background-color: #fff;
+                        }
+                    }
+                .swiper-button-prev {
+                    &::after {
+                        display: none;
+                    }
+                }
+                    .swiper-button-next {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            border: 2px solid #fff;
+                        &::after {
+                            color: #fff;
+                        }
+                }
+            }
+        }
+        .MuiStack-root {
+            background-color: #5f646e;
+            padding-bottom: 40px;
+            align-items: center;
+            nav {
+                ul {
+                    li {
+            .MuiButtonBase-root {
+            color: #fff;
+            }
+           }
+          }
+        }
+            .MuiTypography-root {
+            display: none;
+            }
+        }
+        .movie {
+            background-color: #5f646e;
+            padding: 20px 0 20px 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            align-items: center;
+        .single-movie {
+            h2 {
+                color: #fff;
+                font-size: 40px;
+                max-width: 400px;
+                margin-bottom: 50px;
+            }
+            p {
+                color: #fff;
+                font-size: 32px;
+                max-width: 400px;
+            }
+          }
+        }
+    }
+    .not-found {
+        background-color: #5f646e;
+        color: #fff;
+        min-height: 600px;
+        text-align: center;
+        h2 {
+            margin-bottom: 80px;
+            padding-top: 120px;
+            font-size: 120px;
+        }
+        p {
+            font-size: 60px;
+        }
+    }
+}
+
 .container {
     margin: 0 auto;
     width: 100%;
